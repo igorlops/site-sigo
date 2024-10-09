@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef, useState, useEffect, ReactNode, CSSProperties } from "react";
+import React, { useRef, useState, ReactNode, CSSProperties } from "react";
 
 interface HoverProps {
   style?: CSSProperties;
@@ -78,19 +78,10 @@ const Hover: React.FC<HoverProps> = ({
 
     const tiltX = parseFloat((-1 * (max / 2 - x * max)).toFixed(2));
     const tiltY = parseFloat((-1 * (max / 2 - y * max)).toFixed(2));
-    
-
-    let angle =
-      Math.atan2(
-        event.clientX - (left.current + width.current / 2),
-        -(event.clientY - (top.current + height.current / 2))
-      ) *
-      (180 / Math.PI);
 
     return {
       tiltX: tiltX,
       tiltY: tiltY,
-      angle,
     };
   };
 

@@ -1,9 +1,10 @@
 import React, { useCallback } from "react";
 import Particles from "react-particles";
+import { Engine } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
 
 const SnowParticles = () => {
-    const particlesInit = useCallback(async (engine: any) => {
+    const particlesInit = useCallback(async (engine: Engine) => {
         await loadFull(engine); // Carrega todas as funcionalidades do tsparticles
     }, []);
 

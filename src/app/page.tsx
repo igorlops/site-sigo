@@ -3,8 +3,6 @@ import Footer from "@/components/ui/sections/footer/Footer";
 import { Header } from "@/components/ui/sections/header/Header";
 import { Navbar } from "@/components/ui/sections/navbar/Navbar";
 import { About } from "@/components/ui/sections/about/About";
-import Image from "next/image";
-import { useEffect } from "react";
 import { motion, useScroll } from "framer-motion";
 import Services from "@/components/ui/sections/services/Services";
 
