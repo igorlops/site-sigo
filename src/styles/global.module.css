@@ -1,0 +1,8 @@
+::selection {
+    background-color: #ffeb3b;
+    color: #000000;
+  }
+  ::-webkit-selection {
+    background-color: #ffeb3b; 
+    color: #000000; 
+  }
