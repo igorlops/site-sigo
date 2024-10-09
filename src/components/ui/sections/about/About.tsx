@@ -4,7 +4,6 @@ import PageTitle from "../../items/PageTitle";
 import WorkImage from '@images/work-sigo-web-solutions.jpg'
 import { motion } from "framer-motion";
 import ButtonCTA from "../../items/ButtonCTA";
-import SnowParticles from "../../items/ParticlesSnow";
 import Card from "../../items/Card";
 
 
