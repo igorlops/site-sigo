@@ -1,10 +1,8 @@
 import Image from "next/image";
-import Hover from "../../items/Hover";
 import PageTitle from "../../items/PageTitle";
 import WorkImage from '@images/work-sigo-web-solutions.jpg'
 import { motion } from "framer-motion";
 import ButtonCTA from "../../items/ButtonCTA";
-import Card from "../../items/Card";
 
 
 export function About() {
