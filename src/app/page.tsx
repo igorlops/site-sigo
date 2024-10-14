@@ -1,28 +1,81 @@
 'use client'
 import Footer from "@/components/ui/sections/footer/Footer";
 import { Header } from "@/components/ui/sections/header/Header";
-import { Navbar } from "@/components/ui/sections/navbar/Navbar";
 import { About } from "@/components/ui/sections/about/About";
 import { motion, useScroll } from "framer-motion";
 import Services from "@/components/ui/sections/services/Services";
+import Contact from "@/components/ui/sections/contact/Contact";
+import { useEffect, useRef, useState } from "react";
+import Navbar from "@/components/ui/sections/navbar/Navbar";
 
 export default function Home() {
-  const { scrollYProgress } = useScroll();
-  console.log(scrollYProgress)
+    const { scrollYProgress } = useScroll();
+    console.log(scrollYProgress)
+    const [activeSection, setActiveSection] = useState<string>("home");
+    const homeRef = useRef<HTMLElement>(null);
+    const serviceRef = useRef<HTMLElement>(null);
+    const aboutRef = useRef<HTMLElement>(null);
+    const contactRef = useRef<HTMLElement>(null);
+    
+    const getSectionTop = (ref: React.RefObject<HTMLElement>) => {
+      return ref.current ? ref.current.offsetTop : 0;
+    };
+
+    // Atualizar a seção ativa com base no scrollYProgress
+    useEffect(() => {
+      const handleScroll = () => {
+        const scrollY = window.scrollY;
+        const serviceTop = getSectionTop(serviceRef);
+        const aboutTop = getSectionTop(aboutRef);
+        const contactTop = getSectionTop(contactRef);
+
+        const currentSection = scrollY >= contactTop
+          ? 'contact' : scrollY >= aboutTop
+          ? 'about' : scrollY >= serviceTop
+          ? 'services' : 'home';
+
+        setActiveSection(currentSection);
+      };
+
+      window.addEventListener("scroll", handleScroll);
+      handleScroll(); // Inicializa com a seção correta
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
 
   return (
     <>
-          <Navbar/>
+          <Navbar 
+            activeSection={activeSection}
+            homeRef={homeRef}
+            serviceRef={serviceRef}
+            aboutRef={aboutRef}
+            contactRef={contactRef}
+          />
           <motion.div
             className="progress-bar"
             style={{ scaleX: scrollYProgress }}
           />
-          <div style={{zIndex:-99, position:"relative"}}>
+          <section ref={homeRef} style={{zIndex:-99, position:"relative"}}>
             <Header/>
-          </div>
-          <Services/>
-          <About/>
-          <Footer/>
+          </section>
+
+          <section ref={serviceRef}>
+              <Services/>
+          </section>
+
+          <section ref={aboutRef}>
+              <About/>
+          </section>
+
+          <section ref={contactRef}>
+              <Contact/>
+          </section>
+          <section>
+              <Footer/>
+          </section>
     </>
   );
 }

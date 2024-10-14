@@ -2,6 +2,7 @@
 import ButtonCTA from "../../items/ButtonCTA";
 import { ScrollIcon } from "../../items/Icons/ScrollIcon";
 import ParticlesBackground from "../../items/Particles";
+import Typewriter from 'typewriter-effect';
 
 export function Header() {
     return (
@@ -18,22 +19,37 @@ export function Header() {
                 <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-50">
                     <div className="mx-auto max-w-2xl lg:mx-0">
                         <h2 className="text-7xl font-bold tracking-tight sm:text-9xl text-amber-300 font-bold font-sans">{"<SIGO/>"}</h2>
-                        <p className="mt-6 text-5xl text-gray-300">
+                        <p className="mt-6 text-3xl sm:text-5xl  text-gray-300">
                             Somos uma Agência de Desenvolvimento de Soluções Web. 
                         </p>
-                        <p className="mt-6 text-3xl text-gray-300">
-                            Desenvolvemos <span className="text-amber-300">Sites</span>.
+                        <p className="mt-6 text-xl sm:text-3xl text-gray-300">
+                            <span>Desenvolvemos </span>
+                            <span className="text-amber-300">
+                                <Typewriter
+                                    component={'span'}
+                                    options={{
+                                        strings: [
+                                            'Sites Institucionais', 
+                                            'Catálogos Digitais', 
+                                            'Landing Pages', 
+                                            'Blog'
+                                        ],
+                                        autoStart: true,
+                                        loop: true,
+                                    }}
+                                />
+                            </span>.
                         </p>
 
                     </div>
                     <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-                        <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+                        <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 sm:grid-cols-2 md:flex lg:gap-x-10">
                             <ButtonCTA title="Entrar em contato"/>
                         </div>
                         <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20">
                             <div className="flex flex-col">
-                                <dt className="text-2xl font-bold leading-9 tracking-tight text-white">Siga o caminho certo:</dt>
-                                <a href="#" className="text-base leading-7 text-gray-300">
+                                <dt className="text-lg sm:text-2xl font-bold leading-9 tracking-tight text-white">Siga o caminho certo:</dt>
+                                <a href="https://api.whatsapp.com/send/?phone=85992100969&text=Olá%2C+tenho+interesse+em+um+site+para+meu+negócio.&type=phone_number&app_absent=0" className="text-base leading-7 text-gray-300 underline underline-offset-1">
                                     Fale com nossos especialistas e vamos aumentar as vendas. 
                                 </a>
                             </div>

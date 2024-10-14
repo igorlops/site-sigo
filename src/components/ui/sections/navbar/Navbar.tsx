@@ -1,46 +1,44 @@
-import InstagramIcon from "../../items/Icons/Instagram";
-import MailIcon from "../../items/Icons/Mail";
 import LogoIcon from "../../items/Icons/Logo";
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
+import { motion } from "framer-motion";
 
-export function Navbar() {
-    const [activeSection, setActiveSection] = useState<string>("home");
-    const sectionsRef = useRef<Array<HTMLElement | null>>([]);
+interface NavbarProps {
+    activeSection: string;
+    homeRef: React.RefObject<HTMLElement>;
+    serviceRef: React.RefObject<HTMLElement>;
+    aboutRef: React.RefObject<HTMLElement>;
+    contactRef: React.RefObject<HTMLElement>;
+}
   
-    useEffect(() => {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              setActiveSection(entry.target.id);
-            }
-          });
-        }, 
-        { threshold: 0.5 } // Define quando a seção será considerada visível (50% visível)
-      );
-      sectionsRef.current.forEach(section => {
-        if (section) observer.observe(section);
-      });
-  
-      return () => {
-        sectionsRef.current.forEach(section => {
-          if (section) observer.unobserve(section);
-        });
-      };
-    }, []);
+export default function Navbar({ activeSection, homeRef, serviceRef, aboutRef, contactRef }: NavbarProps) {
+
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    const scrollToSection = (sectionRef: React.RefObject<HTMLElement>) => {
+        sectionRef.current?.scrollIntoView({ behavior: 'smooth' });
+    };
+
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
+
+    const menuVariants = {
+        open: { opacity: 1, x: 0, transition: { duration: 0.5, ease: "easeInOut" } },
+        closed: { opacity: 0, x: "-100%", transition: { duration: 0.5, ease: "easeInOut" } }
+    };
 
     return (
         <>
-            <nav className="relative bg-gray-700">
+            <nav className="relative bg-amber-300">
                 <div className="mx-auto p-2 max-w-7xl sm:px-9">
                     <div className="flex justify-between">
                         <div className="flex justify-center items-center gap-2">
-                            <a href="#" className="text-white flex items-center gap-x-2">
-                                <InstagramIcon/> @sigowebsolutions
+                            <a href="#" className="flex items-center gap-x-2 font-bold">
+                                Solicite um orçamento
                             </a>
                         </div>
                         <div className="flex items-center">
-                            <a href="#" className="text-white gap-2 flex items-center"><MailIcon/> sigo@gmail.com</a>
+                            <a href="#" className="gap-2 flex items-center font-bold">Site com o melhor preço</a>
                         </div>
                     </div>
                 </div>
@@ -48,45 +46,160 @@ export function Navbar() {
             <nav className="sticky top-0 z-50 bg-gray-900 divide">
                 <div className="mx-auto max-w-7xl px-2 sm:px-6">
                     <div className="relative flex h-16 items-center justify-between">
-                        <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                            <button type="button" className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-                                <span className="absolute -inset-0.5"></span>
-                                <span className="sr-only">Open main menu</span>
-
-                                <svg className="block h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                                </svg>
-
-                                <svg className="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
-                                </svg>
+                        {/* Ícone do menu móvel na direita */}
+                        <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
+                            <button onClick={toggleMobileMenu} className="focus:outline-none">
+                                <motion.div
+                                    initial={{ rotate: 0 }}
+                                    animate={{ rotate: isMobileMenuOpen ? 45 : 0 }}
+                                    transition={{ duration: 0.3 }}
+                                >
+                                    {isMobileMenuOpen ? (
+                                        // Ícone de fechar (X)
+                                        <motion.svg
+                                            className="block h-6 w-6"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            stroke="white" // Cor branca aplicada aqui
+                                            aria-hidden="true"
+                                            initial={{ scale: 0 }}
+                                            animate={{ scale: 1 }}
+                                        >
+                                            <motion.path
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth="2"
+                                                d="M6 18L18 6M6 6l12 12"
+                                                initial={{ pathLength: 0 }}
+                                                animate={{ pathLength: 1, transition: { duration: 0.3 } }}
+                                            />
+                                        </motion.svg>
+                                    ) : (
+                                        // Ícone de menu (hambúrguer)
+                                        <motion.svg
+                                            className="block h-6 w-6"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            stroke="white" // Cor branca aplicada aqui
+                                            aria-hidden="true"
+                                            initial={{ scale: 0 }}
+                                            animate={{ scale: 1 }}
+                                        >
+                                            <motion.path
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth="2"
+                                                d="M4 6h16M4 12h16m-7 6h7"
+                                                initial={{ pathLength: 0 }}
+                                                animate={{ pathLength: 1, transition: { duration: 0.3 } }}
+                                            />
+                                        </motion.svg>
+                                    )}
+                                </motion.div>
                             </button>
                         </div>
+
+                        {/* Logo e Links no menu */}
                         <div className="flex flex-1 items-start lg:justify-between sm:items-stretch sm:justify-start">
                             <div className="flex flex-shrink-0 items-center">
                                 <div className="max-w-sm">
-                                    <LogoIcon size={50}/>
+                                    <LogoIcon size={50} />
                                 </div>
                             </div>
+
+                            {/* Links do menu desktop */}
                             <div className="hidden sm:ml-6 sm:flex">
                                 <div className="flex items-center justify-center space-x-4">
-                                    <a href="#home" className={`px-3 py-[1.5em] text-sm font-medium text-white hover:border-b-4  hover:border-amber-200 active:border-amber-500 ${activeSection === "home" ? " border-b-4 border-amber-300" : ""}`} aria-current="page">Home</a>
-                                    <a href="#about" className={`px-3 py-[1.5em] text-sm font-medium text-white hover:border-b-4  hover:border-amber-200 active:border-amber-500 ${activeSection === "home" ? " border-b-4 border-amber-300" : ""}`}>Sobre</a>
-                                    <a href="#services" className={`px-3 py-[1.5em] text-sm font-medium text-white hover:border-b-4  hover:border-amber-200 active:border-amber-500 ${activeSection === "home" ? " border-b-4 border-amber-300" : ""}`}>Serviços</a>
-                                    <a href="#contact" className={`px-3 py-[1.5em] text-sm font-medium text-white hover:border-b-4  hover:border-amber-200 active:border-amber-500 ${activeSection === "home" ? " border-b-4 border-amber-300" : ""}`}>Contato</a>
+                                    <a onClick={() => scrollToSection(homeRef)} className={`cursor-pointer px-3 py-[1.4em] text-md font-medium text-white ${
+                                        activeSection === "home"
+                                            ? 'border-b-4 border-amber-300'
+                                            : 'hover:border-b-4 hover:border-amber-200'
+                                        } `}>
+                                        Home
+                                    </a>
+                                    <a onClick={() => scrollToSection(serviceRef)} className={`cursor-pointer px-3 py-[1.4em] text-md font-medium text-white ${
+                                        activeSection === "services"
+                                            ? 'border-b-4 border-amber-300'
+                                            : 'hover:border-b-4 hover:border-amber-200'
+                                        } `}>
+                                        Serviços
+                                    </a>
+                                    <a onClick={() => scrollToSection(aboutRef)} className={`cursor-pointer px-3 py-[1.4em] text-md font-medium text-white ${
+                                        activeSection === "about"
+                                            ? 'border-b-4 border-amber-300'
+                                            : 'hover:border-b-4 hover-border-amber-200'
+                                        } `}>
+                                        Sobre
+                                    </a>
+                                    <a onClick={() => scrollToSection(contactRef)} className={`cursor-pointer px-3 py-[1.4em] text-md font-medium text-white ${
+                                        activeSection === "contact"
+                                            ? 'border-b-4 border-amber-300'
+                                            : 'hover:border-b-4 hover-border-amber-200'
+                                        } `}>
+                                        Contato
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                {/* <div className="sm:hidden" id="mobile-menu">
-                    <div className="space-y-1 px-2 pb-3 pt-2">
-                        <a href="#" className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Home</a>
-                        <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-amber-200 hover:text-white">Sobre</a>
-                        <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-amber-200 hover:text-white">Serviços</a>
-                        <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-amber-200 hover:text-white">Contato</a>
+
+                {/* Mobile menu content */}
+                <motion.div
+                    className="absolute top-12 left-0 bg-gray-800 w-full h-full"
+                    initial="closed"
+                    animate={isMobileMenuOpen ? "open" : "closed"}
+                    variants={menuVariants}
+                >
+                    <div className="sm:hidden" id="mobile-menu">
+                        <div className="bg-gray-700 space-y-1 px-2 pb-3 pt-2">
+                            <a onClick={() =>  {
+                                scrollToSection(homeRef)
+                                setIsMobileMenuOpen(false)
+                            } 
+                            } className={`block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-amber-300 hover:text-black ${
+                            activeSection === "home"
+                                            ? 'bg-amber-300 text-black'
+                                            : ''    
+                            }`}>
+                                Home
+                            </a>
+                            <a onClick={() =>  {
+                                scrollToSection(serviceRef)
+                                setIsMobileMenuOpen(false)
+                            } 
+                            } className={`block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-amber-300 hover:text-black ${
+                            activeSection === "services"
+                                            ? 'bg-amber-300 text-black'
+                                            : ''    
+                            }`}>
+                                Serviços
+                            </a>
+                            <a onClick={() =>  {
+                                scrollToSection(aboutRef)
+                                setIsMobileMenuOpen(false)
+                            } 
+                            } className={`block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-amber-300 hover:text-black ${
+                            activeSection === "about"
+                                            ? 'bg-amber-300 text-black'
+                                            : ''    
+                            }`}>
+                                Sobre
+                            </a>
+                            <a onClick={() =>  {
+                                scrollToSection(contactRef)
+                                setIsMobileMenuOpen(false)
+                            } 
+                            } className={`block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-amber-300 hover:text-black ${
+                            activeSection === "contact"
+                                            ? 'bg-amber-300 text-black'
+                                            : ''    
+                            }`}>
+                                Contato
+                            </a>
+                        </div>
                     </div>
-                </div> */}
+                </motion.div>
             </nav>
         </>
     );

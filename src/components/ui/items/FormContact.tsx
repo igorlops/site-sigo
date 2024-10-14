@@ -4,10 +4,6 @@ export default function FormContact() {
     return (
         <>
             <form action="" method="post">
-                <div className="pb-5">
-                    <h2 className="text-base font-semibold leading-7 text-amber-300">Preencha seus dados aqui</h2>
-                    <p className="mt-1 text-sm leading-6 text-gray-300">Solicite já um orçamento, vamos fazer seu negócio decolar.</p>
-
                     <div className="mt-10 flex flex-wrap flex-col text-white">
                         <div className="sm:col-span-3 my-3">
                             <InputText label="Primeiro nome" name="first-name" type="text"/>
@@ -33,7 +29,6 @@ export default function FormContact() {
                                 placeholder="Digite sua idéia aqui"></textarea>
                         </div>
                     </div>
-                </div>
                 <button className="hover:scale-105 transition duration-300 ease-in-out px-5 py-2 my-5 bg-amber-300 rounded-md hover:bg-amber-600 hover:ring-amber-700 hover:text-white font-bold ring-1 ring-inset ring-amber-400" type="submit">Enviar</button>
             </form>
         </>
