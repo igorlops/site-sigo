@@ -12,7 +12,7 @@ export default function Footer() {
             <footer className="bg-gray-800 py-[50px] w-full divide-y divide-gray-600">
                 <div className="container mx-auto py-5">
                     <div className="gap-x-5 gap-y-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center">
-                        <div className="flex text-white mx-auto pr-[8em] flex-col items-center">
+                        <div className="flex text-white mx-auto flex-col items-center">
                             <div className="flex flex-col" style={{maxWidth:"fit-content"}}>
                                 <div className="flex flex-row gap-3">
                                     <LogoIcon size={50}/> 
