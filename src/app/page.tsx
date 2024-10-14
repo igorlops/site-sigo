@@ -29,9 +29,9 @@ export default function Home() {
         const aboutTop = getSectionTop(aboutRef);
         const contactTop = getSectionTop(contactRef);
 
-        const currentSection = scrollY >= contactTop
-          ? 'contact' : scrollY >= aboutTop
-          ? 'about' : scrollY >= serviceTop
+        const currentSection = scrollY >= (contactTop - 200)
+          ? 'contact' : scrollY >= (aboutTop - 200)
+          ? 'about' : scrollY >= (serviceTop - 200)
           ? 'services' : 'home';
 
         setActiveSection(currentSection);
@@ -59,7 +59,7 @@ export default function Home() {
             style={{ scaleX: scrollYProgress }}
           />
           <section ref={homeRef} style={{zIndex:-99, position:"relative"}}>
-            <Header/>
+            <Header serviceRef={serviceRef}/>
           </section>
 
           <section ref={serviceRef}>

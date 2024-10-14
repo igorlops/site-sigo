@@ -110,28 +110,28 @@ export default function Navbar({ activeSection, homeRef, serviceRef, aboutRef, c
                             {/* Links do menu desktop */}
                             <div className="hidden sm:ml-6 sm:flex">
                                 <div className="flex items-center justify-center space-x-4">
-                                    <a onClick={() => scrollToSection(homeRef)} className={`cursor-pointer px-3 py-[1.4em] text-md font-medium text-white ${
+                                    <a onClick={() => scrollToSection(homeRef)} className={`cursor-pointer px-3 py-[1.3em] text-md font-medium text-white ${
                                         activeSection === "home"
                                             ? 'border-b-4 border-amber-300'
                                             : 'hover:border-b-4 hover:border-amber-200'
                                         } `}>
                                         Home
                                     </a>
-                                    <a onClick={() => scrollToSection(serviceRef)} className={`cursor-pointer px-3 py-[1.4em] text-md font-medium text-white ${
+                                    <a onClick={() => scrollToSection(serviceRef)} className={`cursor-pointer px-3 py-[1.3em] text-md font-medium text-white ${
                                         activeSection === "services"
                                             ? 'border-b-4 border-amber-300'
                                             : 'hover:border-b-4 hover:border-amber-200'
                                         } `}>
                                         Serviços
                                     </a>
-                                    <a onClick={() => scrollToSection(aboutRef)} className={`cursor-pointer px-3 py-[1.4em] text-md font-medium text-white ${
+                                    <a onClick={() => scrollToSection(aboutRef)} className={`cursor-pointer px-3 py-[1.3em] text-md font-medium text-white ${
                                         activeSection === "about"
                                             ? 'border-b-4 border-amber-300'
                                             : 'hover:border-b-4 hover-border-amber-200'
                                         } `}>
                                         Sobre
                                     </a>
-                                    <a onClick={() => scrollToSection(contactRef)} className={`cursor-pointer px-3 py-[1.4em] text-md font-medium text-white ${
+                                    <a onClick={() => scrollToSection(contactRef)} className={`cursor-pointer px-3 py-[1.3em] text-md font-medium text-white ${
                                         activeSection === "contact"
                                             ? 'border-b-4 border-amber-300'
                                             : 'hover:border-b-4 hover-border-amber-200'

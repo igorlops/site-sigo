@@ -3,7 +3,7 @@ import { InputText } from "./InputText";
 export default function FormContact() {
     return (
         <>
-            <form action="" method="post">
+            <form action="https://email.poentecompany.com.br/email.php" method="post">
                     <div className="mt-10 flex flex-wrap flex-col text-white">
                         <div className="sm:col-span-3 my-3">
                             <InputText label="Primeiro nome" name="first-name" type="text"/>

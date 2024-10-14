@@ -3,8 +3,15 @@ import ButtonCTA from "../../items/ButtonCTA";
 import { ScrollIcon } from "../../items/Icons/ScrollIcon";
 import ParticlesBackground from "../../items/Particles";
 import Typewriter from 'typewriter-effect';
+interface HeaderProps {
+    serviceRef: React.RefObject<HTMLElement>;
+}
 
-export function Header() {
+export function Header({serviceRef}:HeaderProps) {
+
+    const scrollToSection = (sectionRef: React.RefObject<HTMLElement>) => {
+        sectionRef.current?.scrollIntoView({ behavior: 'smooth' });
+    };
     return (
         <>
             <div className="relative isolate overflow-hidden bg-gray-900 pt-24 sm:pt-32">
@@ -57,7 +64,7 @@ export function Header() {
                     </div>
                 </div>
                 <div className="w-full flex justify-center pt-5">
-                    <a href="#services" className="hover:scale-105 transition duration-300 ease-in-out">
+                    <a className="hover:scale-105 transition duration-300 ease-in-out cursor-pointer" onClick={() => scrollToSection(serviceRef)}>
                         <ScrollIcon/>
                     </a>
                 </div>
