@@ -49,8 +49,8 @@ export default function Footer() {
                                 <HoverInText>
 
                                     <ContactSocial
-                                        content="sigowebsolutions@gmail.com"
-                                        href="mailto:sigowebsolutions@gmail.com"
+                                        content="sigo.websolutions@gmail.com"
+                                        href="mailto:sigo.websolutions@gmail.com"
                                         icon={<MailIcon/>}
                                     />
                                 </HoverInText>

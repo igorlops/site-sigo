@@ -22,8 +22,8 @@ export default function Contact() {
                         />
                         <ContactSocial
                             title="Escreva um email"
-                            content="sigowebsolutions@gmail.com"
-                            href="mailto:sigowebsolutions@gmail.com"
+                            content="sigo.websolutions@gmail.com"
+                            href="mailto:sigo.websolutions@gmail.com"
                             icon={<MailIcon/>}
                         />
                         <ContactSocial
