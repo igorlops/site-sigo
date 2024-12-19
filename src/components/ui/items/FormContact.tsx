@@ -61,7 +61,7 @@ export default function FormContact() {
                     text: data.message || "Erro ao enviar a mensagem.",
                 });
             }
-        } catch (error) {
+        } catch {
             setResponseMessage({
                 type: "error",
                 text: "Ocorreu um erro inesperado. Por favor, tente novamente.",
