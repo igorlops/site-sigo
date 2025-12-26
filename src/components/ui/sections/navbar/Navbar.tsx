@@ -138,6 +138,9 @@ export default function Navbar({ activeSection, homeRef, serviceRef, aboutRef, c
                                         } `}>
                                         Contato
                                     </a>
+                                    <a href="/modelos" className={`hover:scale-105 transition duration-300 ease-in-out px-5 py-2 my-5 bg-amber-300 rounded-md hover:bg-amber-600 hover:ring-amber-700 hover:text-white font-bold ring-1 ring-inset ring-amber-400`}>
+                                        Portfólio
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -152,7 +155,7 @@ export default function Navbar({ activeSection, homeRef, serviceRef, aboutRef, c
                     variants={menuVariants}
                 >
                     <div className="sm:hidden" id="mobile-menu">
-                        <div className="bg-gray-700 space-y-1 px-2 pb-3 pt-2">
+                        <div className="bg-gray-700 space-y-1 px-2 pb-3 pt-2 gap-5">
                             <a onClick={() =>  {
                                 scrollToSection(homeRef)
                                 setIsMobileMenuOpen(false)
@@ -196,6 +199,9 @@ export default function Navbar({ activeSection, homeRef, serviceRef, aboutRef, c
                                             : ''    
                             }`}>
                                 Contato
+                            </a>
+                            <a href="/modelos" className={`hover:scale-105 transition duration-300 ease-in-out px-5 py-2 my-5 bg-amber-300 rounded-md hover:bg-amber-600 hover:ring-amber-700 hover:text-white font-bold ring-1 ring-inset ring-amber-400`}>
+                                Portfólio
                             </a>
                         </div>
                     </div>

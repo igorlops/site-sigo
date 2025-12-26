@@ -24,6 +24,22 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+
+  .glass-dark {
+    @apply bg-navy-950/40 backdrop-blur-lg border border-white/10 shadow-2xl;
+  }
+
+  .bg-mesh {
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(245, 158, 11, 0.15) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(10, 25, 47, 0.4) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(245, 158, 11, 0.1) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, rgba(10, 25, 47, 0.4) 0px, transparent 50%);
+  }
 }
 
 .progress-bar {
@@ -31,8 +47,8 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 5px;
-  background-color: #f7fc00;
+  height: 4px;
+  background: linear-gradient(to right, #f59e0b, #fbbf24);
   transform-origin: 0%;
   z-index: 9999;
 }

@@ -1,0 +1,35 @@
+import { NextRequest, NextResponse } from 'next/server';
+import pool from '@/lib/mysql';
+
+export async function POST(req: NextRequest) {
+    try {
+        const body = await req.json();
+        const { first_name, last_name, email, phone, message } = body;
+
+        // Simple validation
+        if (!first_name || !email || !message) {
+            return NextResponse.json(
+                { message: 'Campos obrigatórios ausentes.' },
+                { status: 400 }
+            );
+        }
+
+        // Insert into MySQL
+        const [result] = await pool.execute(
+            'INSERT INTO contacts (first_name, last_name, email, phone, message) VALUES (?, ?, ?, ?, ?)',
+            [first_name, last_name, email, phone, message]
+        );
+
+        return NextResponse.json(
+            { message: 'Sua mensagem foi enviada com sucesso e salva em nosso banco de dados!', result },
+            { status: 200 }
+        );
+    } catch (error: unknown) {
+        console.error('Database Error:', error);
+        const errorMessage = error instanceof Error ? error.message : 'Erro desconhecido';
+        return NextResponse.json(
+            { message: 'Erro ao processar sua solicitação.', error: errorMessage },
+            { status: 500 }
+        );
+    }
+}

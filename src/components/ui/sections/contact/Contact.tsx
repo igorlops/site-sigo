@@ -4,57 +4,87 @@ import InstagramIcon from "../../items/Icons/Instagram";
 import MailIcon from "../../items/Icons/Mail";
 import PhoneIcon from "../../items/Icons/PhoneIcon";
 import WhatsAppIcon from "../../items/Icons/WhatsAppIcon";
+import InViewSection from "../../items/InViewSection";
 
 export default function Contact() {
-
     return (
-        <>
-            <div className="w-100 bg-gray-900 mx-auto flex flex-col justify-center items-center pb-[5em]">
-                <div className="container mx-auto">
-                    <h2 className="text-gray-100 text-4xl md:text-5xl lg:text-7xl font-bold pt-[3em] pb-[1em] text-center">Solicite já um <span className="text-amber-300 font-bold">orçamento</span></h2>
+        <section className="bg-navy-950 py-24 sm:py-32 relative overflow-hidden bg-mesh">
+            <div className="container mx-auto px-6">
+                <InViewSection>
+                    <div className="max-w-4xl mx-auto text-center mb-20">
+                        <h2 className="text-primary-400 font-mono text-sm tracking-widest uppercase mb-4">Primeiro Passo</h2>
+                        <h3 className="text-4xl md:text-6xl font-black text-white mb-6">Vamos Iniciar sua <br /><span className="text-primary-400 font-sans">Transformação Digital</span></h3>
+                        <p className="text-xl text-gray-400">Escolha o canal que preferir ou preencha o formulário para um orçamento sob medida.</p>
+                    </div>
+                </InViewSection>
 
-                    <div className="flex flex-col flex-wrap items-start px-10 py-5 text-left md:flex-row md:justify-between text-white">
-                        <ContactSocial
-                            title="Siga nosso instagram"
-                            content="@sigowebsolutions"
-                            href="https://www.instagram.com/sigowebsolutions/"
-                            icon={<InstagramIcon/>}
-                        />
-                        <ContactSocial
-                            title="Escreva um email"
-                            content="sigo.websolutions@gmail.com"
-                            href="mailto:sigo.websolutions@gmail.com"
-                            icon={<MailIcon/>}
-                        />
-                        <ContactSocial
-                            title="Enviar uma mensagem"
-                            content="(85) 9 9210-0969"
-                            href="https://api.whatsapp.com/send/?phone=85992100969&text=Olá%2C+tenho+interesse+em+um+site+para+meu+negócio.&type=phone_number&app_absent=0"
-                            icon={<WhatsAppIcon/>}
-                        />
-                        <ContactSocial
-                            title="Ligar para nós"
-                            content="(85) 9 9210-0969"
-                            href="tel:88998604521"
-                            icon={<PhoneIcon/>}
-                        />
-                    </div>
-                    <div className="flex justify-center md:flex-row flex-wrap px-3 flex-col md:items-center text-white gap-[3em]">
-                        <div className="flex flex-col bg-gray-800 p-5 w-[100%] rounded-xl md:w-[400px] items-center" style={{maxHeight:"fit-content"}}>
-                            <h2 className="text-3xl my-5 text-amber-300 font-bold">Fale conosco</h2>
-                            <p>
-                                Se você tem alguma dúvida ou quer solicitar um orçamento personalizado, 
-                                não deixe de entrar em contato conosco, será um prazer em atendê-lo!
-                            </p>
-                            <p className="mt-5 mb-1"><span className="text-amber-300 font-bold">Aumente suas vendas</span> e potencialize o crescimento do seu negócio com um Site!</p>
-                            <p className="my-1">Transforme sua presença digital e destaque-se no mercado de forma <span className="text-amber-300 font-bold">impactante</span>!</p>
-                            <p className="my-1">Criamos sites modernos e soluções digitais sob medida, pensadas especialmente para empresas que querem se <span className="text-amber-300 font-bold">destacar</span>.</p>
-                            <p className="my-1">Nosso foco é ajudar você a ter uma <span className="text-amber-300 font-bold">presença digital</span> que realmente faça diferença, atraindo mais clientes e trazendo resultados.</p>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start lg:items-center">
+                    <InViewSection>
+                        <div className="space-y-12">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div className="glass-dark p-6 rounded-2xl border border-white/5 hover:bg-white/5 transition-colors group">
+                                    <ContactSocial
+                                        title="Instagram"
+                                        content="@sigowebsolutions"
+                                        href="https://www.instagram.com/sigowebsolutions/"
+                                        icon={<InstagramIcon />}
+                                    />
+                                </div>
+                                <div className="glass-dark p-6 rounded-2xl border border-white/5 hover:bg-white/5 transition-colors group">
+                                    <ContactSocial
+                                        title="E-mail"
+                                        content="sigo.websolutions@gmail.com"
+                                        href="mailto:sigo.websolutions@gmail.com"
+                                        icon={<MailIcon />}
+                                    />
+                                </div>
+                                <div className="glass-dark p-6 rounded-2xl border border-white/5 hover:bg-white/5 transition-colors group">
+                                    <ContactSocial
+                                        title="WhatsApp"
+                                        content="(85) 9 9210-0969"
+                                        href="https://api.whatsapp.com/send/?phone=85992100969&text=Olá%2C+tenho+interesse+em+um+site+para+meu+negócio.&type=phone_number&app_absent=0"
+                                        icon={<WhatsAppIcon />}
+                                    />
+                                </div>
+                                <div className="glass-dark p-6 rounded-2xl border border-white/5 hover:bg-white/5 transition-colors group">
+                                    <ContactSocial
+                                        title="Telefone"
+                                        content="(85) 9 9210-0969"
+                                        href="tel:88998604521"
+                                        icon={<PhoneIcon />}
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="glass p-10 rounded-3xl border border-primary-400/10 relative overflow-hidden">
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-primary-400/5 rounded-full blur-3xl"></div>
+                                <h4 className="text-2xl font-bold text-white mb-4">Por que falar conosco hoje?</h4>
+                                <ul className="space-y-4 text-gray-300">
+                                    <li className="flex gap-3 items-center">
+                                        <div className="w-1.5 h-1.5 rounded-full bg-primary-400"></div>
+                                        <span>Consultoria estratégica gratuita inicial.</span>
+                                    </li>
+                                    <li className="flex gap-3 items-center">
+                                        <div className="w-1.5 h-1.5 rounded-full bg-primary-400"></div>
+                                        <span>Análise técnica da sua presença digital atual.</span>
+                                    </li>
+                                    <li className="flex gap-3 items-center">
+                                        <div className="w-1.5 h-1.5 rounded-full bg-primary-400"></div>
+                                        <span>Planejamento de escala e conversão.</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div className="w-[100%] md:w-[600px] mx-auto px-5"><FormContact/></div>
-                    </div>
+                    </InViewSection>
+
+                    <InViewSection>
+                        <div className="glass-dark p-10 rounded-[2.5rem] border border-white/10 shadow-2xl relative">
+                            <h4 className="text-3xl font-bold text-white mb-8">Solicitar Orçamento</h4>
+                            <FormContact />
+                        </div>
+                    </InViewSection>
                 </div>
             </div>
-       </>
+        </section>
     );
 }
