@@ -33,3 +33,15 @@ export async function POST(req: NextRequest) {
         );
     }
 }
+export async function GET() {
+    try {
+        const [rows] = await pool.execute('SELECT * FROM contacts ORDER BY created_at DESC');
+        return NextResponse.json(rows, { status: 200 });
+    } catch (error: unknown) {
+        console.error('Database Error:', error);
+        return NextResponse.json(
+            { message: 'Erro ao buscar contatos.' },
+            { status: 500 }
+        );
+    }
+}

@@ -24,7 +24,7 @@ export function Header({ serviceRef }: HeaderProps) {
             <div className="absolute top-0 -right-4 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
             <div className="absolute -bottom-8 left-20 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-4000"></div>
 
-            <div className="container mx-auto px-6 relative z-10 text-center lg:text-left flex flex-col lg:flex-row items-center justify-between gap-12">
+            <div className="container mx-auto px-6 pt-40 relative z-10 text-center lg:text-left flex flex-col lg:flex-row items-center justify-between gap-12">
                 <div className="max-w-3xl">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -115,11 +115,11 @@ export function Header({ serviceRef }: HeaderProps) {
                     </div>
                 </motion.div>
             </div>
-
-            <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce cursor-pointer flex flex-col items-center gap-2 opacity-50 hover:opacity-100 transition-opacity" onClick={() => scrollToSection(serviceRef)}>
+            <div className="relative pt-16 items-center animate-bounce cursor-pointer flex flex-col items-center gap-2 opacity-50 hover:opacity-100 transition-opacity" onClick={() => scrollToSection(serviceRef)}>
                 <span className="text-[10px] uppercase tracking-[0.2em] font-medium">Scroll Discover</span>
                 <ScrollIcon />
             </div>
+
         </section>
     );
 }

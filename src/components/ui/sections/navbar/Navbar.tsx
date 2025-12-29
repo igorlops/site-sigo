@@ -9,204 +9,135 @@ interface NavbarProps {
     aboutRef: React.RefObject<HTMLElement>;
     contactRef: React.RefObject<HTMLElement>;
 }
-  
-export default function Navbar({ activeSection, homeRef, serviceRef, aboutRef, contactRef }: NavbarProps) {
 
+export default function Navbar({ activeSection, homeRef, serviceRef, aboutRef, contactRef }: NavbarProps) {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const scrollToSection = (sectionRef: React.RefObject<HTMLElement>) => {
         sectionRef.current?.scrollIntoView({ behavior: 'smooth' });
+        setIsMobileMenuOpen(false);
     };
 
-    const toggleMobileMenu = () => {
-        setIsMobileMenuOpen(!isMobileMenuOpen);
-    };
+    const navLinks = [
+        { id: "home", label: "Home", ref: homeRef },
+        { id: "services", label: "Serviços", ref: serviceRef },
+        { id: "about", label: "Sobre", ref: aboutRef },
+        { id: "contact", label: "Contato", ref: contactRef },
+    ];
 
     const menuVariants = {
-        open: { opacity: 1, x: 0, transition: { duration: 0.5, ease: "easeInOut" } },
-        closed: { opacity: 0, x: "-100%", transition: { duration: 0.5, ease: "easeInOut" } }
+        open: { opacity: 1, y: 0, scale: 1, transition: { type: "spring", stiffness: 300, damping: 30 } },
+        closed: { opacity: 0, y: -20, scale: 0.95, transition: { duration: 0.2 } }
     };
 
     return (
-        <>
-            <nav className="relative bg-amber-300">
-                <div className="mx-auto p-2 max-w-7xl sm:px-9">
-                    <div className="flex justify-between">
-                        <div className="flex justify-center items-center gap-2">
-                            <a href="#" className="flex items-center gap-x-2 font-bold">
-                                Solicite um orçamento
-                            </a>
+        <header className="fixed top-0 left-0 right-0 z-[100] px-4 py-6 pointer-events-none">
+            <nav className="mx-auto max-w-7xl pointer-events-auto">
+                <div className="glass-dark border border-white/10 rounded-full px-6 py-3 flex items-center justify-between shadow-2xl backdrop-blur-xl">
+                    {/* Logo Area */}
+                    <div className="flex items-center gap-4">
+                        <div className="hover:rotate-12 transition-transform duration-300">
+                            <LogoIcon size={40} />
                         </div>
-                        <div className="flex items-center">
-                            <a href="#" className="gap-2 flex items-center font-bold">Site com o melhor preço</a>
-                        </div>
+                        <span className="hidden md:block font-black text-white text-lg tracking-tighter">
+                            SIGO<span className="text-primary-400">.</span>
+                        </span>
                     </div>
-                </div>
-            </nav>
-            <nav className="sticky top-0 z-50 bg-gray-900 divide">
-                <div className="mx-auto max-w-7xl px-2 sm:px-6">
-                    <div className="relative flex h-16 items-center justify-between">
-                        {/* Ícone do menu móvel na direita */}
-                        <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
-                            <button onClick={toggleMobileMenu} className="focus:outline-none">
-                                <motion.div
-                                    initial={{ rotate: 0 }}
-                                    animate={{ rotate: isMobileMenuOpen ? 45 : 0 }}
-                                    transition={{ duration: 0.3 }}
-                                >
-                                    {isMobileMenuOpen ? (
-                                        // Ícone de fechar (X)
-                                        <motion.svg
-                                            className="block h-6 w-6"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 24 24"
-                                            stroke="white" // Cor branca aplicada aqui
-                                            aria-hidden="true"
-                                            initial={{ scale: 0 }}
-                                            animate={{ scale: 1 }}
-                                        >
-                                            <motion.path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                strokeWidth="2"
-                                                d="M6 18L18 6M6 6l12 12"
-                                                initial={{ pathLength: 0 }}
-                                                animate={{ pathLength: 1, transition: { duration: 0.3 } }}
-                                            />
-                                        </motion.svg>
-                                    ) : (
-                                        // Ícone de menu (hambúrguer)
-                                        <motion.svg
-                                            className="block h-6 w-6"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 24 24"
-                                            stroke="white" // Cor branca aplicada aqui
-                                            aria-hidden="true"
-                                            initial={{ scale: 0 }}
-                                            animate={{ scale: 1 }}
-                                        >
-                                            <motion.path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                strokeWidth="2"
-                                                d="M4 6h16M4 12h16m-7 6h7"
-                                                initial={{ pathLength: 0 }}
-                                                animate={{ pathLength: 1, transition: { duration: 0.3 } }}
-                                            />
-                                        </motion.svg>
-                                    )}
-                                </motion.div>
+
+                    {/* Desktop Menu */}
+                    <div className="hidden md:flex items-center bg-white/5 border border-white/10 rounded-full px-2 py-1">
+                        {navLinks.map((link) => (
+                            <button
+                                key={link.id}
+                                onClick={() => scrollToSection(link.ref)}
+                                className={`relative px-5 py-2 text-sm font-bold transition-all duration-300 rounded-full ${activeSection === link.id
+                                    ? "text-navy-950"
+                                    : "text-gray-400 hover:text-white"
+                                    }`}
+                            >
+                                {activeSection === link.id && (
+                                    <motion.div
+                                        layoutId="nav-active"
+                                        className="absolute inset-0 bg-primary-400 rounded-full -z-10"
+                                        transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                                    />
+                                )}
+                                {link.label}
                             </button>
-                        </div>
+                        ))}
+                    </div>
 
-                        {/* Logo e Links no menu */}
-                        <div className="flex flex-1 items-start lg:justify-between sm:items-stretch sm:justify-start">
-                            <div className="flex flex-shrink-0 items-center">
-                                <div className="max-w-sm">
-                                    <LogoIcon size={50} />
-                                </div>
-                            </div>
+                    {/* Desktop CTA */}
+                    <div className="hidden md:flex items-center gap-4">
+                        <a
+                            href="/modelos"
+                            className="text-white hover:text-primary-400 font-bold text-sm transition-colors"
+                        >
+                            Portfólio
+                        </a>
+                        <a
+                            href="https://api.whatsapp.com/send/?phone=85992100969"
+                            className="bg-primary-400 hover:bg-primary-500 text-navy-950 px-6 py-2 rounded-full font-black text-sm transition-all shadow-[0_0_15px_rgba(245,158,11,0.2)]"
+                        >
+                            Orçamento
+                        </a>
+                    </div>
 
-                            {/* Links do menu desktop */}
-                            <div className="hidden sm:ml-6 sm:flex">
-                                <div className="flex items-center justify-center space-x-4">
-                                    <a onClick={() => scrollToSection(homeRef)} className={`cursor-pointer px-3 py-[1.3em] text-md font-medium text-white ${
-                                        activeSection === "home"
-                                            ? 'border-b-4 border-amber-300'
-                                            : 'hover:border-b-4 hover:border-amber-200'
-                                        } `}>
-                                        Home
-                                    </a>
-                                    <a onClick={() => scrollToSection(serviceRef)} className={`cursor-pointer px-3 py-[1.3em] text-md font-medium text-white ${
-                                        activeSection === "services"
-                                            ? 'border-b-4 border-amber-300'
-                                            : 'hover:border-b-4 hover:border-amber-200'
-                                        } `}>
-                                        Serviços
-                                    </a>
-                                    <a onClick={() => scrollToSection(aboutRef)} className={`cursor-pointer px-3 py-[1.3em] text-md font-medium text-white ${
-                                        activeSection === "about"
-                                            ? 'border-b-4 border-amber-300'
-                                            : 'hover:border-b-4 hover-border-amber-200'
-                                        } `}>
-                                        Sobre
-                                    </a>
-                                    <a onClick={() => scrollToSection(contactRef)} className={`cursor-pointer px-3 py-[1.3em] text-md font-medium text-white ${
-                                        activeSection === "contact"
-                                            ? 'border-b-4 border-amber-300'
-                                            : 'hover:border-b-4 hover-border-amber-200'
-                                        } `}>
-                                        Contato
-                                    </a>
-                                    <a href="/modelos" className={`hover:scale-105 transition duration-300 ease-in-out px-5 py-2 my-5 bg-amber-300 rounded-md hover:bg-amber-600 hover:ring-amber-700 hover:text-white font-bold ring-1 ring-inset ring-amber-400`}>
-                                        Portfólio
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                    {/* Mobile Menu Toggle */}
+                    <div className="md:hidden flex items-center gap-4">
+                        <a
+                            href="https://api.whatsapp.com/send/?phone=85992100969"
+                            className="bg-primary-400 text-navy-950 px-4 py-2 rounded-full font-black text-xs"
+                        >
+                            WhatsApp
+                        </a>
+                        <button
+                            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                            className="p-2 text-white hover:bg-white/10 rounded-full transition-colors"
+                        >
+                            {isMobileMenuOpen ? (
+                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            ) : (
+                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+                                </svg>
+                            )}
+                        </button>
                     </div>
                 </div>
 
-                {/* Mobile menu content */}
+                {/* Mobile Menu Content */}
                 <motion.div
-                    className="absolute top-12 left-0 bg-gray-800 w-full h-full"
+                    className="md:hidden mt-4 pointer-events-auto"
                     initial="closed"
                     animate={isMobileMenuOpen ? "open" : "closed"}
                     variants={menuVariants}
                 >
-                    <div className="sm:hidden" id="mobile-menu">
-                        <div className="bg-gray-700 space-y-1 px-2 pb-3 pt-2 gap-5">
-                            <a onClick={() =>  {
-                                scrollToSection(homeRef)
-                                setIsMobileMenuOpen(false)
-                            } 
-                            } className={`block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-amber-300 hover:text-black ${
-                            activeSection === "home"
-                                            ? 'bg-amber-300 text-black'
-                                            : ''    
-                            }`}>
-                                Home
-                            </a>
-                            <a onClick={() =>  {
-                                scrollToSection(serviceRef)
-                                setIsMobileMenuOpen(false)
-                            } 
-                            } className={`block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-amber-300 hover:text-black ${
-                            activeSection === "services"
-                                            ? 'bg-amber-300 text-black'
-                                            : ''    
-                            }`}>
-                                Serviços
-                            </a>
-                            <a onClick={() =>  {
-                                scrollToSection(aboutRef)
-                                setIsMobileMenuOpen(false)
-                            } 
-                            } className={`block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-amber-300 hover:text-black ${
-                            activeSection === "about"
-                                            ? 'bg-amber-300 text-black'
-                                            : ''    
-                            }`}>
-                                Sobre
-                            </a>
-                            <a onClick={() =>  {
-                                scrollToSection(contactRef)
-                                setIsMobileMenuOpen(false)
-                            } 
-                            } className={`block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-amber-300 hover:text-black ${
-                            activeSection === "contact"
-                                            ? 'bg-amber-300 text-black'
-                                            : ''    
-                            }`}>
-                                Contato
-                            </a>
-                            <a href="/modelos" className={`hover:scale-105 transition duration-300 ease-in-out px-5 py-2 my-5 bg-amber-300 rounded-md hover:bg-amber-600 hover:ring-amber-700 hover:text-white font-bold ring-1 ring-inset ring-amber-400`}>
-                                Portfólio
-                            </a>
-                        </div>
+                    <div className="glass-dark border border-white/10 rounded-3xl p-6 flex flex-col gap-4 shadow-2xl backdrop-blur-2xl">
+                        {navLinks.map((link) => (
+                            <button
+                                key={link.id}
+                                onClick={() => scrollToSection(link.ref)}
+                                className={`text-left px-4 py-3 rounded-xl text-lg font-bold transition-all ${activeSection === link.id
+                                    ? "bg-primary-400 text-navy-950"
+                                    : "text-white hover:bg-white/5"
+                                    }`}
+                            >
+                                {link.label}
+                            </button>
+                        ))}
+                        <hr className="border-white/10" />
+                        <a
+                            href="/modelos"
+                            className="px-4 py-3 text-white font-bold text-lg hover:text-primary-400 transition-colors"
+                        >
+                            Ver Portfólio
+                        </a>
                     </div>
                 </motion.div>
             </nav>
-        </>
+        </header>
     );
 }

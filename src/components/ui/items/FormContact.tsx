@@ -155,7 +155,7 @@ export default function FormContact() {
                 </div>
 
                 <button
-                    className="w-full py-5 bg-primary-400 text-navy-950 font-black uppercase tracking-widest rounded-xl hover:bg-primary-300 hover:scale-[1.01] active:scale-[0.99] transition-all shadow-xl shadow-primary-400/10 disabled:opacity-50 disabled:cursor-not-allowed group flex items-center justify-center gap-3"
+                    className="w-full py-5 bg-gradient-to-r from-primary-400 to-primary-600 text-navy-950 font-black uppercase tracking-widest rounded-full hover:shadow-[0_0_30px_rgba(245,158,11,0.3)] hover:-translate-y-0.5 active:scale-[0.98] transition-all disabled:opacity-50 disabled:cursor-not-allowed group flex items-center justify-center gap-3"
                     type="submit"
                     disabled={loading}
                 >

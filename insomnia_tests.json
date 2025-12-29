@@ -1,0 +1,24 @@
+{
+    "contacts": {
+        "url": "http://localhost:3000/api/contact",
+        "method": "POST",
+        "body": {
+            "first_name": "João",
+            "last_name": "Silva",
+            "email": "joao.silva@exemplo.com",
+            "phone": "(85) 99999-9999",
+            "message": "Olá, gostaria de solicitar um orçamento para um novo site institucional."
+        }
+    },
+    "portfolios": {
+        "url": "http://localhost:3000/api/portfolio",
+        "method": "POST",
+        "body": {
+            "title": "E-commerce de Moda Premium",
+            "description": "Uma plataforma de e-commerce completa com design minimalista, filtros avançados e checkout otimizado.",
+            "image_url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070",
+            "link_url": "https://exemplo-ecommerce.com",
+            "category": "E-commerce"
+        }
+    }
+}

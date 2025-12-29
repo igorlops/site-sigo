@@ -1,22 +1,30 @@
 interface ContactSocialProps {
-    title?: string|undefined;
+    title?: string | undefined;
     content: string;
     icon: JSX.Element;
-    href:string;
+    href: string;
 }
 
-export default function ContactSocial({content,icon,title,href}:ContactSocialProps) {
+export default function ContactSocial({ content, icon, title, href }: ContactSocialProps) {
     return (
-        <div className="mb-4 flex flex-col text-left">
-            {title && <div className="font-bold">
-                <p className="text-amber-300">{title}</p>
-            </div>}
-            <a href={href} className="flex items-center gap-3" style={{textDecoration:"none"}}>
-                <span className="text-amber-300">{icon}</span> 
-                <p>
+        <a
+            href={href}
+            className="group flex items-center gap-4 bg-white/5 border border-white/10 p-4 rounded-2xl hover:bg-white/10 hover:border-primary-400/30 transition-all duration-300"
+            style={{ textDecoration: "none" }}
+        >
+            <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-primary-400/10 text-primary-400 rounded-xl group-hover:bg-primary-400 transition-colors duration-300 group-hover:text-navy-950">
+                {icon}
+            </div>
+            <div className="flex flex-col">
+                {title && (
+                    <span className="text-xs font-black uppercase tracking-widest text-primary-400 mb-1">
+                        {title}
+                    </span>
+                )}
+                <span className="text-white font-medium group-hover:text-primary-400 transition-colors truncate max-w-[200px]">
                     {content}
-                </p>
-            </a>
-        </div>
+                </span>
+            </div>
+        </a>
     )
 }
