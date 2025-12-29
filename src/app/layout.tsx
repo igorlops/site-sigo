@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Script from "next/script";
+import FloatingChat from "@/components/ui/items/FloatingChat";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-    <Script
+      <Script
         src="https://www.googletagmanager.com/gtag/js?id=AW-17487945963"
         strategy="afterInteractive"
       />
@@ -42,7 +43,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased z-50 relative selection:bg-amber-300 selection:text-black`}
       >
         {children}
-      <Script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></Script>
+        <FloatingChat />
+        <Script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></Script>
       </body>
     </html>
   );

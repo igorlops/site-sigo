@@ -1,6 +1,8 @@
 import LogoIcon from "../../items/Icons/Logo";
 import React, { useState } from 'react';
 import { motion } from "framer-motion";
+import Link from "next/link"; // Import Next Link
+import { usePathname } from "next/navigation";
 
 interface NavbarProps {
     activeSection: string;
@@ -12,8 +14,14 @@ interface NavbarProps {
 
 export default function Navbar({ activeSection, homeRef, serviceRef, aboutRef, contactRef }: NavbarProps) {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const pathname = usePathname();
+    const isHomePage = pathname === "/";
 
     const scrollToSection = (sectionRef: React.RefObject<HTMLElement>) => {
+        if (!isHomePage) {
+            window.location.href = '/#' + sectionRef.current?.id;
+            return;
+        }
         sectionRef.current?.scrollIntoView({ behavior: 'smooth' });
         setIsMobileMenuOpen(false);
     };
@@ -35,52 +43,50 @@ export default function Navbar({ activeSection, homeRef, serviceRef, aboutRef, c
             <nav className="mx-auto max-w-7xl pointer-events-auto">
                 <div className="glass-dark border border-white/10 rounded-full px-6 py-3 flex items-center justify-between shadow-2xl backdrop-blur-xl">
                     {/* Logo Area */}
-                    <div className="flex items-center gap-4">
+                    <Link href="/" className="flex items-center gap-4">
                         <div className="hover:rotate-12 transition-transform duration-300">
                             <LogoIcon size={40} />
                         </div>
                         <span className="hidden md:block font-black text-white text-lg tracking-tighter">
                             SIGO<span className="text-primary-400">.</span>
                         </span>
-                    </div>
+                    </Link>
 
-                    {/* Desktop Menu */}
-                    <div className="hidden md:flex items-center bg-white/5 border border-white/10 rounded-full px-2 py-1">
-                        {navLinks.map((link) => (
-                            <button
-                                key={link.id}
-                                onClick={() => scrollToSection(link.ref)}
-                                className={`relative px-5 py-2 text-sm font-bold transition-all duration-300 rounded-full ${activeSection === link.id
-                                    ? "text-navy-950"
-                                    : "text-gray-400 hover:text-white"
-                                    }`}
-                            >
-                                {activeSection === link.id && (
-                                    <motion.div
-                                        layoutId="nav-active"
-                                        className="absolute inset-0 bg-primary-400 rounded-full -z-10"
-                                        transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
-                                    />
-                                )}
-                                {link.label}
-                            </button>
-                        ))}
-                    </div>
+                    {/* Desktop Menu - Only visible on Home Page */}
+                    {isHomePage ? (
+                        <div className="hidden md:flex items-center bg-white/5 border border-white/10 rounded-full px-2 py-1">
+                            {navLinks.map((link) => (
+                                <button
+                                    key={link.id}
+                                    onClick={() => scrollToSection(link.ref)}
+                                    className={`relative px-5 py-2 text-sm font-bold transition-all duration-300 rounded-full ${activeSection === link.id
+                                        ? "text-navy-950"
+                                        : "text-gray-400 hover:text-white"
+                                        }`}
+                                >
+                                    {activeSection === link.id && (
+                                        <motion.div
+                                            layoutId="nav-active"
+                                            className="absolute inset-0 bg-primary-400 rounded-full -z-10"
+                                            transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                                        />
+                                    )}
+                                    {link.label}
+                                </button>
+                            ))}
+                        </div>
+                    ) : (
+                        <div className="hidden md:block"></div> /* Spacer if menu is hidden */
+                    )}
 
                     {/* Desktop CTA */}
                     <div className="hidden md:flex items-center gap-4">
-                        <a
-                            href="/modelos"
-                            className="text-white hover:text-primary-400 font-bold text-sm transition-colors"
-                        >
-                            Portfólio
-                        </a>
-                        <a
-                            href="https://api.whatsapp.com/send/?phone=85992100969"
+                        <Link
+                            href="/orcamento"
                             className="bg-primary-400 hover:bg-primary-500 text-navy-950 px-6 py-2 rounded-full font-black text-sm transition-all shadow-[0_0_15px_rgba(245,158,11,0.2)]"
                         >
                             Orçamento
-                        </a>
+                        </Link>
                     </div>
 
                     {/* Mobile Menu Toggle */}
@@ -116,7 +122,8 @@ export default function Navbar({ activeSection, homeRef, serviceRef, aboutRef, c
                     variants={menuVariants}
                 >
                     <div className="glass-dark border border-white/10 rounded-3xl p-6 flex flex-col gap-4 shadow-2xl backdrop-blur-2xl">
-                        {navLinks.map((link) => (
+                        {/* Only show nav links on mobile if on Home Page */}
+                        {isHomePage && navLinks.map((link) => (
                             <button
                                 key={link.id}
                                 onClick={() => scrollToSection(link.ref)}
@@ -128,16 +135,28 @@ export default function Navbar({ activeSection, homeRef, serviceRef, aboutRef, c
                                 {link.label}
                             </button>
                         ))}
-                        <hr className="border-white/10" />
-                        <a
-                            href="/modelos"
+                        {isHomePage && <hr className="border-white/10" />}
+
+                        <Link
+                            href="/orcamento"
                             className="px-4 py-3 text-white font-bold text-lg hover:text-primary-400 transition-colors"
                         >
-                            Ver Portfólio
-                        </a>
+                            Solicitar Orçamento
+                        </Link>
+                        {/* Add Home Link for Mobile if not on home */}
+                        {!isHomePage && (
+                            <Link
+                                href="/"
+                                className="px-4 py-3 text-white font-bold text-lg hover:text-primary-400 transition-colors"
+                            >
+                                Voltar para Home
+                            </Link>
+                        )}
                     </div>
                 </motion.div>
             </nav>
         </header>
     );
 }
+
+
