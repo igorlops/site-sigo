@@ -64,7 +64,7 @@ export default function Home() {
       {/* Sidebar Navigation (Baseado no layout Admin) */}
       <aside className="fixed left-0 top-0 h-full w-64 border-r border-white/5 bg-slate-950/50 backdrop-blur-xl z-50 hidden lg:flex flex-col">
         <div className="p-8">
-          <a href="https://www.sigowebsolutions.com.br" target="_blank" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-3 group">
             <div className="w-10 h-10 bg-amber-500 rounded-xl flex items-center justify-center font-black text-slate-950 group-hover:rotate-6 transition-transform shadow-[0_0_20px_rgba(245,158,11,0.2)]">
               S
             </div>
@@ -72,28 +72,28 @@ export default function Home() {
               <span className="text-xl font-black tracking-tighter uppercase italic text-white group-hover:text-amber-500 transition-colors">SIGO</span>
               <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Web Solutions</span>
             </div>
-          </a>
+          </Link>
         </div>
 
         <nav className="mt-8 px-4 space-y-2 flex-1">
           <div className="text-xs font-bold uppercase tracking-widest text-slate-600 px-4 mb-4">Navegação</div>
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.href}
               href={item.href}
               className="flex items-center gap-4 px-4 py-4 rounded-2xl transition-all border border-transparent text-slate-400 hover:text-white hover:bg-white/5 hover:border-white/5 group"
             >
               <span className="text-slate-500 group-hover:text-amber-500 transition-colors">{item.icon}</span>
               <span className="font-bold">{item.label}</span>
-            </a>
+            </Link>
           ))}
         </nav>
 
         <div className="p-6 mt-auto border-t border-white/5">
-          <a href="https://www.sigowebsolutions.com.br" target="_blank" className="flex items-center gap-2 text-slate-500 hover:text-white text-sm transition-colors group">
+          <Link href="/" className="flex items-center gap-2 text-slate-500 hover:text-white text-sm transition-colors group">
             <ExternalLink size={16} className="group-hover:text-amber-500 transition-colors" />
             <span>Voltar ao Site Principal</span>
-          </a>
+          </Link>
         </div>
       </aside>
 
@@ -111,7 +111,7 @@ export default function Home() {
               <div className="w-8 h-8 bg-amber-500 rounded-lg flex items-center justify-center font-black text-slate-950 shadow-[0_0_15px_rgba(245,158,11,0.3)]">S</div>
               <span className="font-black italic">SIGO Showcase</span>
             </div>
-            <a href="https://www.sigowebsolutions.com.br" target="_blank" rel="noopener noreferrer" className="text-xs font-bold uppercase tracking-widest text-amber-500">Voltar ao Site</a>
+            <Link href="/" rel="noopener noreferrer" className="text-xs font-bold uppercase tracking-widest text-amber-500">Voltar ao Site</Link>
           </div>
 
           {/* Intro */}
@@ -145,7 +145,7 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
               {sitesPremium.map((site, i) => (
-                <Link key={site.slug} href={`/sites-institucionais/premium/${site.slug}`} className="group relative bg-slate-900/50 border border-white/5 rounded-2xl overflow-hidden hover:border-amber-500/30 hover:shadow-[0_0_30px_rgba(245,158,11,0.1)] transition-all duration-500">
+                <Link key={site.slug} href={`/portfolio/sites-institucionais/premium/${site.slug}`} className="group relative bg-slate-900/50 border border-white/5 rounded-2xl overflow-hidden hover:border-amber-500/30 hover:shadow-[0_0_30px_rgba(245,158,11,0.1)] transition-all duration-500">
                   <div className="h-40 bg-gradient-to-br from-slate-800 to-slate-900 group-hover:from-slate-800 group-hover:to-amber-900/20 transition-all relative overflow-hidden">
                     <Layout className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white/5 w-24 h-24 group-hover:scale-110 transition-transform duration-700" />
                     <div className="absolute top-4 right-4 bg-amber-500 text-slate-900 text-[10px] font-black uppercase tracking-widest px-2 py-1 rounded-sm shadow-lg">Premium</div>
@@ -177,7 +177,7 @@ export default function Home() {
 
             <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4">
               {landingPages.map((site) => (
-                <Link key={site.slug} href={`/landing-pages/${site.slug}`} className="group bg-white/5 border border-white/5 rounded-xl p-4 hover:bg-emerald-500/10 hover:border-emerald-500/30 transition-all duration-300">
+                <Link key={site.slug} href={`/portfolio/landing-pages/${site.slug}`} className="group bg-white/5 border border-white/5 rounded-xl p-4 hover:bg-emerald-500/10 hover:border-emerald-500/30 transition-all duration-300">
                   <div className="flex justify-between items-start mb-3">
                     <Layout size={20} className="text-slate-600 group-hover:text-emerald-500 transition-colors" />
                     <ArrowRight size={12} className="text-slate-700 -rotate-45 group-hover:text-emerald-500 group-hover:rotate-0 transition-all duration-300" />
@@ -204,7 +204,7 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
               {sitesSimples.map((site) => (
-                <Link key={site.slug} href={`/sites-institucionais/simples/${site.slug}`} className="group border border-dashed border-slate-800 rounded-xl p-6 hover:border-solid hover:border-blue-500 hover:bg-blue-500/5 transition-all">
+                <Link key={site.slug} href={`/portfolio/sites-institucionais/simples/${site.slug}`} className="group border border-dashed border-slate-800 rounded-xl p-6 hover:border-solid hover:border-blue-500 hover:bg-blue-500/5 transition-all">
                   <h3 className="text-lg font-bold text-slate-300 group-hover:text-blue-400 transition-colors mb-2">{site.name}</h3>
                   <p className="text-xs text-slate-600 font-mono">/simples/{site.slug}</p>
                 </Link>

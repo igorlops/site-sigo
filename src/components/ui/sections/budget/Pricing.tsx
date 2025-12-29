@@ -5,7 +5,7 @@ const plans = [
     {
         name: "Landing Page",
         description: "Ideal para campanhas e produtos únicos.",
-        price: "A partir de R$ 900",
+        price: "A partir de R$ 299,97",
         features: [
             "Design Exclusivo",
             "Alta Conversão",
@@ -16,15 +16,28 @@ const plans = [
         highlight: false
     },
     {
-        name: "Site Institucional",
-        description: "Para empresas que querem fortalecer a marca.",
-        price: "A partir de R$ 2.500",
+        name: "Site Institucional Standart",
+        description: "Para empresas dominar o mundo digital.",
+        price: "A partir de R$ 499,97",
         features: [
             "Até 5 Páginas",
+            "Design Standart",
+            "SEO Básico",
+            "Integração WhatsApp",
+            "Hospedagem Inclusa (1 ano)"
+        ],
+        highlight: false
+    },
+    {
+        name: "Site Institucional Premium",
+        description: "Para empresas que querem fortalecer a marca.",
+        price: "A partir de R$ 999,97",
+        features: [
+            "Até 7 Páginas",
             "Design Premium",
             "SEO Otimizado",
-            "Painel Administrativo",
-            "Blog Integrado"
+            "Integração WhatsApp",
+            "Hospedagem Inclusa (1 ano)"
         ],
         highlight: true
     },
@@ -56,12 +69,12 @@ export default function Pricing() {
                     </div>
                 </InViewSection>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="flex justify-center gap-4 flex-wrap">
                     {plans.map((plan, index) => (
                         <InViewSection key={index}>
-                            <div className={`relative p-8 rounded-3xl border transition-all h-full flex flex-col ${plan.highlight
-                                    ? "glass border-primary-400/30 shadow-[0_0_50px_rgba(245,158,11,0.1)]"
-                                    : "glass-dark border-white/5 hover:border-white/20"
+                            <div className={`relative p-8 rounded-3xl border transition-all h-full flex flex-col xs:basis-1 md:basis-1/2 lg:basis-1/3 xl:basis-1/4 ${plan.highlight
+                                ? "glass border-primary-400/30 shadow-[0_0_50px_rgba(245,158,11,0.1)]"
+                                : "glass-dark border-white/5 hover:border-white/20"
                                 }`}>
                                 {plan.highlight && (
                                     <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary-400 text-navy-950 text-xs font-black uppercase tracking-widest px-4 py-1 rounded-full">
@@ -84,8 +97,8 @@ export default function Pricing() {
                                 </ul>
 
                                 <a href="#budget-form" className={`w-full py-4 rounded-xl font-bold text-center transition-all ${plan.highlight
-                                        ? "bg-primary-400 text-navy-950 hover:bg-primary-500 hover:shadow-lg"
-                                        : "bg-white/5 text-white hover:bg-white/10"
+                                    ? "bg-primary-400 text-navy-950 hover:bg-primary-500 hover:shadow-lg"
+                                    : "bg-white/5 text-white hover:bg-white/10"
                                     }`}>
                                     Selecionar
                                 </a>

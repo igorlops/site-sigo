@@ -82,8 +82,14 @@ export default function Navbar({ activeSection, homeRef, serviceRef, aboutRef, c
                     {/* Desktop CTA */}
                     <div className="hidden md:flex items-center gap-4">
                         <Link
+                            href="/portfolio"
+                            className="text-white hover:text-gray-300 px-6 py-2 font-medium text-sm transition-all"
+                        >
+                            Ver Portfólio
+                        </Link>
+                        <Link
                             href="/orcamento"
-                            className="bg-primary-400 hover:bg-primary-500 text-navy-950 px-6 py-2 rounded-full font-black text-sm transition-all shadow-[0_0_15px_rgba(245,158,11,0.2)]"
+                            className="bg-primary-400 hover:bg-primary-500 text-navy-950 px-6 py-2 rounded-full font-medium text-sm transition-all"
                         >
                             Orçamento
                         </Link>
@@ -137,6 +143,12 @@ export default function Navbar({ activeSection, homeRef, serviceRef, aboutRef, c
                         ))}
                         {isHomePage && <hr className="border-white/10" />}
 
+                        <Link
+                            href="/portfolio"
+                            className="px-4 py-3 text-white font-bold text-lg hover:text-primary-400 transition-colors"
+                        >
+                            Ver Portfólio
+                        </Link>
                         <Link
                             href="/orcamento"
                             className="px-4 py-3 text-white font-bold text-lg hover:text-primary-400 transition-colors"
