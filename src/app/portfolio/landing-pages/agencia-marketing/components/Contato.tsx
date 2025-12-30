@@ -1,5 +1,4 @@
 'use client';
-import { theme } from '../theme';
 import { Mail, Phone, Instagram, Linkedin } from 'lucide-react';
 
 export default function Contato() {

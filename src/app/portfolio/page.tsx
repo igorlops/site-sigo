@@ -144,7 +144,7 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-              {sitesPremium.map((site, i) => (
+              {sitesPremium.map((site) => (
                 <Link key={site.slug} href={`/portfolio/sites-institucionais/premium/${site.slug}`} className="group relative bg-slate-900/50 border border-white/5 rounded-2xl overflow-hidden hover:border-amber-500/30 hover:shadow-[0_0_30px_rgba(245,158,11,0.1)] transition-all duration-500">
                   <div className="h-40 bg-gradient-to-br from-slate-800 to-slate-900 group-hover:from-slate-800 group-hover:to-amber-900/20 transition-all relative overflow-hidden">
                     <Layout className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white/5 w-24 h-24 group-hover:scale-110 transition-transform duration-700" />

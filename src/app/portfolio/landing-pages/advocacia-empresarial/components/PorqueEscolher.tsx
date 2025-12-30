@@ -32,7 +32,7 @@ export default function PorqueEscolher() {
 
                     <div className="flex items-center">
                         <div className="bg-white/10 backdrop-blur-sm p-10 rounded-2xl border border-white/20">
-                            <p className="font-serif text-2xl italic mb-6">"A assessoria jurídica foi fundamental para estruturarmos nossa rodada Série B sem atrasos."</p>
+                            <p className="font-serif text-2xl italic mb-6">&quot;A assessoria jurídica foi fundamental para estruturarmos nossa rodada Série B sem atrasos.&quot;</p>
                             <div className="flex items-center gap-4">
                                 <div className="w-12 h-12 rounded-full bg-amber-700" />
                                 <div>

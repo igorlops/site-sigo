@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Link from "next/link";
-import { Scale, Shield, FileText, Users, Award, TrendingUp, CheckCircle, Briefcase } from "lucide-react";
+import { Scale, Shield, FileText, TrendingUp, Briefcase } from "lucide-react";
 
 export default function Page() {
     return (
@@ -202,7 +202,7 @@ export default function Page() {
                                 </div>
                                 <div className="text-yellow-500 mb-4">★★★★★</div>
                                 <p className="text-slate-600 italic leading-relaxed">
-                                    "Recuperamos R$ 2,3 milhões em créditos tributários com a tese jurídica apresentada pela equipe. Além do valor, a segurança jurídica que temos hoje é inestimável."
+                                    &quot;Recuperamos R$ 2,3 milhões em créditos tributários com a tese jurídica apresentada pela equipe. Além do valor, a segurança jurídica que temos hoje é inestimável.&quot;
                                 </p>
                             </div>
 
@@ -218,7 +218,7 @@ export default function Page() {
                                 </div>
                                 <div className="text-yellow-500 mb-4">★★★★★</div>
                                 <p className="text-slate-600 italic leading-relaxed">
-                                    "Estávamos à beira da falência. A estratégia de recuperação judicial elaborada salvou 200 empregos e hoje estamos crescendo 30% ao ano."
+                                    &quot;Estávamos à beira da falência. A estratégia de recuperação judicial elaborada salvou 200 empregos e hoje estamos crescendo 30% ao ano.&quot;
                                 </p>
                             </div>
 
@@ -234,7 +234,7 @@ export default function Page() {
                                 </div>
                                 <div className="text-yellow-500 mb-4">★★★★★</div>
                                 <p className="text-slate-600 italic leading-relaxed">
-                                    "Com as políticas e treinamentos implementados, reduzimos 80% das reclamações trabalhistas. O passivo que existia simplesmente desapareceu."
+                                    &quot;Com as políticas e treinamentos implementados, reduzimos 80% das reclamações trabalhistas. O passivo que existia simplesmente desapareceu.&quot;
                                 </p>
                             </div>
                         </div>

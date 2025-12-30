@@ -1,7 +1,6 @@
 'use client';
 
 import { theme } from '../theme';
-import { Sparkles } from 'lucide-react';
 
 export default function Header() {
     return (

@@ -7,7 +7,6 @@ import Process from "@/components/ui/sections/budget/Process";
 import Pricing from "@/components/ui/sections/budget/Pricing";
 import FormBudget from "@/components/ui/sections/budget/FormBudget";
 import InViewSection from "@/components/ui/items/InViewSection";
-import { Header } from "@/components/ui/sections/header/Header";
 
 export default function OrcamentoPage() {
     const homeRef = useRef<HTMLElement>(null);

@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import InViewSection from "../../items/InViewSection";
 
 const plans = [

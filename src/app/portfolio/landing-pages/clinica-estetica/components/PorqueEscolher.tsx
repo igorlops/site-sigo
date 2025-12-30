@@ -25,7 +25,7 @@ export default function PorqueEscolher() {
                                 <div className="text-rose-300/50 mt-1"><Star className="w-5 h-5" /></div>
                                 <div>
                                     <h3 className="font-serif text-xl text-stone-50 mb-2">Naturalidade</h3>
-                                    <p className="text-stone-400 text-sm leading-relaxed">Nosso "não" é tão importante quanto nosso "sim". Não realizamos procedimentos que descaracterizem sua feição.</p>
+                                    <p className="text-stone-400 text-sm leading-relaxed">Nosso &quot;não&quot; é tão importante quanto nosso &quot;sim&quot;. Não realizamos procedimentos que descaracterizem sua feição.</p>
                                 </div>
                             </div>
                             <div className="flex gap-6 items-start">
@@ -46,7 +46,7 @@ export default function PorqueEscolher() {
                         />
                         <div className="absolute inset-0 flex items-center justify-center">
                             <div className="border border-white/20 p-8 w-fit backdrop-blur-sm">
-                                <p className="font-serif text-3xl italic text-center">"A elegância é a única beleza <br /> que não desaparece."</p>
+                                <p className="font-serif text-3xl italic text-center">&quot;A elegância é a única beleza <br /> que não desaparece.&quot;</p>
                                 <p className="text-center text-xs mt-4 uppercase tracking-widest text-white/50">Audrey Hepburn</p>
                             </div>
                         </div>

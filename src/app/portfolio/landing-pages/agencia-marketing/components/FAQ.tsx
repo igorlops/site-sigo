@@ -10,7 +10,6 @@ const faqs = [
     { q: "Relatórios são mensais?", a: "Semanais! Dashboard live 24/7 + call de alinhamento quinzenal.", cat: "Performance" }
 ];
 
-const categorias = [...new Set(faqs.map(f => f.cat))];
 
 export default function FAQ() {
     return (
