@@ -26,7 +26,7 @@ export default function Footer() {
                             Do esboço à cravação, participe de cada etapa da materialização de uma peça única, feita exclusivamente para sua história.
                         </p>
                     </div>
-                    <Link href="/sites-institucionais/premium/joalheria-artesanal-premium/contato" className="bg-amber-700 text-white px-10 py-5 rounded-sm font-bold uppercase tracking-widest text-xs hover:bg-amber-600 transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(217,119,6,0.3)] duration-500">
+                    <Link href="/portfolio/sites-institucionais/premium/joalheria-artesanal-premium/contato" className="bg-amber-700 text-white px-10 py-5 rounded-sm font-bold uppercase tracking-widest text-xs hover:bg-amber-600 transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(217,119,6,0.3)] duration-500">
                         Iniciar Projeto Bespoke
                     </Link>
                 </div>

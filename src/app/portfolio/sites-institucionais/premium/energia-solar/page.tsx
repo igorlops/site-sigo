@@ -291,7 +291,7 @@ export default function HomePage() {
                                         </li>
                                     ))}
                                 </ul>
-                                <Link href="/sites-institucionais/premium/energia-solar/servicos" className="inline-flex items-center gap-2 text-amber-400 font-bold hover:text-amber-300 transition-colors">
+                                <Link href="/portfolio/sites-institucionais/premium/energia-solar/servicos" className="inline-flex items-center gap-2 text-amber-400 font-bold hover:text-amber-300 transition-colors">
                                     Saiba mais <ArrowRight size={18} />
                                 </Link>
                             </div>
@@ -387,7 +387,7 @@ export default function HomePage() {
                             <span className="text-sky-600 font-bold uppercase tracking-widest text-sm mb-2 block">Nosso Portfólio</span>
                             <h2 className="text-4xl md:text-5xl font-bold text-slate-900">Obras Recentes</h2>
                         </div>
-                        <Link href="/sites-institucionais/premium/energia-solar/portfolio" className="text-sky-600 font-bold flex items-center gap-2 hover:gap-4 transition-all">
+                        <Link href="/portfolio/sites-institucionais/premium/energia-solar/portfolio" className="text-sky-600 font-bold flex items-center gap-2 hover:gap-4 transition-all">
                             Ver todos os projetos <ArrowRight size={20} />
                         </Link>
                     </div>

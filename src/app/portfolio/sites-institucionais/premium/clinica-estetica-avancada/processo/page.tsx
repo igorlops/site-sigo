@@ -210,7 +210,7 @@ export default function ProcessoPage() {
                     </div>
 
                     <div className="text-center mt-20">
-                        <Link href="/sites-institucionais/premium/clinica-estetica-avancada/contato" className="px-12 py-5 bg-neutral-900 text-white rounded-full font-bold text-lg hover:bg-rose-600 transition-colors shadow-xl">
+                        <Link href="/portfolio/sites-institucionais/premium/clinica-estetica-avancada/contato" className="px-12 py-5 bg-neutral-900 text-white rounded-full font-bold text-lg hover:bg-rose-600 transition-colors shadow-xl">
                             Iniciar Minha Jornada Agora
                         </Link>
                     </div>

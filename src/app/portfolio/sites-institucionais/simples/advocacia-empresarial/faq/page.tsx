@@ -108,7 +108,7 @@ export default function FAQPage() {
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <a
-                                    href="/sites-institucionais/simples/advocacia-empresarial/contato"
+                                    href="/portfolio/sites-institucionais/simples/advocacia-empresarial/contato"
                                     className="px-8 py-4 bg-white text-amber-900 rounded font-bold hover:bg-amber-50 transition-colors"
                                 >
                                     Enviar Mensagem

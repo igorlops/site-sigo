@@ -185,7 +185,7 @@ export default function DepoimentosPage() {
                     <p className="text-xl text-amber-100 mb-8 max-w-2xl mx-auto">
                         Junte-se ao grupo de empresas que confiam a segurança de seus negócios à Imperium.
                     </p>
-                    <Link href="/sites-institucionais/premium/advocacia-empresarial/contato" className="inline-block bg-slate-900 px-8 py-4 rounded font-bold hover:bg-slate-800 transition-colors shadow-xl">
+                    <Link href="/portfolio/sites-institucionais/premium/advocacia-empresarial/contato" className="inline-block bg-slate-900 px-8 py-4 rounded font-bold hover:bg-slate-800 transition-colors shadow-xl">
                         Solicitar Credenciais Completas
                     </Link>
                 </div>

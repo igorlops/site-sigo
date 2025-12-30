@@ -116,7 +116,7 @@ export default function Footer() {
                                 Escritórios em SP, RJ e BH
                             </li>
                             <li className="pt-2">
-                                <Link href="/sites-institucionais/premium/consultoria-empresarial/contato" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg font-bold text-sm transition-all shadow-lg hover:shadow-blue-900/50">
+                                <Link href="/portfolio/sites-institucionais/premium/consultoria-empresarial/contato" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg font-bold text-sm transition-all shadow-lg hover:shadow-blue-900/50">
                                     Fale com um Especialista <ArrowRight size={16} />
                                 </Link>
                             </li>

@@ -23,22 +23,22 @@ export default function Header() {
     }, []);
 
     const solutions = [
-        { title: "Tecnologia & Inovação", icon: Lightbulb, href: "/sites-institucionais/premium/consultoria-empresarial/servicos#tech" },
-        { title: "Manufatura & Indústria", icon: Building2, href: "/sites-institucionais/premium/consultoria-empresarial/servicos#industry" },
-        { title: "Serviços Financeiros", icon: TrendingUp, href: "/sites-institucionais/premium/consultoria-empresarial/servicos#finance" },
-        { title: "Gestão de Pessoas", icon: Users, href: "/sites-institucionais/premium/consultoria-empresarial/servicos#people" },
-        { title: "Estratégia & Risco", icon: Shield, href: "/sites-institucionais/premium/consultoria-empresarial/servicos#strategy" },
-        { title: "Excelência Operacional", icon: BarChart3, href: "/sites-institucionais/premium/consultoria-empresarial/servicos#ops" },
+        { title: "Tecnologia & Inovação", icon: Lightbulb, href: "/portfolio/sites-institucionais/premium/consultoria-empresarial/servicos#tech" },
+        { title: "Manufatura & Indústria", icon: Building2, href: "/portfolio/sites-institucionais/premium/consultoria-empresarial/servicos#industry" },
+        { title: "Serviços Financeiros", icon: TrendingUp, href: "/portfolio/sites-institucionais/premium/consultoria-empresarial/servicos#finance" },
+        { title: "Gestão de Pessoas", icon: Users, href: "/portfolio/sites-institucionais/premium/consultoria-empresarial/servicos#people" },
+        { title: "Estratégia & Risco", icon: Shield, href: "/portfolio/sites-institucionais/premium/consultoria-empresarial/servicos#strategy" },
+        { title: "Excelência Operacional", icon: BarChart3, href: "/portfolio/sites-institucionais/premium/consultoria-empresarial/servicos#ops" },
     ];
 
     const mainLinks = [
-        { label: "Home", href: "/sites-institucionais/premium/consultoria-empresarial" },
-        { label: "Sobre", href: "/sites-institucionais/premium/consultoria-empresarial/sobre" },
-        { label: "Soluções", href: "/sites-institucionais/premium/consultoria-empresarial/servicos", isDropdown: true },
-        { label: "Portfólio", href: "/sites-institucionais/premium/consultoria-empresarial/portfolio" },
-        { label: "Metodologia", href: "/sites-institucionais/premium/consultoria-empresarial/processo" },
-        { label: "Insights", href: "/sites-institucionais/premium/consultoria-empresarial/blog" },
-        { label: "Contato", href: "/sites-institucionais/premium/consultoria-empresarial/contato" },
+        { label: "Home", href: "/portfolio/sites-institucionais/premium/consultoria-empresarial" },
+        { label: "Sobre", href: "/portfolio/sites-institucionais/premium/consultoria-empresarial/sobre" },
+        { label: "Soluções", href: "/portfolio/sites-institucionais/premium/consultoria-empresarial/servicos", isDropdown: true },
+        { label: "Portfólio", href: "/portfolio/sites-institucionais/premium/consultoria-empresarial/portfolio" },
+        { label: "Metodologia", href: "/portfolio/sites-institucionais/premium/consultoria-empresarial/processo" },
+        { label: "Insights", href: "/portfolio/sites-institucionais/premium/consultoria-empresarial/blog" },
+        { label: "Contato", href: "/portfolio/sites-institucionais/premium/consultoria-empresarial/contato" },
     ];
 
     return (
@@ -50,7 +50,7 @@ export default function Header() {
                 <div className="container mx-auto px-6 md:px-12 lg:px-20 xl:px-32 h-full flex items-center justify-between">
 
                     {/* Logo */}
-                    <Link href="/sites-institucionais/premium/consultoria-empresarial" className="flex items-center gap-3 group">
+                    <Link href="/portfolio/sites-institucionais/premium/consultoria-empresarial" className="flex items-center gap-3 group">
                         <div className="w-10 h-10 md:w-12 md:h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:bg-blue-700 transition-colors">
                             <Briefcase size={22} strokeWidth={2.5} />
                         </div>
@@ -104,7 +104,7 @@ export default function Header() {
                                                 <p className="font-bold text-sm">Precisa de algo personalizado?</p>
                                                 <p className="text-xs text-slate-400">Nossos consultores criam projetos sob medida.</p>
                                             </div>
-                                            <Link href="/sites-institucionais/premium/consultoria-empresarial/contato" className="text-xs font-bold bg-white text-slate-900 px-3 py-2 rounded-lg hover:bg-slate-200 transition-colors">
+                                            <Link href="/portfolio/sites-institucionais/premium/consultoria-empresarial/contato" className="text-xs font-bold bg-white text-slate-900 px-3 py-2 rounded-lg hover:bg-slate-200 transition-colors">
                                                 Falar com Especialista
                                             </Link>
                                         </div>
@@ -117,7 +117,7 @@ export default function Header() {
                     {/* CTA Button */}
                     <div className="hidden lg:flex items-center gap-4">
                         <Link
-                            href="/sites-institucionais/premium/consultoria-empresarial/contato"
+                            href="/portfolio/sites-institucionais/premium/consultoria-empresarial/contato"
                             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-bold text-sm transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 flex items-center gap-2"
                         >
                             Diagnóstico Gratuito <ArrowRight size={16} />
@@ -171,7 +171,7 @@ export default function Header() {
                         </div>
                     ))}
                     <Link
-                        href="/sites-institucionais/premium/consultoria-empresarial/contato"
+                        href="/portfolio/sites-institucionais/premium/consultoria-empresarial/contato"
                         onClick={() => setIsMobileMenuOpen(false)}
                         className="bg-blue-600 text-white w-full py-4 rounded-xl font-bold text-center mt-4 shadow-lg active:scale-95 transition-transform"
                     >

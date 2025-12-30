@@ -197,7 +197,7 @@ export default function SobrePage() {
                             Se você chegou até aqui, já deu um passo importante. Entre em contato para agendar sua primeira sessão.
                         </p>
                         <a
-                            href="/sites-institucionais/simples/psicologo/contato"
+                            href="/portfolio/sites-institucionais/simples/psicologo/contato"
                             className="inline-block px-10 py-4 bg-teal-700 text-white rounded-md font-medium hover:bg-teal-800 transition-all shadow-lg"
                         >
                             Agendar Primeira Sessão

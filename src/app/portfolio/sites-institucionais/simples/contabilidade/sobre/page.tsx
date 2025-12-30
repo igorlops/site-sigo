@@ -168,7 +168,7 @@ export default function SobrePage() {
                             Agende uma conversa sem compromisso e veja como podemos ajudar sua empresa
                         </p>
                         <a
-                            href="/sites-institucionais/simples/contabilidade/contato"
+                            href="/portfolio/sites-institucionais/simples/contabilidade/contato"
                             className="inline-block bg-blue-600 text-white px-10 py-4 rounded text-lg font-bold hover:bg-blue-700 transition-all shadow-lg"
                         >
                             Falar com Consultor

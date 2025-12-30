@@ -39,7 +39,7 @@ export default function SobrePage() {
                             <p className="text-stone-600 mb-8 leading-relaxed">
                                 De um pequeno estúdio na Vila Madalena a uma referência internacional em design de interiores e arquitetura corporativa. Uma jornada pautada pela excelência.
                             </p>
-                            <Link href="/sites-institucionais/premium/arquitetura-design-interiores/portfolio" className="text-amber-600 font-bold flex items-center gap-2 hover:gap-4 transition-all">
+                            <Link href="/portfolio/sites-institucionais/premium/arquitetura-design-interiores/portfolio" className="text-amber-600 font-bold flex items-center gap-2 hover:gap-4 transition-all">
                                 Ver Projetos Premiados <ArrowRight size={20} />
                             </Link>
                         </div>
@@ -152,7 +152,7 @@ export default function SobrePage() {
                             Cada projeto é uma oportunidade única de inovação. Estamos prontos para ouvir suas ideias e transformá-las em algo extraordinário.
                         </p>
                         <Link
-                            href="/sites-institucionais/premium/arquitetura-design-interiores/contato"
+                            href="/portfolio/sites-institucionais/premium/arquitetura-design-interiores/contato"
                             className="inline-flex items-center gap-3 px-10 py-5 bg-amber-600 text-white rounded-full font-bold hover:bg-amber-700 hover:shadow-lg hover:shadow-amber-600/20 transition-all duration-300"
                         >
                             Iniciar Conversa <ArrowRight size={20} />

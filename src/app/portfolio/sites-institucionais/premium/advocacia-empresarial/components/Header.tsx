@@ -24,14 +24,14 @@ export default function Header() {
     }, []);
 
     const navLinks = [
-        { name: "Home", path: "/sites-institucionais/premium/advocacia-empresarial" },
-        { name: "Sobre", path: "/sites-institucionais/premium/advocacia-empresarial/sobre" },
+        { name: "Home", path: "/portfolio/sites-institucionais/premium/advocacia-empresarial" },
+        { name: "Sobre", path: "/portfolio/sites-institucionais/premium/advocacia-empresarial/sobre" },
         // Soluções is handled correctly via mega menu logic
-        { name: "Portfólio", path: "/sites-institucionais/premium/advocacia-empresarial/portfolio" },
-        { name: "Metodologia", path: "/sites-institucionais/premium/advocacia-empresarial/processo" },
-        { name: "Insights", path: "/sites-institucionais/premium/advocacia-empresarial/blog" },
-        { name: "Depoimentos", path: "/sites-institucionais/premium/advocacia-empresarial/depoimentos" },
-        { name: "Contato", path: "/sites-institucionais/premium/advocacia-empresarial/contato" },
+        { name: "Portfólio", path: "/portfolio/sites-institucionais/premium/advocacia-empresarial/portfolio" },
+        { name: "Metodologia", path: "/portfolio/sites-institucionais/premium/advocacia-empresarial/processo" },
+        { name: "Insights", path: "/portfolio/sites-institucionais/premium/advocacia-empresarial/blog" },
+        { name: "Depoimentos", path: "/portfolio/sites-institucionais/premium/advocacia-empresarial/depoimentos" },
+        { name: "Contato", path: "/portfolio/sites-institucionais/premium/advocacia-empresarial/contato" },
     ];
 
     const solutions = [
@@ -39,45 +39,45 @@ export default function Header() {
             icon: Building2,
             title: "Direito Empresarial",
             desc: "Assessoria societária completa e governança.",
-            href: "/sites-institucionais/premium/advocacia-empresarial/servicos#empresarial"
+            href: "/portfolio/sites-institucionais/premium/advocacia-empresarial/servicos#empresarial"
         },
         {
             icon: FileText,
             title: "Contratos Corporativos",
             desc: "Elaboração e revisão de instrumentos complexos.",
-            href: "/sites-institucionais/premium/advocacia-empresarial/servicos#contratos"
+            href: "/portfolio/sites-institucionais/premium/advocacia-empresarial/servicos#contratos"
         },
         {
             icon: Shield,
             title: "Compliance & Risco",
             desc: "Programas de integridade e adequação à LGPD.",
-            href: "/sites-institucionais/premium/advocacia-empresarial/servicos#compliance"
+            href: "/portfolio/sites-institucionais/premium/advocacia-empresarial/servicos#compliance"
         },
         {
             icon: Users,
             title: "Trabalhista Estratégico",
             desc: "Prevenção de passivos e negociação sindical.",
-            href: "/sites-institucionais/premium/advocacia-empresarial/servicos#trabalhista"
+            href: "/portfolio/sites-institucionais/premium/advocacia-empresarial/servicos#trabalhista"
         },
         {
             icon: Gavel,
             title: "Contencioso Cível",
             desc: "Defesa intransigente em disputas judiciais.",
-            href: "/sites-institucionais/premium/advocacia-empresarial/servicos#contencioso"
+            href: "/portfolio/sites-institucionais/premium/advocacia-empresarial/servicos#contencioso"
         },
         {
             icon: Scale,
             title: "Recuperação Judicial",
             desc: "Reestruturação de passivos e soerguimento.",
-            href: "/sites-institucionais/premium/advocacia-empresarial/servicos#recuperacao"
+            href: "/portfolio/sites-institucionais/premium/advocacia-empresarial/servicos#recuperacao"
         },
     ];
 
     return (
         <header
             className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 border-b border-amber-700/20 ${isScrolled
-                    ? "bg-white/95 backdrop-blur-md shadow-2xl py-2"
-                    : "bg-white py-6"
+                ? "bg-white/95 backdrop-blur-md shadow-2xl py-2"
+                : "bg-white py-6"
                 }`}
         >
             {/* Top Bar for Desktop */}
@@ -102,7 +102,7 @@ export default function Header() {
             <div className="container mx-auto px-6 md:px-12 lg:px-20 xl:px-32 h-20 flex items-center justify-between mt-6 lg:mt-4">
 
                 {/* Logo */}
-                <Link href="/sites-institucionais/premium/advocacia-empresarial" className="relative group z-50 flex items-center gap-3">
+                <Link href="/portfolio/sites-institucionais/premium/advocacia-empresarial" className="relative group z-50 flex items-center gap-3">
                     <div className="w-12 h-12 bg-slate-900 text-amber-500 flex items-center justify-center rounded-lg border border-amber-700/30 shadow-lg group-hover:bg-amber-700 group-hover:text-white transition-all duration-500">
                         <Scale size={28} strokeWidth={1.5} />
                     </div>
@@ -153,7 +153,7 @@ export default function Header() {
                                         </Link>
                                     ))}
                                     <div className="col-span-2 mt-2 pt-3 border-t border-slate-100 text-center">
-                                        <Link href="/sites-institucionais/premium/advocacia-empresarial/servicos" className="text-xs font-bold text-amber-700 hover:underline flex items-center justify-center gap-1">
+                                        <Link href="/portfolio/sites-institucionais/premium/advocacia-empresarial/servicos" className="text-xs font-bold text-amber-700 hover:underline flex items-center justify-center gap-1">
                                             Ver Todas as Áreas <BookOpen size={12} />
                                         </Link>
                                     </div>
@@ -177,7 +177,7 @@ export default function Header() {
                 <div className="hidden lg:block relative group">
                     <div className="absolute -inset-0.5 bg-gradient-to-r from-amber-600 to-amber-800 rounded-lg blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
                     <Link
-                        href="/sites-institucionais/premium/advocacia-empresarial/contato"
+                        href="/portfolio/sites-institucionais/premium/advocacia-empresarial/contato"
                         className="relative flex items-center gap-2 bg-slate-900 text-white px-6 py-3 rounded-lg font-semibold text-sm hover:bg-slate-800 transition-all shadow-xl"
                     >
                         <Gavel size={16} className="text-amber-500" />
@@ -209,7 +209,7 @@ export default function Header() {
                         </Link>
                     ))}
                     <Link
-                        href="/sites-institucionais/premium/advocacia-empresarial/servicos"
+                        href="/portfolio/sites-institucionais/premium/advocacia-empresarial/servicos"
                         onClick={() => setIsMobileMenuOpen(false)}
                         className="text-xl font-serif font-bold text-amber-700 border-b border-slate-100 pb-4 flex justify-between items-center"
                     >
@@ -217,7 +217,7 @@ export default function Header() {
                         <ArrowRightIcon />
                     </Link>
                     <Link
-                        href="/sites-institucionais/premium/advocacia-empresarial/contato"
+                        href="/portfolio/sites-institucionais/premium/advocacia-empresarial/contato"
                         onClick={() => setIsMobileMenuOpen(false)}
                         className="w-full bg-slate-900 text-white py-4 rounded-lg font-bold text-center mt-4 shadow-lg active:scale-95 transition-transform"
                     >

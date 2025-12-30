@@ -229,10 +229,10 @@ export default function DepoimentosPage() {
                         Junte-se à comunidade que mais cresce no Brasil. Transforme seu telhado em renda e deixe o sol pagar suas contas.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-6">
-                        <Link href="/sites-institucionais/premium/energia-solar/contato" className="px-10 py-5 bg-amber-500 hover:bg-amber-400 text-sky-950 font-bold rounded-xl text-lg shadow-xl shadow-amber-900/20 transition-all hover:scale-105">
+                        <Link href="/portfolio/sites-institucionais/premium/energia-solar/contato" className="px-10 py-5 bg-amber-500 hover:bg-amber-400 text-sky-950 font-bold rounded-xl text-lg shadow-xl shadow-amber-900/20 transition-all hover:scale-105">
                             Quero minha Proposta
                         </Link>
-                        <Link href="/sites-institucionais/premium/energia-solar/portfolio" className="px-10 py-5 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold rounded-xl text-lg backdrop-blur transition-all">
+                        <Link href="/portfolio/sites-institucionais/premium/energia-solar/portfolio" className="px-10 py-5 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold rounded-xl text-lg backdrop-blur transition-all">
                             Ver Fotos de Obras
                         </Link>
                     </div>

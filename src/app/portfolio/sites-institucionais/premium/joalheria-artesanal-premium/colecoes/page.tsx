@@ -108,10 +108,10 @@ export default function ColecoesPage() {
                             Criar algo do zero permite que você escolha cada detalhe, desde o tom exato do ouro até o corte da pedra. Nossos designers estão prontos para traduzir sua visão.
                         </p>
                         <div className="flex gap-6">
-                            <Link href="/sites-institucionais/premium/joalheria-artesanal-premium/contato" className="bg-stone-900 text-white px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-amber-600 transition-colors">
+                            <Link href="/portfolio/sites-institucionais/premium/joalheria-artesanal-premium/contato" className="bg-stone-900 text-white px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-amber-600 transition-colors">
                                 Falar com Designer
                             </Link>
-                            <Link href="/sites-institucionais/premium/joalheria-artesanal-premium/processo" className="flex items-center gap-2 text-stone-900 text-xs font-bold uppercase tracking-widest hover:text-amber-700 transition-colors">
+                            <Link href="/portfolio/sites-institucionais/premium/joalheria-artesanal-premium/processo" className="flex items-center gap-2 text-stone-900 text-xs font-bold uppercase tracking-widest hover:text-amber-700 transition-colors">
                                 Entender Processo <Info size={16} />
                             </Link>
                         </div>

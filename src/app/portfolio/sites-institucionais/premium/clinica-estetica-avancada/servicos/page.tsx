@@ -173,8 +173,8 @@ export default function ServicosPage() {
                                 key={cat.id}
                                 onClick={() => setActiveCategory(cat.id)}
                                 className={`flex items-center gap-2 px-8 py-3 rounded-full font-bold transition-all duration-300 ${activeCategory === cat.id
-                                        ? "bg-rose-600 text-white shadow-lg scale-105"
-                                        : "bg-neutral-50 text-neutral-500 hover:bg-rose-50 hover:text-rose-500"
+                                    ? "bg-rose-600 text-white shadow-lg scale-105"
+                                    : "bg-neutral-50 text-neutral-500 hover:bg-rose-50 hover:text-rose-500"
                                     }`}
                             >
                                 <cat.icon size={18} />
@@ -203,7 +203,7 @@ export default function ServicosPage() {
                                                 className="object-cover"
                                             />
                                         </div>
-                                        <Link href="/sites-institucionais/premium/clinica-estetica-avancada/contato" className="w-full btn-primary py-4 rounded-xl flex items-center justify-center gap-2 bg-rose-600 text-white font-bold shadow-lg shadow-rose-200 hover:bg-rose-700 transition-colors">
+                                        <Link href="/portfolio/sites-institucionais/premium/clinica-estetica-avancada/contato" className="w-full btn-primary py-4 rounded-xl flex items-center justify-center gap-2 bg-rose-600 text-white font-bold shadow-lg shadow-rose-200 hover:bg-rose-700 transition-colors">
                                             Agendar Avaliação <ArrowRight size={18} />
                                         </Link>
                                     </div>

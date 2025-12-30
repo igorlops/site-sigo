@@ -246,7 +246,7 @@ export default function ServicosPage() {
                                             </div>
 
                                             <Link
-                                                href="/sites-institucionais/simples/imobiliaria/contato"
+                                                href="/portfolio/sites-institucionais/simples/imobiliaria/contato"
                                                 className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-8 py-3 rounded hover:from-cyan-700 hover:to-blue-700 transition-colors font-semibold shadow-md"
                                             >
                                                 Solicitar este Serviço <ArrowRight size={18} />
@@ -292,7 +292,7 @@ export default function ServicosPage() {
                         Fale com um corretor especializado e descubra como podemos ajudar
                     </p>
                     <Link
-                        href="/sites-institucionais/simples/imobiliaria/contato"
+                        href="/portfolio/sites-institucionais/simples/imobiliaria/contato"
                         className="inline-block bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-10 py-4 rounded text-lg font-bold hover:from-cyan-700 hover:to-blue-700 transition-all shadow-lg"
                     >
                         Falar com Corretor Agora

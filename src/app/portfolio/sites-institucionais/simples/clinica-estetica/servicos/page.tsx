@@ -239,7 +239,7 @@ export default function ServicosPage() {
                                             </div>
 
                                             <Link
-                                                href="/sites-institucionais/simples/clinica-estetica/contato"
+                                                href="/portfolio/sites-institucionais/simples/clinica-estetica/contato"
                                                 className="inline-flex items-center gap-2 bg-rose-500 text-white px-8 py-3 rounded-full hover:bg-rose-600 transition-colors font-semibold shadow-md"
                                             >
                                                 Quero este tratamento <ArrowRight size={18} />
@@ -315,7 +315,7 @@ export default function ServicosPage() {
                         Agende sua avaliação gratuita e descubra qual tratamento é ideal para você e seus objetivos
                     </p>
                     <Link
-                        href="/sites-institucionais/simples/clinica-estetica/contato"
+                        href="/portfolio/sites-institucionais/simples/clinica-estetica/contato"
                         className="inline-block bg-slate-900 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-slate-800 transition-all duration-200 shadow-lg"
                     >
                         Agendar Avaliação Gratuita

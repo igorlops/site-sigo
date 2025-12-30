@@ -145,7 +145,7 @@ export default function PortfolioPage() {
                             <p className="text-slate-300 text-lg mb-8 leading-relaxed">
                                 Historicamente, nossos empreendimentos apresentam uma valorização média de <span className="text-white font-bold">40% entre o lançamento e a entrega das chaves</span>. Isso demonstra não apenas a qualidade do produto, mas nossa expertise em selecionar as melhores localizações.
                             </p>
-                            <Link href="/sites-institucionais/premium/construtora-incorporadora/contato" className="inline-block bg-orange-600 hover:bg-orange-500 text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-orange-900/40 transition-all">
+                            <Link href="/portfolio/sites-institucionais/premium/construtora-incorporadora/contato" className="inline-block bg-orange-600 hover:bg-orange-500 text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-orange-900/40 transition-all">
                                 Quero Investir com Segurança
                             </Link>
                         </div>

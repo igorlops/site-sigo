@@ -66,17 +66,17 @@ export default function Footer() {
                             <div>
                                 <h5 className="text-xs font-bold text-amber-700 uppercase mb-3 tracking-wider">Consultivo</h5>
                                 <ul className="space-y-2.5">
-                                    <li><Link href="/sites-institucionais/premium/advocacia-empresarial/servicos" className="text-sm text-slate-400 hover:text-amber-500 transition-colors flex items-center gap-2 group"><ArrowRight size={10} className="text-slate-600 group-hover:text-amber-600" /> Empresarial e Societário</Link></li>
-                                    <li><Link href="/sites-institucionais/premium/advocacia-empresarial/servicos" className="text-sm text-slate-400 hover:text-amber-500 transition-colors flex items-center gap-2 group"><ArrowRight size={10} className="text-slate-600 group-hover:text-amber-600" /> Contratos Complexos</Link></li>
-                                    <li><Link href="/sites-institucionais/premium/advocacia-empresarial/servicos" className="text-sm text-slate-400 hover:text-amber-500 transition-colors flex items-center gap-2 group"><ArrowRight size={10} className="text-slate-600 group-hover:text-amber-600" /> Compliance e LGPD</Link></li>
+                                    <li><Link href="/portfolio/sites-institucionais/premium/advocacia-empresarial/servicos" className="text-sm text-slate-400 hover:text-amber-500 transition-colors flex items-center gap-2 group"><ArrowRight size={10} className="text-slate-600 group-hover:text-amber-600" /> Empresarial e Societário</Link></li>
+                                    <li><Link href="/portfolio/sites-institucionais/premium/advocacia-empresarial/servicos" className="text-sm text-slate-400 hover:text-amber-500 transition-colors flex items-center gap-2 group"><ArrowRight size={10} className="text-slate-600 group-hover:text-amber-600" /> Contratos Complexos</Link></li>
+                                    <li><Link href="/portfolio/sites-institucionais/premium/advocacia-empresarial/servicos" className="text-sm text-slate-400 hover:text-amber-500 transition-colors flex items-center gap-2 group"><ArrowRight size={10} className="text-slate-600 group-hover:text-amber-600" /> Compliance e LGPD</Link></li>
                                 </ul>
                             </div>
                             <div>
                                 <h5 className="text-xs font-bold text-amber-700 uppercase mb-3 tracking-wider">Contencioso</h5>
                                 <ul className="space-y-2.5">
-                                    <li><Link href="/sites-institucionais/premium/advocacia-empresarial/servicos" className="text-sm text-slate-400 hover:text-amber-500 transition-colors flex items-center gap-2 group"><ArrowRight size={10} className="text-slate-600 group-hover:text-amber-600" /> Cível Estratégico</Link></li>
-                                    <li><Link href="/sites-institucionais/premium/advocacia-empresarial/servicos" className="text-sm text-slate-400 hover:text-amber-500 transition-colors flex items-center gap-2 group"><ArrowRight size={10} className="text-slate-600 group-hover:text-amber-600" /> Trabalhista Patronal</Link></li>
-                                    <li><Link href="/sites-institucionais/premium/advocacia-empresarial/servicos" className="text-sm text-slate-400 hover:text-amber-500 transition-colors flex items-center gap-2 group"><ArrowRight size={10} className="text-slate-600 group-hover:text-amber-600" /> Recuperação Judicial</Link></li>
+                                    <li><Link href="/portfolio/sites-institucionais/premium/advocacia-empresarial/servicos" className="text-sm text-slate-400 hover:text-amber-500 transition-colors flex items-center gap-2 group"><ArrowRight size={10} className="text-slate-600 group-hover:text-amber-600" /> Cível Estratégico</Link></li>
+                                    <li><Link href="/portfolio/sites-institucionais/premium/advocacia-empresarial/servicos" className="text-sm text-slate-400 hover:text-amber-500 transition-colors flex items-center gap-2 group"><ArrowRight size={10} className="text-slate-600 group-hover:text-amber-600" /> Trabalhista Patronal</Link></li>
+                                    <li><Link href="/portfolio/sites-institucionais/premium/advocacia-empresarial/servicos" className="text-sm text-slate-400 hover:text-amber-500 transition-colors flex items-center gap-2 group"><ArrowRight size={10} className="text-slate-600 group-hover:text-amber-600" /> Recuperação Judicial</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -98,7 +98,7 @@ export default function Footer() {
                                 { name: "Código de Ética OAB", path: "#" }
                             ].map((item, idx) => (
                                 <li key={idx}>
-                                    <Link href={`/sites-institucionais/premium/advocacia-empresarial${item.path}`} className="text-sm text-slate-400 hover:text-amber-500 transition-colors flex items-center gap-2">
+                                    <Link href={`/portfolio/sites-institucionais/premium/advocacia-empresarial${item.path}`} className="text-sm text-slate-400 hover:text-amber-500 transition-colors flex items-center gap-2">
                                         <FileText size={12} className="opacity-50" /> {item.name}
                                     </Link>
                                 </li>

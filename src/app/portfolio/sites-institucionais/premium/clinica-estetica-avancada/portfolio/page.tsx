@@ -122,8 +122,8 @@ export default function PortfolioPage() {
                                 key={cat.id}
                                 onClick={() => setFilter(cat.id)}
                                 className={`flex items-center gap-2 px-6 py-3 rounded-full font-bold transition-all duration-300 text-sm ${filter === cat.id
-                                        ? "bg-neutral-900 text-white shadow-lg"
-                                        : "bg-neutral-50 text-neutral-500 hover:bg-neutral-100"
+                                    ? "bg-neutral-900 text-white shadow-lg"
+                                    : "bg-neutral-50 text-neutral-500 hover:bg-neutral-100"
                                     }`}
                             >
                                 {filter === cat.id && <CheckCircle2 size={16} />}
@@ -213,7 +213,7 @@ export default function PortfolioPage() {
                                     <div className="w-12 h-12 rounded-full border-2 border-white bg-neutral-300"></div>
                                     <div className="w-12 h-12 rounded-full border-2 border-white bg-neutral-400 flex items-center justify-center text-xs font-bold">+50</div>
                                 </div>
-                                <Link href="/sites-institucionais/premium/clinica-estetica-avancada/contato" className="text-rose-600 font-bold hover:text-rose-700 flex items-center gap-2">
+                                <Link href="/portfolio/sites-institucionais/premium/clinica-estetica-avancada/contato" className="text-rose-600 font-bold hover:text-rose-700 flex items-center gap-2">
                                     Quero uma avaliação similar <ArrowRight size={20} />
                                 </Link>
                             </div>

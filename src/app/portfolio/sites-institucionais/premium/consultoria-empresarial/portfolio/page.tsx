@@ -246,7 +246,7 @@ export default function PortfolioPage() {
                         Não acreditamos em fórmulas mágicas, mas acreditamos em método e trabalho duro. Vamos diagnosticar suas oportunidades juntos?
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
-                        <Link href="/sites-institucionais/premium/consultoria-empresarial/contato" className="bg-slate-900 text-white px-10 py-4 rounded-lg font-bold hover:bg-slate-800 transition shadow-lg">
+                        <Link href="/portfolio/sites-institucionais/premium/consultoria-empresarial/contato" className="bg-slate-900 text-white px-10 py-4 rounded-lg font-bold hover:bg-slate-800 transition shadow-lg">
                             Agendar Reunião de Diagnóstico
                         </Link>
                         <Link href="#" className="bg-white text-slate-900 border border-slate-300 px-10 py-4 rounded-lg font-bold hover:bg-slate-50 transition">

@@ -76,13 +76,13 @@ export default function HomePage() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-6 animate-fade-in-up delay-300">
-                            <Link href="/sites-institucionais/premium/clinica-estetica-avancada/contato" className="group relative px-10 py-5 bg-rose-600 text-white rounded-full font-bold text-lg overflow-hidden shadow-xl shadow-rose-900/30 hover:scale-105 transition-transform duration-500">
+                            <Link href="/portfolio/sites-institucionais/premium/clinica-estetica-avancada/contato" className="group relative px-10 py-5 bg-rose-600 text-white rounded-full font-bold text-lg overflow-hidden shadow-xl shadow-rose-900/30 hover:scale-105 transition-transform duration-500">
                                 <div className="absolute inset-0 bg-gradient-to-r from-rose-500 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                                 <span className="relative flex items-center gap-3">
                                     Agendar Avaliação <ArrowRight size={20} />
                                 </span>
                             </Link>
-                            <Link href="/sites-institucionais/premium/clinica-estetica-avancada/servicos" className="px-10 py-5 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-full font-bold text-lg hover:bg-white/20 transition-all hover:border-white/50">
+                            <Link href="/portfolio/sites-institucionais/premium/clinica-estetica-avancada/servicos" className="px-10 py-5 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-full font-bold text-lg hover:bg-white/20 transition-all hover:border-white/50">
                                 Conhecer Tratamentos
                             </Link>
                         </div>
@@ -165,7 +165,7 @@ export default function HomePage() {
                             </div>
 
                             <div className="mt-12 flex flex-col sm:flex-row gap-8 items-center">
-                                <Link href="/sites-institucionais/premium/clinica-estetica-avancada/sobre" className="px-8 py-4 bg-neutral-900 text-white rounded-full font-bold hover:bg-rose-600 transition-colors shadow-lg">
+                                <Link href="/portfolio/sites-institucionais/premium/clinica-estetica-avancada/sobre" className="px-8 py-4 bg-neutral-900 text-white rounded-full font-bold hover:bg-rose-600 transition-colors shadow-lg">
                                     Conheça Nossa História
                                 </Link>
                                 <div className="flex items-center gap-4">
@@ -195,8 +195,8 @@ export default function HomePage() {
                                     key={key}
                                     onClick={() => setActiveTab(key)}
                                     className={`px-8 py-3 rounded-full text-sm font-bold tracking-wide transition-all duration-300 uppercase ${activeTab === key
-                                            ? "bg-rose-600 text-white shadow-lg shadow-rose-200 transform scale-105"
-                                            : "bg-neutral-100 text-neutral-500 hover:bg-rose-50 hover:text-rose-500"
+                                        ? "bg-rose-600 text-white shadow-lg shadow-rose-200 transform scale-105"
+                                        : "bg-neutral-100 text-neutral-500 hover:bg-rose-50 hover:text-rose-500"
                                         }`}
                                 >
                                     {key}
@@ -217,7 +217,7 @@ export default function HomePage() {
                                 <p className="text-neutral-500 mb-8 leading-relaxed">
                                     {item.desc}
                                 </p>
-                                <Link href="/sites-institucionais/premium/clinica-estetica-avancada/servicos" className="inline-flex items-center gap-2 text-sm font-bold text-neutral-900 group-hover:text-rose-600 transition-colors uppercase tracking-widest">
+                                <Link href="/portfolio/sites-institucionais/premium/clinica-estetica-avancada/servicos" className="inline-flex items-center gap-2 text-sm font-bold text-neutral-900 group-hover:text-rose-600 transition-colors uppercase tracking-widest">
                                     Saiba Mais <ArrowRight size={16} />
                                 </Link>
                             </div>
@@ -225,7 +225,7 @@ export default function HomePage() {
                     </div>
 
                     <div className="mt-16 text-center">
-                        <Link href="/sites-institucionais/premium/clinica-estetica-avancada/servicos" className="inline-block border-b-2 border-neutral-900 text-neutral-900 font-bold hover:text-rose-600 hover:border-rose-600 transition-colors pb-1 text-lg">
+                        <Link href="/portfolio/sites-institucionais/premium/clinica-estetica-avancada/servicos" className="inline-block border-b-2 border-neutral-900 text-neutral-900 font-bold hover:text-rose-600 hover:border-rose-600 transition-colors pb-1 text-lg">
                             Ver Menu Completo de Tratamentos
                         </Link>
                     </div>
@@ -275,7 +275,7 @@ export default function HomePage() {
                     </div>
 
                     <div className="mt-12 text-center">
-                        <Link href="/sites-institucionais/premium/clinica-estetica-avancada/portfolio" className="px-10 py-4 border border-white/30 rounded-full text-white font-bold hover:bg-white hover:text-neutral-900 transition-all">
+                        <Link href="/portfolio/sites-institucionais/premium/clinica-estetica-avancada/portfolio" className="px-10 py-4 border border-white/30 rounded-full text-white font-bold hover:bg-white hover:text-neutral-900 transition-all">
                             Ver Galeria Completa
                         </Link>
                     </div>
@@ -376,7 +376,7 @@ export default function HomePage() {
                     </p>
 
                     <div className="flex flex-col sm:flex-row justify-center gap-6">
-                        <Link href="/sites-institucionais/premium/clinica-estetica-avancada/contato" className="px-12 py-6 bg-white text-rose-900 font-bold rounded-full text-xl shadow-2xl hover:scale-105 transition-all">
+                        <Link href="/portfolio/sites-institucionais/premium/clinica-estetica-avancada/contato" className="px-12 py-6 bg-white text-rose-900 font-bold rounded-full text-xl shadow-2xl hover:scale-105 transition-all">
                             Agendar pelo WhatsApp
                         </Link>
                     </div>

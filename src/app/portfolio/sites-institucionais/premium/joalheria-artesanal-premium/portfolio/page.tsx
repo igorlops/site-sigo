@@ -88,7 +88,7 @@ export default function PortfolioPage() {
                                     </div>
                                 </div>
 
-                                <Link href="/sites-institucionais/premium/joalheria-artesanal-premium/contato" className="inline-flex items-center gap-3 text-white border border-stone-700 px-8 py-3 text-xs font-bold uppercase tracking-widest hover:border-amber-600 hover:text-amber-500 transition-all">
+                                <Link href="/portfolio/sites-institucionais/premium/joalheria-artesanal-premium/contato" className="inline-flex items-center gap-3 text-white border border-stone-700 px-8 py-3 text-xs font-bold uppercase tracking-widest hover:border-amber-600 hover:text-amber-500 transition-all">
                                     Encomendar Similar <ArrowRight size={14} />
                                 </Link>
                             </div>

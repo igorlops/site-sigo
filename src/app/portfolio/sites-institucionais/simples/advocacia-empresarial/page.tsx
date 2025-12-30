@@ -22,10 +22,10 @@ export default function Page() {
                                 Martins & Associados oferece assessoria jurídica completa para empresas que buscam segurança, compliance e crescimento sustentável. Mais de 20 anos defendendo os interesses de negócios como o seu.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <Link href="/sites-institucionais/simples/advocacia-empresarial/contato" className="px-8 py-4 bg-white text-amber-900 rounded font-bold hover:bg-amber-50 transition-colors text-center shadow-lg">
+                                <Link href="/portfolio/sites-institucionais/simples/advocacia-empresarial/contato" className="px-8 py-4 bg-white text-amber-900 rounded font-bold hover:bg-amber-50 transition-colors text-center shadow-lg">
                                     Agendar Consulta Estratégica
                                 </Link>
-                                <Link href="/sites-institucionais/simples/advocacia-empresarial/servicos" className="px-8 py-4 bg-transparent border-2 border-amber-300 rounded font-bold hover:bg-amber-800 transition-colors text-center">
+                                <Link href="/portfolio/sites-institucionais/simples/advocacia-empresarial/servicos" className="px-8 py-4 bg-transparent border-2 border-amber-300 rounded font-bold hover:bg-amber-800 transition-colors text-center">
                                     Conhecer Áreas de Atuação
                                 </Link>
                             </div>
@@ -121,7 +121,7 @@ export default function Page() {
                                     </div>
                                     <h3 className="text-xl font-bold text-slate-900 mb-3">{area.title}</h3>
                                     <p className="text-slate-600 leading-relaxed mb-6">{area.desc}</p>
-                                    <Link href="/sites-institucionais/simples/advocacia-empresarial/servicos" className="text-amber-700 font-semibold inline-flex items-center hover:text-amber-800">
+                                    <Link href="/portfolio/sites-institucionais/simples/advocacia-empresarial/servicos" className="text-amber-700 font-semibold inline-flex items-center hover:text-amber-800">
                                         Saiba mais →
                                     </Link>
                                 </div>
@@ -251,7 +251,7 @@ export default function Page() {
                         <p className="text-amber-200 mb-8 max-w-2xl mx-auto">
                             Primeira reunião sem custo para análise do seu caso.
                         </p>
-                        <Link href="/sites-institucionais/simples/advocacia-empresarial/contato" className="inline-block px-10 py-5 bg-white text-amber-900 font-bold rounded hover:bg-amber-50 transition-colors shadow-2xl text-lg">
+                        <Link href="/portfolio/sites-institucionais/simples/advocacia-empresarial/contato" className="inline-block px-10 py-5 bg-white text-amber-900 font-bold rounded hover:bg-amber-50 transition-colors shadow-2xl text-lg">
                             Agendar Consulta Gratuita
                         </Link>
                         <p className="mt-6 text-amber-200 text-sm">

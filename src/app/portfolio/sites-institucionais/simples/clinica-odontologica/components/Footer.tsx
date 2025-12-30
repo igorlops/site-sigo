@@ -25,22 +25,22 @@ export default function Footer() {
                         <h3 className="text-white font-semibold mb-4">Navegação</h3>
                         <ul className="space-y-2">
                             <li>
-                                <Link href="/sites-institucionais/simples/clinica-odontologica" className="hover:text-white transition-colors">
+                                <Link href="/portfolio/sites-institucionais/simples/clinica-odontologica" className="hover:text-white transition-colors">
                                     Home
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/sites-institucionais/simples/clinica-odontologica/sobre" className="hover:text-white transition-colors">
+                                <Link href="/portfolio/sites-institucionais/simples/clinica-odontologica/sobre" className="hover:text-white transition-colors">
                                     Sobre
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/sites-institucionais/simples/clinica-odontologica/servicos" className="hover:text-white transition-colors">
+                                <Link href="/portfolio/sites-institucionais/simples/clinica-odontologica/servicos" className="hover:text-white transition-colors">
                                     Serviços
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/sites-institucionais/simples/clinica-odontologica/precos" className="hover:text-white transition-colors">
+                                <Link href="/portfolio/sites-institucionais/simples/clinica-odontologica/precos" className="hover:text-white transition-colors">
                                     Preços
                                 </Link>
                             </li>

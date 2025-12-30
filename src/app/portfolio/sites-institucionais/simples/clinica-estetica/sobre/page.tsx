@@ -209,7 +209,7 @@ export default function SobrePage() {
                     <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
                         Agende sua avaliação gratuita e conheça pessoalmente nossa clínica, equipe e metodologia de trabalho
                     </p>
-                    <Link href="/sites-institucionais/simples/clinica-estetica/contato" className="inline-block bg-rose-500 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-rose-600 transition-all duration-200 shadow-lg">
+                    <Link href="/portfolio/sites-institucionais/simples/clinica-estetica/contato" className="inline-block bg-rose-500 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-rose-600 transition-all duration-200 shadow-lg">
                         Agendar Visita Gratuita
                     </Link>
                 </section>

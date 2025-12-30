@@ -170,7 +170,7 @@ export default function ProcessoPage() {
             <section className="py-20 text-center">
                 <div className="container mx-auto px-6">
                     <h2 className="font-montserrat font-bold text-3xl text-slate-900 mb-6">Ainda tem dúvidas?</h2>
-                    <Link href="/sites-institucionais/premium/construtora-incorporadora/contato" className="inline-flex items-center gap-2 bg-orange-600 text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:bg-orange-500 transition-colors">
+                    <Link href="/portfolio/sites-institucionais/premium/construtora-incorporadora/contato" className="inline-flex items-center gap-2 bg-orange-600 text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:bg-orange-500 transition-colors">
                         Falar com Especialista em Crédito <ArrowRight size={20} />
                     </Link>
                 </div>

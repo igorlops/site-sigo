@@ -8,11 +8,11 @@ export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const navLinks = [
-        { href: "/sites-institucionais/simples/advocacia-empresarial", label: "Home" },
-        { href: "/sites-institucionais/simples/advocacia-empresarial/sobre", label: "Sobre" },
-        { href: "/sites-institucionais/simples/advocacia-empresarial/servicos", label: "Serviços" },
-        { href: "/sites-institucionais/simples/advocacia-empresarial/faq", label: "FAQ" },
-        { href: "/sites-institucionais/simples/advocacia-empresarial/contato", label: "Contato" }
+        { href: "/portfolio/sites-institucionais/simples/advocacia-empresarial", label: "Home" },
+        { href: "/portfolio/sites-institucionais/simples/advocacia-empresarial/sobre", label: "Sobre" },
+        { href: "/portfolio/sites-institucionais/simples/advocacia-empresarial/servicos", label: "Serviços" },
+        { href: "/portfolio/sites-institucionais/simples/advocacia-empresarial/faq", label: "FAQ" },
+        { href: "/portfolio/sites-institucionais/simples/advocacia-empresarial/contato", label: "Contato" }
     ];
 
     return (
@@ -20,7 +20,7 @@ export default function Header() {
             <div className="container mx-auto px-4">
                 <div className="flex items-center justify-between h-20">
                     {/* Logo */}
-                    <Link href="/sites-institucionais/simples/advocacia-empresarial" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                    <Link href="/portfolio/sites-institucionais/simples/advocacia-empresarial" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
                         <div className="w-10 h-10 bg-amber-600 rounded flex items-center justify-center">
                             <Scale size={24} className="text-white" />
                         </div>
@@ -42,7 +42,7 @@ export default function Header() {
                             </Link>
                         ))}
                         <Link
-                            href="/sites-institucionais/simples/advocacia-empresarial/contato"
+                            href="/portfolio/sites-institucionais/simples/advocacia-empresarial/contato"
                             className="px-6 py-2.5 bg-amber-600 hover:bg-amber-700 rounded font-bold transition-colors shadow-md"
                         >
                             Agendar Consulta
@@ -74,7 +74,7 @@ export default function Header() {
                                 </Link>
                             ))}
                             <Link
-                                href="/sites-institucionais/simples/advocacia-empresarial/contato"
+                                href="/portfolio/sites-institucionais/simples/advocacia-empresarial/contato"
                                 className="px-6 py-3 bg-amber-600 hover:bg-amber-700 rounded font-bold transition-colors text-center mt-2"
                                 onClick={() => setMobileMenuOpen(false)}
                             >

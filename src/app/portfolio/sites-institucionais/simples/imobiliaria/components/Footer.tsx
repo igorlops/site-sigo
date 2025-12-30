@@ -38,27 +38,27 @@ export default function Footer() {
                         <h4 className="font-bold text-white text-lg mb-6">Navegação</h4>
                         <ul className="space-y-3">
                             <li>
-                                <Link href="/sites-institucionais/simples/imobiliaria" className="hover:text-cyan-300 transition-colors text-sm">
+                                <Link href="/portfolio/sites-institucionais/simples/imobiliaria" className="hover:text-cyan-300 transition-colors text-sm">
                                     Home
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/sites-institucionais/simples/imobiliaria/sobre" className="hover:text-cyan-300 transition-colors text-sm">
+                                <Link href="/portfolio/sites-institucionais/simples/imobiliaria/sobre" className="hover:text-cyan-300 transition-colors text-sm">
                                     Sobre Nós
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/sites-institucionais/simples/imobiliaria/servicos" className="hover:text-cyan-300 transition-colors text-sm">
+                                <Link href="/portfolio/sites-institucionais/simples/imobiliaria/servicos" className="hover:text-cyan-300 transition-colors text-sm">
                                     Serviços
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/sites-institucionais/simples/imobiliaria/portfolio" className="hover:text-cyan-300 transition-colors text-sm">
+                                <Link href="/portfolio/sites-institucionais/simples/imobiliaria/portfolio" className="hover:text-cyan-300 transition-colors text-sm">
                                     Imóveis Disponíveis
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/sites-institucionais/simples/imobiliaria/contato" className="hover:text-cyan-300 transition-colors text-sm">
+                                <Link href="/portfolio/sites-institucionais/simples/imobiliaria/contato" className="hover:text-cyan-300 transition-colors text-sm">
                                     Contato
                                 </Link>
                             </li>
@@ -125,7 +125,7 @@ export default function Footer() {
                             Agende uma visita sem compromisso e conheça nossas opções exclusivas de imóveis
                         </p>
                         <Link
-                            href="/sites-institucionais/simples/imobiliaria/contato"
+                            href="/portfolio/sites-institucionais/simples/imobiliaria/contato"
                             className="inline-block px-8 py-3 bg-white text-blue-900 rounded font-bold hover:bg-cyan-50 transition-colors shadow-lg"
                         >
                             Agendar Visita Gratuita

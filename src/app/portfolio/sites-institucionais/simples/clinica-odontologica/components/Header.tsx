@@ -19,7 +19,7 @@ export default function Header() {
             <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-20 items-center justify-between">
                     <div className="flex items-center">
-                        <Link href="/sites-institucionais/simples/clinica-odontologica" className="flex items-center space-x-3">
+                        <Link href="/portfolio/sites-institucionais/simples/clinica-odontologica" className="flex items-center space-x-3">
                             <div className="h-10 w-10 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center">
                                 <span className="text-white font-bold text-xl">E</span>
                             </div>
@@ -42,7 +42,7 @@ export default function Header() {
 
                     <div className="hidden md:flex">
                         <Link
-                            href="/sites-institucionais/simples/clinica-odontologica/contato"
+                            href="/portfolio/sites-institucionais/simples/clinica-odontologica/contato"
                             className="bg-blue-600 text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-medium"
                         >
                             Agendar Consulta
@@ -78,7 +78,7 @@ export default function Header() {
                             </Link>
                         ))}
                         <Link
-                            href="/sites-institucionais/simples/clinica-odontologica/contato"
+                            href="/portfolio/sites-institucionais/simples/clinica-odontologica/contato"
                             className="block mt-4 bg-blue-600 text-white px-6 py-2.5 rounded-lg text-center hover:bg-blue-700 transition-colors"
                             onClick={() => setMobileMenuOpen(false)}
                         >

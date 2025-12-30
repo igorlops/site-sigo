@@ -22,10 +22,10 @@ export default function Page() {
                             Tratamentos personalizados que unem tecnologia de ponta e arte médica para realçar sua beleza natural com segurança, resultados visíveis e acompanhamento dedicado em cada etapa da sua transformação.
                         </p>
                         <div className="flex flex-col md:flex-row gap-4 justify-center">
-                            <Link href="/sites-institucionais/simples/clinica-estetica/contato" className="px-8 py-4 bg-rose-500 text-white rounded-full font-medium hover:bg-rose-600 transition-all shadow-lg hover:shadow-rose-200">
+                            <Link href="/portfolio/sites-institucionais/simples/clinica-estetica/contato" className="px-8 py-4 bg-rose-500 text-white rounded-full font-medium hover:bg-rose-600 transition-all shadow-lg hover:shadow-rose-200">
                                 Agendar Avaliação Gratuita
                             </Link>
-                            <Link href="/sites-institucionais/simples/clinica-estetica/servicos" className="px-8 py-4 bg-white text-slate-700 border border-slate-200 rounded-full font-medium hover:bg-slate-50 transition-all">
+                            <Link href="/portfolio/sites-institucionais/simples/clinica-estetica/servicos" className="px-8 py-4 bg-white text-slate-700 border border-slate-200 rounded-full font-medium hover:bg-slate-50 transition-all">
                                 Conhecer Tratamentos
                             </Link>
                         </div>
@@ -119,7 +119,7 @@ export default function Page() {
                                     <div className="text-4xl mb-4">{service.icon}</div>
                                     <h3 className="text-2xl font-serif text-slate-800 mb-3">{service.title}</h3>
                                     <p className="text-slate-600 mb-6 leading-relaxed">{service.desc}</p>
-                                    <Link href="/sites-institucionais/simples/clinica-estetica/servicos" className="inline-flex items-center text-rose-500 font-medium group-hover:gap-2 transition-all">
+                                    <Link href="/portfolio/sites-institucionais/simples/clinica-estetica/servicos" className="inline-flex items-center text-rose-500 font-medium group-hover:gap-2 transition-all">
                                         Saiba mais <ArrowRight size={16} className="ml-1" />
                                     </Link>
                                 </div>
@@ -273,7 +273,7 @@ export default function Page() {
                         <p className="text-slate-500 mb-8 max-w-2xl mx-auto">
                             Sem compromisso, sem custo. Apenas uma conversa sincera sobre seus sonhos e como podemos ajudar.
                         </p>
-                        <Link href="/sites-institucionais/simples/clinica-estetica/contato" className="inline-block px-10 py-5 bg-slate-900 text-white rounded-full font-bold hover:bg-slate-800 transition-colors shadow-lg">
+                        <Link href="/portfolio/sites-institucionais/simples/clinica-estetica/contato" className="inline-block px-10 py-5 bg-slate-900 text-white rounded-full font-bold hover:bg-slate-800 transition-colors shadow-lg">
                             Quero Minha Avaliação Gratuita
                         </Link>
                         <p className="mt-6 text-slate-500 text-sm">

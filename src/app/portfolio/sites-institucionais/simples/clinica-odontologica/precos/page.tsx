@@ -94,8 +94,8 @@ export default function PrecosPage() {
                             <div
                                 key={index}
                                 className={`rounded-2xl p-8 ${plano.destaque
-                                        ? 'bg-gradient-to-br from-blue-600 to-cyan-600 text-white shadow-2xl transform scale-105'
-                                        : 'bg-white border-2 border-gray-200'
+                                    ? 'bg-gradient-to-br from-blue-600 to-cyan-600 text-white shadow-2xl transform scale-105'
+                                    : 'bg-white border-2 border-gray-200'
                                     }`}
                             >
                                 {plano.destaque && (
@@ -145,10 +145,10 @@ export default function PrecosPage() {
                                 </ul>
 
                                 <Link
-                                    href="/sites-institucionais/simples/clinica-odontologica/contato"
+                                    href="/portfolio/sites-institucionais/simples/clinica-odontologica/contato"
                                     className={`block text-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${plano.destaque
-                                            ? 'bg-white text-blue-600 hover:bg-gray-100'
-                                            : 'bg-blue-600 text-white hover:bg-blue-700'
+                                        ? 'bg-white text-blue-600 hover:bg-gray-100'
+                                        : 'bg-blue-600 text-white hover:bg-blue-700'
                                         }`}
                                 >
                                     Quero este plano
@@ -315,7 +315,7 @@ export default function PrecosPage() {
                         Agende uma avaliação gratuita e descubra qual plano oferece o melhor custo-benefício para você
                     </p>
                     <Link
-                        href="/sites-institucionais/simples/clinica-odontologica/contato"
+                        href="/portfolio/sites-institucionais/simples/clinica-odontologica/contato"
                         className="inline-block bg-white text-blue-600 px-10 py-4 rounded-xl text-lg font-bold hover:bg-gray-100 transition-all duration-200 shadow-2xl"
                     >
                         Agendar Avaliação Gratuita

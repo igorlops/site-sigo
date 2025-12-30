@@ -91,10 +91,10 @@ export default function HomePage() {
                         </div>
 
                         <div className="flex flex-wrap gap-4 mt-8 animate-fade-in-up delay-500">
-                            <Link href="/sites-institucionais/premium/construtora-incorporadora/servicos" className="text-white font-bold text-sm border-b border-orange-500 pb-1 hover:text-orange-400 transition-colors">
+                            <Link href="/portfolio/sites-institucionais/premium/construtora-incorporadora/servicos" className="text-white font-bold text-sm border-b border-orange-500 pb-1 hover:text-orange-400 transition-colors">
                                 Ver Lançamentos
                             </Link>
-                            <Link href="/sites-institucionais/premium/construtora-incorporadora/contato" className="text-white font-bold text-sm border-b border-transparent hover:border-white pb-1 transition-colors">
+                            <Link href="/portfolio/sites-institucionais/premium/construtora-incorporadora/contato" className="text-white font-bold text-sm border-b border-transparent hover:border-white pb-1 transition-colors">
                                 Simular Financiamento
                             </Link>
                         </div>
@@ -121,7 +121,7 @@ export default function HomePage() {
                             <h2 className="font-montserrat font-bold text-4xl md:text-5xl text-slate-900 mb-4">Lançamentos <span className="text-teal-700">Exclusivos</span></h2>
                             <p className="text-lg text-slate-500 max-w-xl">Oportunidades únicas de investimento e moradia nos bairros que mais valorizam na cidade.</p>
                         </div>
-                        <Link href="/sites-institucionais/premium/construtora-incorporadora/servicos" className="hidden md:flex items-center gap-2 text-orange-600 font-bold hover:gap-4 transition-all">
+                        <Link href="/portfolio/sites-institucionais/premium/construtora-incorporadora/servicos" className="hidden md:flex items-center gap-2 text-orange-600 font-bold hover:gap-4 transition-all">
                             Ver Todos os Imóveis <ArrowRight size={20} />
                         </Link>
                     </div>
@@ -182,7 +182,7 @@ export default function HomePage() {
                                             <p className="text-xs text-slate-400 font-medium">A partir de</p>
                                             <p className="font-montserrat font-bold text-2xl text-teal-700">R$ {item.price}</p>
                                         </div>
-                                        <Link href="/sites-institucionais/premium/construtora-incorporadora/servicos" className="bg-slate-900 text-white p-3 rounded-xl hover:bg-orange-600 transition-colors shadow-lg">
+                                        <Link href="/portfolio/sites-institucionais/premium/construtora-incorporadora/servicos" className="bg-slate-900 text-white p-3 rounded-xl hover:bg-orange-600 transition-colors shadow-lg">
                                             <ArrowRight size={20} />
                                         </Link>
                                     </div>
@@ -192,7 +192,7 @@ export default function HomePage() {
                     </div>
 
                     <div className="mt-12 text-center md:hidden">
-                        <Link href="/sites-institucionais/premium/construtora-incorporadora/servicos" className="inline-flex items-center gap-2 text-orange-600 font-bold">
+                        <Link href="/portfolio/sites-institucionais/premium/construtora-incorporadora/servicos" className="inline-flex items-center gap-2 text-orange-600 font-bold">
                             Ver Todos os Imóveis <ArrowRight size={20} />
                         </Link>
                     </div>
@@ -270,7 +270,7 @@ export default function HomePage() {
                     </div>
 
                     <div className="mt-16 text-center">
-                        <Link href="/sites-institucionais/premium/construtora-incorporadora/processo" className="inline-block border-2 border-slate-900 text-slate-900 px-8 py-3 rounded-xl font-bold hover:bg-slate-900 hover:text-white transition-colors">
+                        <Link href="/portfolio/sites-institucionais/premium/construtora-incorporadora/processo" className="inline-block border-2 border-slate-900 text-slate-900 px-8 py-3 rounded-xl font-bold hover:bg-slate-900 hover:text-white transition-colors">
                             Ver Detalhes do Processo
                         </Link>
                     </div>
@@ -304,7 +304,7 @@ export default function HomePage() {
                         <h2 className="font-montserrat font-bold text-4xl md:text-5xl mb-4 leading-tight">Condições Especiais de Lançamento</h2>
                         <p className="text-orange-100 text-lg mb-8">Garanta preços de tabela zero e benefícios exclusivos para os primeiros compradores do **Reserva Imperial**.</p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Link href="/sites-institucionais/premium/construtora-incorporadora/contato" className="bg-white text-orange-600 px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:bg-slate-100 transition-colors text-center">
+                            <Link href="/portfolio/sites-institucionais/premium/construtora-incorporadora/contato" className="bg-white text-orange-600 px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:bg-slate-100 transition-colors text-center">
                                 Falar com Consultor Agora
                             </Link>
                             <p className="text-xs text-orange-100 max-w-xs pt-2">*Condições válidas até o final do mês. Consulte regulamento.</p>
@@ -356,7 +356,7 @@ export default function HomePage() {
                         ))}
                     </div>
                     <div className="text-center mt-12">
-                        <Link href="/sites-institucionais/premium/construtora-incorporadora/contato" className="text-teal-700 font-bold hover:underline">Ver todas as perguntas</Link>
+                        <Link href="/portfolio/sites-institucionais/premium/construtora-incorporadora/contato" className="text-teal-700 font-bold hover:underline">Ver todas as perguntas</Link>
                     </div>
                 </div>
             </section>

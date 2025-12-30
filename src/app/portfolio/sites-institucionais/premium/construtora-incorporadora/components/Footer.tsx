@@ -24,10 +24,10 @@ export default function Footer() {
                         </p>
                     </div>
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <Link href="/sites-institucionais/premium/construtora-incorporadora/servicos" className="bg-orange-600 hover:bg-orange-500 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg shadow-orange-900/40 transition-all hover:-translate-y-1">
+                        <Link href="/portfolio/sites-institucionais/premium/construtora-incorporadora/servicos" className="bg-orange-600 hover:bg-orange-500 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg shadow-orange-900/40 transition-all hover:-translate-y-1">
                             Ver Lançamentos
                         </Link>
-                        <Link href="/sites-institucionais/premium/construtora-incorporadora/contato" className="border-2 border-white/20 hover:border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/5 transition-all">
+                        <Link href="/portfolio/sites-institucionais/premium/construtora-incorporadora/contato" className="border-2 border-white/20 hover:border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/5 transition-all">
                             Falar com Consultor
                         </Link>
                     </div>
@@ -77,7 +77,7 @@ export default function Footer() {
                                 { name: "Horizonte Azul", status: "Em Obras", color: "text-teal-500" }
                             ].map((emp, idx) => (
                                 <li key={idx}>
-                                    <Link href="/sites-institucionais/premium/construtora-incorporadora/servicos" className="group block">
+                                    <Link href="/portfolio/sites-institucionais/premium/construtora-incorporadora/servicos" className="group block">
                                         <span className="text-sm font-bold text-slate-300 group-hover:text-white transition-colors">{emp.name}</span>
                                         <div className="flex items-center gap-2 mt-0.5">
                                             <span className={`text-[10px] uppercase font-bold ${emp.color}`}>{emp.status}</span>
@@ -87,7 +87,7 @@ export default function Footer() {
                                 </li>
                             ))}
                         </ul>
-                        <Link href="/sites-institucionais/premium/construtora-incorporadora/servicos" className="mt-6 inline-block text-xs font-bold text-teal-500 hover:text-white transition-colors border-b border-teal-500/30 pb-0.5">
+                        <Link href="/portfolio/sites-institucionais/premium/construtora-incorporadora/servicos" className="mt-6 inline-block text-xs font-bold text-teal-500 hover:text-white transition-colors border-b border-teal-500/30 pb-0.5">
                             Ver Todos os Imóveis
                         </Link>
                     </div>

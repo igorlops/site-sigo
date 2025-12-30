@@ -24,13 +24,13 @@ export default function Header() {
     }, []);
 
     const navLinks = [
-        { name: "Home", path: "/sites-institucionais/premium/joalheria-artesanal-premium" },
-        { name: "O Atelier", path: "/sites-institucionais/premium/joalheria-artesanal-premium/sobre" },
-        { name: "Coleções", path: "/sites-institucionais/premium/joalheria-artesanal-premium/colecoes", isMega: true },
-        { name: "Peças Exclusivas", path: "/sites-institucionais/premium/joalheria-artesanal-premium/portfolio" },
-        { name: "Jornada Criativa", path: "/sites-institucionais/premium/joalheria-artesanal-premium/processo" },
-        { name: "Journal", path: "/sites-institucionais/premium/joalheria-artesanal-premium/journal" },
-        { name: "Concierge", path: "/sites-institucionais/premium/joalheria-artesanal-premium/contato" },
+        { name: "Home", path: "/portfolio/sites-institucionais/premium/joalheria-artesanal-premium" },
+        { name: "O Atelier", path: "/portfolio/sites-institucionais/premium/joalheria-artesanal-premium/sobre" },
+        { name: "Coleções", path: "/portfolio/sites-institucionais/premium/joalheria-artesanal-premium/colecoes", isMega: true },
+        { name: "Peças Exclusivas", path: "/portfolio/sites-institucionais/premium/joalheria-artesanal-premium/portfolio" },
+        { name: "Jornada Criativa", path: "/portfolio/sites-institucionais/premium/joalheria-artesanal-premium/processo" },
+        { name: "Journal", path: "/portfolio/sites-institucionais/premium/joalheria-artesanal-premium/journal" },
+        { name: "Concierge", path: "/portfolio/sites-institucionais/premium/joalheria-artesanal-premium/contato" },
     ];
 
     return (
@@ -51,7 +51,7 @@ export default function Header() {
                 <div className="container mx-auto px-6 md:px-12 lg:px-20 flex items-center justify-between">
 
                     {/* Logo */}
-                    <Link href="/sites-institucionais/premium/joalheria-artesanal-premium" className="group z-50 flex flex-col items-center">
+                    <Link href="/portfolio/sites-institucionais/premium/joalheria-artesanal-premium" className="group z-50 flex flex-col items-center">
                         <div className="font-playfair font-black text-2xl md:text-3xl text-stone-900 leading-none tracking-tighter group-hover:text-amber-700 transition-colors">
                             L'ART D'OR
                         </div>
@@ -159,7 +159,7 @@ export default function Header() {
                         </a>
                         <div className="h-4 w-px bg-stone-300" />
                         <Link
-                            href="/sites-institucionais/premium/joalheria-artesanal-premium/contato"
+                            href="/portfolio/sites-institucionais/premium/joalheria-artesanal-premium/contato"
                             className="bg-gradient-to-r from-stone-900 to-stone-800 text-amber-50 px-6 py-3 rounded-sm font-bold text-xs uppercase tracking-widest hover:shadow-lg hover:shadow-stone-900/20 hover:-translate-y-0.5 transition-all duration-500 flex items-center gap-2 border border-transparent hover:border-amber-500/30"
                         >
                             Encomenda Exclusiva
@@ -195,7 +195,7 @@ export default function Header() {
                         </nav>
                         <div className="mt-auto space-y-6 pt-10">
                             <Link
-                                href="/sites-institucionais/premium/joalheria-artesanal-premium/contato"
+                                href="/portfolio/sites-institucionais/premium/joalheria-artesanal-premium/contato"
                                 className="w-full block bg-stone-900 text-amber-50 text-center py-5 font-bold uppercase tracking-widest text-sm"
                             >
                                 Falar com Concierge

@@ -8,18 +8,18 @@ export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const navLinks = [
-        { href: "/sites-institucionais/simples/imobiliaria", label: "Home" },
-        { href: "/sites-institucionais/simples/imobiliaria/sobre", label: "Sobre" },
-        { href: "/sites-institucionais/simples/imobiliaria/servicos", label: "Serviços" },
-        { href: "/sites-institucionais/simples/imobiliaria/portfolio", label: "Imóveis" },
-        { href: "/sites-institucionais/simples/imobiliaria/contato", label: "Contato" }
+        { href: "/portfolio/sites-institucionais/simples/imobiliaria", label: "Home" },
+        { href: "/portfolio/sites-institucionais/simples/imobiliaria/sobre", label: "Sobre" },
+        { href: "/portfolio/sites-institucionais/simples/imobiliaria/servicos", label: "Serviços" },
+        { href: "/portfolio/sites-institucionais/simples/imobiliaria/portfolio", label: "Imóveis" },
+        { href: "/portfolio/sites-institucionais/simples/imobiliaria/contato", label: "Contato" }
     ];
 
     return (
         <header className="bg-gradient-to-r from-blue-900 to-cyan-800 text-white sticky top-0 z-50 shadow-lg">
             <div className="container mx-auto px-4">
                 <div className="flex items-center justify-between h-20">
-                    <Link href="/sites-institucionais/simples/imobiliaria" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                    <Link href="/portfolio/sites-institucionais/simples/imobiliaria" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
                         <div className="w-10 h-10 bg-cyan-500 rounded flex items-center justify-center">
                             <Home size={24} className="text-white" />
                         </div>
@@ -40,7 +40,7 @@ export default function Header() {
                             </Link>
                         ))}
                         <Link
-                            href="/sites-institucionais/simples/imobiliaria/contato"
+                            href="/portfolio/sites-institucionais/simples/imobiliaria/contato"
                             className="px-6 py-2.5 bg-cyan-500 hover:bg-cyan-600 rounded font-bold transition-colors shadow-md"
                         >
                             Agendar Visita
@@ -70,7 +70,7 @@ export default function Header() {
                                 </Link>
                             ))}
                             <Link
-                                href="/sites-institucionais/simples/imobiliaria/contato"
+                                href="/portfolio/sites-institucionais/simples/imobiliaria/contato"
                                 className="px-6 py-3 bg-cyan-500 hover:bg-cyan-600 rounded font-bold transition-colors text-center mt-2"
                                 onClick={() => setMobileMenuOpen(false)}
                             >

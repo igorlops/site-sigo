@@ -116,8 +116,8 @@ export default function PrecosPage() {
                                 <div
                                     key={i}
                                     className={`relative rounded-2xl overflow-hidden ${plano.destaque
-                                            ? 'bg-blue-600 text-white shadow-2xl scale-105 border-4 border-blue-400'
-                                            : 'bg-white border-2 border-slate-200'
+                                        ? 'bg-blue-600 text-white shadow-2xl scale-105 border-4 border-blue-400'
+                                        : 'bg-white border-2 border-slate-200'
                                         }`}
                                 >
                                     {plano.destaque && (
@@ -200,10 +200,10 @@ export default function PrecosPage() {
                                         </div>
 
                                         <Link
-                                            href="/sites-institucionais/simples/contabilidade/contato"
+                                            href="/portfolio/sites-institucionais/simples/contabilidade/contato"
                                             className={`block text-center w-full py-4 rounded-lg font-bold transition-colors ${plano.destaque
-                                                    ? 'bg-white text-blue-600 hover:bg-blue-50'
-                                                    : 'bg-blue-600 text-white hover:bg-blue-700'
+                                                ? 'bg-white text-blue-600 hover:bg-blue-50'
+                                                : 'bg-blue-600 text-white hover:bg-blue-700'
                                                 }`}
                                         >
                                             Contratar Agora
@@ -247,7 +247,7 @@ export default function PrecosPage() {
                             Nossa equipe está pronta para te ajudar a encontrar a solução ideal para sua empresa
                         </p>
                         <Link
-                            href="/sites-institucionais/simples/contabilidade/contato"
+                            href="/portfolio/sites-institucionais/simples/contabilidade/contato"
                             className="inline-block bg-white text-blue-900 px-10 py-4 rounded font-bold hover:bg-blue-50 transition-colors shadow-lg text-lg"
                         >
                             Falar com Consultor Agora

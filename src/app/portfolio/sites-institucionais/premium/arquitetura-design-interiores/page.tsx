@@ -36,14 +36,14 @@ export default function HomePage() {
 
                     <div className="flex flex-col sm:flex-row gap-6 animate-[fadeInUp_1s_ease-out_0.6s]">
                         <Link
-                            href="/sites-institucionais/premium/arquitetura-design-interiores/contato"
+                            href="/portfolio/sites-institucionais/premium/arquitetura-design-interiores/contato"
                             className="px-10 py-5 bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-amber-600/30 hover:-translate-y-1 transition-all duration-300 flex items-center gap-3 group"
                         >
                             Iniciar Meu Projeto
                             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                         </Link>
                         <Link
-                            href="/sites-institucionais/premium/arquitetura-design-interiores/portfolio"
+                            href="/portfolio/sites-institucionais/premium/arquitetura-design-interiores/portfolio"
                             className="px-10 py-5 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full font-bold text-lg hover:bg-white/20 hover:-translate-y-1 transition-all duration-300"
                         >
                             Ver Portfólio
@@ -130,7 +130,7 @@ export default function HomePage() {
                                 </p>
                             </div>
                             <div className="mt-10">
-                                <Link href="/sites-institucionais/premium/arquitetura-design-interiores/sobre" className="text-amber-600 font-bold hover:text-amber-800 transition-colors flex items-center gap-2 group">
+                                <Link href="/portfolio/sites-institucionais/premium/arquitetura-design-interiores/sobre" className="text-amber-600 font-bold hover:text-amber-800 transition-colors flex items-center gap-2 group">
                                     Conheça nossa filosofia <ArrowRight className="group-hover:translate-x-1 transition-transform" />
                                 </Link>
                             </div>
@@ -201,7 +201,7 @@ export default function HomePage() {
                                         </div>
                                     ))}
                                 </div>
-                                <Link href="/sites-institucionais/premium/arquitetura-design-interiores/servicos" className="text-amber-600 font-bold text-sm uppercase tracking-wide flex items-center gap-2 group-hover:gap-4 transition-all">
+                                <Link href="/portfolio/sites-institucionais/premium/arquitetura-design-interiores/servicos" className="text-amber-600 font-bold text-sm uppercase tracking-wide flex items-center gap-2 group-hover:gap-4 transition-all">
                                     Saiba mais <ArrowRight size={16} />
                                 </Link>
                             </div>
@@ -210,7 +210,7 @@ export default function HomePage() {
 
                     <div className="mt-16 text-center">
                         <Link
-                            href="/sites-institucionais/premium/arquitetura-design-interiores/servicos"
+                            href="/portfolio/sites-institucionais/premium/arquitetura-design-interiores/servicos"
                             className="inline-block px-10 py-4 border-2 border-stone-900 text-stone-900 rounded-full font-bold hover:bg-stone-900 hover:text-white transition-all duration-300"
                         >
                             Ver Detalhes dos Serviços
@@ -284,7 +284,7 @@ export default function HomePage() {
                             <span className="text-amber-600 font-bold uppercase tracking-widest text-sm mb-4 block">Obras Primas</span>
                             <h2 className="text-4xl md:text-5xl font-serif font-bold text-stone-900">Projetos Recentes</h2>
                         </div>
-                        <Link href="/sites-institucionais/premium/arquitetura-design-interiores/portfolio" className="flex items-center gap-2 text-stone-900 font-bold border-b-2 border-amber-500 pb-1 hover:text-amber-600 transition-colors">
+                        <Link href="/portfolio/sites-institucionais/premium/arquitetura-design-interiores/portfolio" className="flex items-center gap-2 text-stone-900 font-bold border-b-2 border-amber-500 pb-1 hover:text-amber-600 transition-colors">
                             Ver todos os projetos <ArrowRight size={20} />
                         </Link>
                     </div>
@@ -298,7 +298,7 @@ export default function HomePage() {
                             { title: "Villa no Campo", cat: "Residencial", img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2670&auto=format&fit=crop" },
                             { title: "Restaurante Fusion", cat: "Comercial", img: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2670&auto=format&fit=crop" }
                         ].map((project, idx) => (
-                            <Link key={idx} href="/sites-institucionais/premium/arquitetura-design-interiores/portfolio" className="group relative block aspect-[4/5] overflow-hidden rounded-2xl cursor-pointer">
+                            <Link key={idx} href="/portfolio/sites-institucionais/premium/arquitetura-design-interiores/portfolio" className="group relative block aspect-[4/5] overflow-hidden rounded-2xl cursor-pointer">
                                 <Image
                                     src={project.img}
                                     alt={project.title}
@@ -385,7 +385,7 @@ export default function HomePage() {
 
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">
                         <Link
-                            href="/sites-institucionais/premium/arquitetura-design-interiores/contato"
+                            href="/portfolio/sites-institucionais/premium/arquitetura-design-interiores/contato"
                             className="px-12 py-6 bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-full font-bold text-xl hover:shadow-2xl hover:shadow-amber-600/30 hover:-translate-y-1 transition-all duration-300"
                         >
                             Agendar Consultoria

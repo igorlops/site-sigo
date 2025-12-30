@@ -128,7 +128,7 @@ export default function ServicosPage() {
                                             </div>
 
                                             <a
-                                                href="/sites-institucionais/simples/psicologo/contato"
+                                                href="/portfolio/sites-institucionais/simples/psicologo/contato"
                                                 className="inline-block bg-teal-700 text-white px-8 py-3 rounded-md hover:bg-teal-800 transition-colors font-semibold shadow-md"
                                             >
                                                 Agendar esta Modalidade
@@ -173,7 +173,7 @@ export default function ServicosPage() {
                         Entre em contato para agendar sua primeira sessão e iniciar sua jornada de transformação pessoal
                     </p>
                     <a
-                        href="/sites-institucionais/simples/psicologo/contato"
+                        href="/portfolio/sites-institucionais/simples/psicologo/contato"
                         className="inline-block bg-teal-700 text-white px-10 py-4 rounded-md text-lg font-bold hover:bg-teal-800 transition-all shadow-lg"
                     >
                         Agendar Primeira Sessão

@@ -17,13 +17,13 @@ export default function ClinicaOdontologicaHome() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link
-                                href="/sites-institucionais/simples/clinica-odontologica/contato"
+                                href="/portfolio/sites-institucionais/simples/clinica-odontologica/contato"
                                 className="bg-blue-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-blue-700 transition-all duration-200 shadow-lg hover:shadow-xl"
                             >
                                 Agendar Avaliação Gratuita
                             </Link>
                             <Link
-                                href="/sites-institucionais/simples/clinica-odontologica/servicos"
+                                href="/portfolio/sites-institucionais/simples/clinica-odontologica/servicos"
                                 className="bg-white text-blue-600 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-gray-50 transition-all duration-200 border-2 border-blue-600"
                             >
                                 Conheça Nossos Serviços
@@ -132,7 +132,7 @@ export default function ClinicaOdontologicaHome() {
                                 <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
                                 <p className="text-gray-600 mb-6">{service.description}</p>
                                 <Link
-                                    href="/sites-institucionais/simples/clinica-odontologica/servicos"
+                                    href="/portfolio/sites-institucionais/simples/clinica-odontologica/servicos"
                                     className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center"
                                 >
                                     Saiba mais →
@@ -306,7 +306,7 @@ export default function ClinicaOdontologicaHome() {
                         Sem compromisso, sem custo.
                     </p>
                     <Link
-                        href="/sites-institucionais/simples/clinica-odontologica/contato"
+                        href="/portfolio/sites-institucionais/simples/clinica-odontologica/contato"
                         className="inline-block bg-white text-blue-600 px-10 py-4 rounded-xl text-lg font-bold hover:bg-gray-100 transition-all duration-200 shadow-2xl"
                     >
                         Quero Minha Avaliação Gratuita

@@ -206,7 +206,7 @@ export default function DepoimentosPage() {
                         Não espere mais para se sentir bem com você mesma. Venha viver a experiência Lumière.
                     </p>
                     <div className="flex justify-center gap-6">
-                        <Link href="/sites-institucionais/premium/clinica-estetica-avancada/contato" className="px-12 py-5 bg-rose-600 text-white rounded-full font-bold text-lg hover:bg-rose-700 transition-colors shadow-xl hover:scale-105">
+                        <Link href="/portfolio/sites-institucionais/premium/clinica-estetica-avancada/contato" className="px-12 py-5 bg-rose-600 text-white rounded-full font-bold text-lg hover:bg-rose-700 transition-colors shadow-xl hover:scale-105">
                             Agendar Minha Transformação
                         </Link>
                     </div>

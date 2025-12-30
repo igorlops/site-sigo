@@ -26,37 +26,37 @@ export default function Header() {
 
     // Premium Navigation Structure
     const navLinks = [
-        { name: "Home", path: "/sites-institucionais/premium/clinica-estetica-avancada" },
-        { name: "Sobre", path: "/sites-institucionais/premium/clinica-estetica-avancada/sobre" },
+        { name: "Home", path: "/portfolio/sites-institucionais/premium/clinica-estetica-avancada" },
+        { name: "Sobre", path: "/portfolio/sites-institucionais/premium/clinica-estetica-avancada/sobre" },
         {
             name: "Tratamentos",
-            path: "/sites-institucionais/premium/clinica-estetica-avancada/servicos",
+            path: "/portfolio/sites-institucionais/premium/clinica-estetica-avancada/servicos",
             hasMegaMenu: true,
             subItems: [
-                { label: "Facial", desc: "Rejuvenescimento e Harmonização", href: "/sites-institucionais/premium/clinica-estetica-avancada/servicos#facial" },
-                { label: "Corporal", desc: "Remodelação e Emagrecimento", href: "/sites-institucionais/premium/clinica-estetica-avancada/servicos#corporal" },
-                { label: "Íntimo", desc: "Estética e Saúde da Mulher", href: "/sites-institucionais/premium/clinica-estetica-avancada/servicos#intimo" },
-                { label: "Capilar", desc: "Terapia e Transplante FUE", href: "/sites-institucionais/premium/clinica-estetica-avancada/servicos#capilar" },
+                { label: "Facial", desc: "Rejuvenescimento e Harmonização", href: "/portfolio/sites-institucionais/premium/clinica-estetica-avancada/servicos#facial" },
+                { label: "Corporal", desc: "Remodelação e Emagrecimento", href: "/portfolio/sites-institucionais/premium/clinica-estetica-avancada/servicos#corporal" },
+                { label: "Íntimo", desc: "Estética e Saúde da Mulher", href: "/portfolio/sites-institucionais/premium/clinica-estetica-avancada/servicos#intimo" },
+                { label: "Capilar", desc: "Terapia e Transplante FUE", href: "/portfolio/sites-institucionais/premium/clinica-estetica-avancada/servicos#capilar" },
             ]
         },
-        { name: "Resultados", path: "/sites-institucionais/premium/clinica-estetica-avancada/portfolio" },
-        { name: "A Clínica", path: "/sites-institucionais/premium/clinica-estetica-avancada/processo" },
-        { name: "Blog", path: "/sites-institucionais/premium/clinica-estetica-avancada/blog" },
-        { name: "Depoimentos", path: "/sites-institucionais/premium/clinica-estetica-avancada/depoimentos" },
+        { name: "Resultados", path: "/portfolio/sites-institucionais/premium/clinica-estetica-avancada/portfolio" },
+        { name: "A Clínica", path: "/portfolio/sites-institucionais/premium/clinica-estetica-avancada/processo" },
+        { name: "Blog", path: "/portfolio/sites-institucionais/premium/clinica-estetica-avancada/blog" },
+        { name: "Depoimentos", path: "/portfolio/sites-institucionais/premium/clinica-estetica-avancada/depoimentos" },
     ];
 
     return (
         <>
             <header
                 className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 border-b ${isScrolled
-                        ? "bg-white/80 backdrop-blur-xl h-20 shadow-lg shadow-rose-100/50 border-rose-100"
-                        : "bg-transparent h-24 border-white/10"
+                    ? "bg-white/80 backdrop-blur-xl h-20 shadow-lg shadow-rose-100/50 border-rose-100"
+                    : "bg-transparent h-24 border-white/10"
                     }`}
             >
                 <div className="container mx-auto px-6 md:px-12 lg:px-24 h-full flex items-center justify-between">
 
                     {/* LOGO AREA */}
-                    <Link href="/sites-institucionais/premium/clinica-estetica-avancada" className="flex items-center gap-2 group relative z-50">
+                    <Link href="/portfolio/sites-institucionais/premium/clinica-estetica-avancada" className="flex items-center gap-2 group relative z-50">
                         <div className={`p-2 rounded-full transition-all duration-500 ${isScrolled ? "bg-rose-50 text-rose-600" : "bg-white/20 text-white backdrop-blur-sm"}`}>
                             <Sparkles size={24} className="animate-pulse-slow" />
                         </div>
@@ -82,8 +82,8 @@ export default function Header() {
                                 <Link
                                     href={link.path}
                                     className={`text-sm font-medium tracking-wide transition-all duration-300 flex items-center gap-1 ${isActive(link.path)
-                                            ? "text-rose-500 font-bold"
-                                            : isScrolled ? "text-neutral-600 hover:text-rose-600" : "text-white/90 hover:text-white"
+                                        ? "text-rose-500 font-bold"
+                                        : isScrolled ? "text-neutral-600 hover:text-rose-600" : "text-white/90 hover:text-white"
                                         }`}
                                 >
                                     {link.name} {link.hasMegaMenu && <ChevronDown size={14} className="group-hover:rotate-180 transition-transform duration-300" />}
@@ -96,8 +96,8 @@ export default function Header() {
                                 {/* MEGA MENU */}
                                 {link.hasMegaMenu && (
                                     <div className={`absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white rounded-3xl p-8 shadow-[0_30px_60px_rgba(225,29,72,0.15)] border border-rose-50 transform transition-all duration-300 origin-top ${activeSubmenu === link.name
-                                            ? "opacity-100 translate-y-0 visible"
-                                            : "opacity-0 -translate-y-4 invisible"
+                                        ? "opacity-100 translate-y-0 visible"
+                                        : "opacity-0 -translate-y-4 invisible"
                                         }`}>
                                         <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-6 h-6 bg-white rotate-45 border-t border-l border-rose-50" />
                                         <div className="grid grid-cols-2 gap-6 relative z-10">
@@ -137,7 +137,7 @@ export default function Header() {
                             <Phone size={20} />
                         </Link>
                         <Link
-                            href="/sites-institucionais/premium/clinica-estetica-avancada/contato"
+                            href="/portfolio/sites-institucionais/premium/clinica-estetica-avancada/contato"
                             className="relative px-8 py-3 rounded-full font-bold text-sm bg-gradient-to-r from-rose-600 via-purple-600 to-rose-600 text-white shadow-lg shadow-rose-500/30 hover:shadow-rose-500/50 hover:scale-105 transition-all duration-500 bg-[length:200%_auto] hover:bg-right overflow-hidden group"
                         >
                             <span className="relative z-10 flex items-center gap-2">
@@ -175,7 +175,7 @@ export default function Header() {
                         </Link>
                     ))}
                     <Link
-                        href="/sites-institucionais/premium/clinica-estetica-avancada/contato"
+                        href="/portfolio/sites-institucionais/premium/clinica-estetica-avancada/contato"
                         onClick={() => setIsMobileMenuOpen(false)}
                         className="mt-8 px-10 py-4 bg-white text-rose-900 rounded-full font-bold text-lg hover:bg-rose-100 transition-colors shadow-2xl"
                     >

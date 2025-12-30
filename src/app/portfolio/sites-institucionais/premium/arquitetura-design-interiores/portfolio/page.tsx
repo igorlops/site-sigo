@@ -120,8 +120,8 @@ export default function PortfolioPage() {
                                 key={cat}
                                 onClick={() => setFilter(cat)}
                                 className={`px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wide transition-all duration-300 ${filter === cat
-                                        ? "bg-stone-900 text-white shadow-lg transform scale-105"
-                                        : "bg-white text-stone-500 hover:bg-stone-200 hover:text-stone-800 border border-stone-200"
+                                    ? "bg-stone-900 text-white shadow-lg transform scale-105"
+                                    : "bg-white text-stone-500 hover:bg-stone-200 hover:text-stone-800 border border-stone-200"
                                     }`}
                             >
                                 {cat}
@@ -233,7 +233,7 @@ export default function PortfolioPage() {
                 <div className="container mx-auto px-4">
                     <h2 className="text-3xl md:text-5xl font-serif font-bold text-stone-900 mb-8">Gostou do que viu?</h2>
                     <Link
-                        href="/sites-institucionais/premium/arquitetura-design-interiores/contato"
+                        href="/portfolio/sites-institucionais/premium/arquitetura-design-interiores/contato"
                         className="inline-block px-12 py-6 bg-stone-900 text-white rounded-full font-bold text-xl hover:bg-amber-600 transition-all duration-300 shadow-xl"
                     >
                         Solicitar Proposta para Meu Projeto

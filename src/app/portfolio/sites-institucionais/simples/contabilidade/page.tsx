@@ -22,10 +22,10 @@ export default function Page() {
                                 Esqueça a burocracia e papelada infinita. Cuidamos de toda a parte fiscal, trabalhista e contábil da sua empresa com tecnologia de ponta e consultoria estratégica para você focar no que realmente importa: fazer seu negócio prosperar.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <Link href="/sites-institucionais/simples/contabilidade/contato" className="px-8 py-4 bg-blue-600 rounded font-bold hover:bg-blue-500 transition-colors text-center shadow-lg">
+                                <Link href="/portfolio/sites-institucionais/simples/contabilidade/contato" className="px-8 py-4 bg-blue-600 rounded font-bold hover:bg-blue-500 transition-colors text-center shadow-lg">
                                     Abrir Minha Empresa Grátis
                                 </Link>
-                                <Link href="/sites-institucionais/simples/contabilidade/precos" className="px-8 py-4 bg-transparent border border-slate-400 rounded font-bold hover:bg-white/10 transition-colors text-center">
+                                <Link href="/portfolio/sites-institucionais/simples/contabilidade/precos" className="px-8 py-4 bg-transparent border border-slate-400 rounded font-bold hover:bg-white/10 transition-colors text-center">
                                     Conhecer Planos
                                 </Link>
                             </div>
@@ -188,7 +188,7 @@ export default function Page() {
                         <p className="text-blue-300 mb-8 max-w-2xl mx-auto">
                             É rápido, seguro e sem taxas extras. No plano anual, a abertura é grátis.
                         </p>
-                        <Link href="/sites-institucionais/simples/contabilidade/contato" className="inline-block px-10 py-5 bg-white text-blue-900 font-bold rounded hover:bg-blue-50 transition-colors shadow-2xl text-lg">
+                        <Link href="/portfolio/sites-institucionais/simples/contabilidade/contato" className="inline-block px-10 py-5 bg-white text-blue-900 font-bold rounded hover:bg-blue-50 transition-colors shadow-2xl text-lg">
                             Falar com Especialista Agora
                         </Link>
                         <p className="mt-6 text-blue-200 text-sm">

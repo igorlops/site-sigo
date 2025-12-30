@@ -38,27 +38,27 @@ export default function Footer() {
                         <h4 className="font-bold text-white text-lg mb-6">Navegação</h4>
                         <ul className="space-y-3">
                             <li>
-                                <Link href="/sites-institucionais/simples/agencia-marketing" className="hover:text-pink-300 transition-colors text-sm">
+                                <Link href="/portfolio/sites-institucionais/simples/agencia-marketing" className="hover:text-pink-300 transition-colors text-sm">
                                     Home
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/sites-institucionais/simples/agencia-marketing/sobre" className="hover:text-pink-300 transition-colors text-sm">
+                                <Link href="/portfolio/sites-institucionais/simples/agencia-marketing/sobre" className="hover:text-pink-300 transition-colors text-sm">
                                     Sobre Nós
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/sites-institucionais/simples/agencia-marketing/servicos" className="hover:text-pink-300 transition-colors text-sm">
+                                <Link href="/portfolio/sites-institucionais/simples/agencia-marketing/servicos" className="hover:text-pink-300 transition-colors text-sm">
                                     Serviços
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/sites-institucionais/simples/agencia-marketing/portfolio" className="hover:text-pink-300 transition-colors text-sm">
+                                <Link href="/portfolio/sites-institucionais/simples/agencia-marketing/portfolio" className="hover:text-pink-300 transition-colors text-sm">
                                     Portfólio
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/sites-institucionais/simples/agencia-marketing/contato" className="hover:text-pink-300 transition-colors text-sm">
+                                <Link href="/portfolio/sites-institucionais/simples/agencia-marketing/contato" className="hover:text-pink-300 transition-colors text-sm">
                                     Contato
                                 </Link>
                             </li>
@@ -125,7 +125,7 @@ export default function Footer() {
                             Solicite uma análise gratuita e descubra como podemos multiplicar seus resultados digitais
                         </p>
                         <Link
-                            href="/sites-institucionais/simples/agencia-marketing/contato"
+                            href="/portfolio/sites-institucionais/simples/agencia-marketing/contato"
                             className="inline-block px-8 py-3 bg-white text-purple-900 rounded-full font-bold hover:bg-purple-50 transition-colors shadow-lg"
                         >
                             Solicitar Análise Gratuita

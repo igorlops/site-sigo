@@ -98,7 +98,7 @@ export default function Footer() {
                         <h4 className="text-white font-bold mb-6 text-lg">Recursos</h4>
                         <ul className="space-y-4 text-sm">
                             <li>
-                                <Link href="/sites-institucionais/premium/energia-solar/calculadora" className="flex items-center gap-2 hover:text-amber-400 transition-colors">
+                                <Link href="/portfolio/sites-institucionais/premium/energia-solar/calculadora" className="flex items-center gap-2 hover:text-amber-400 transition-colors">
                                     <Calculator size={16} className="text-amber-500" /> Calculadora Solar
                                 </Link>
                             </li>
@@ -151,7 +151,7 @@ export default function Footer() {
                             </li>
                         </ul>
 
-                        <Link href="/sites-institucionais/premium/energia-solar/contato" className="mt-6 block w-full py-2 bg-amber-500 hover:bg-amber-400 text-sky-950 font-bold text-center rounded-lg transition-colors shadow-lg shadow-amber-900/20">
+                        <Link href="/portfolio/sites-institucionais/premium/energia-solar/contato" className="mt-6 block w-full py-2 bg-amber-500 hover:bg-amber-400 text-sky-950 font-bold text-center rounded-lg transition-colors shadow-lg shadow-amber-900/20">
                             Falar com Consultor
                         </Link>
                     </div>

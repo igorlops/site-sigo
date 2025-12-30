@@ -204,7 +204,7 @@ export default function SobrePage() {
                             Agende uma conversa e conheça nossa metodologia de perto
                         </p>
                         <a
-                            href="/sites-institucionais/simples/agencia-marketing/contato"
+                            href="/portfolio/sites-institucionais/simples/agencia-marketing/contato"
                             className="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:from-purple-700 hover:to-pink-700 transition-all shadow-lg"
                         >
                             Falar com Especialista

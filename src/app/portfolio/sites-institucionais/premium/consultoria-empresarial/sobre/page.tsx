@@ -268,7 +268,7 @@ export default function SobrePage() {
                             <p className="text-slate-400 mb-8">
                                 Localizados estrategicamente nos principais centros econômicos do país para melhor atender nossos clientes.
                             </p>
-                            <Link href="/sites-institucionais/premium/consultoria-empresarial/contato" className="bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition inline-block">
+                            <Link href="/portfolio/sites-institucionais/premium/consultoria-empresarial/contato" className="bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition inline-block">
                                 Agendar Visita
                             </Link>
                         </div>

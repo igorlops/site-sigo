@@ -177,7 +177,7 @@ export default function ProcessoPage() {
             <section className="py-20 bg-stone-100 text-center">
                 <div className="container mx-auto px-6 md:px-12 lg:px-20 xl:px-32">
                     <h2 className="font-serif text-3xl font-bold text-slate-900 mb-6">Quer entender como isso se aplica ao seu caso?</h2>
-                    <Link href="/sites-institucionais/premium/advocacia-empresarial/contato" className="inline-flex items-center gap-2 bg-slate-900 text-white px-8 py-4 rounded font-bold hover:bg-slate-800 transition-colors shadow-lg">
+                    <Link href="/portfolio/sites-institucionais/premium/advocacia-empresarial/contato" className="inline-flex items-center gap-2 bg-slate-900 text-white px-8 py-4 rounded font-bold hover:bg-slate-800 transition-colors shadow-lg">
                         Agendar Diagnóstico Gratuito <ArrowRight size={18} />
                     </Link>
                 </div>

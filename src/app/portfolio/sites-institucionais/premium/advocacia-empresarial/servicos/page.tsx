@@ -145,7 +145,7 @@ export default function ServicosPage() {
                                         </div>
                                         <h2 className="font-serif text-3xl font-bold text-slate-900 mb-4">{service.title}</h2>
                                         <p className="text-slate-500 mb-6">{service.desc}</p>
-                                        <Link href="/sites-institucionais/premium/advocacia-empresarial/contato" className="text-amber-700 font-bold uppercase text-xs tracking-wider flex items-center gap-2 hover:underline">
+                                        <Link href="/portfolio/sites-institucionais/premium/advocacia-empresarial/contato" className="text-amber-700 font-bold uppercase text-xs tracking-wider flex items-center gap-2 hover:underline">
                                             Solicitar Proposta <ArrowRight size={14} />
                                         </Link>
                                     </div>
@@ -179,7 +179,7 @@ export default function ServicosPage() {
                                         </div>
                                         <h2 className="font-serif text-3xl font-bold text-slate-900 mb-4">{service.title}</h2>
                                         <p className="text-slate-500 mb-6">{service.desc}</p>
-                                        <Link href="/sites-institucionais/premium/advocacia-empresarial/contato" className="text-slate-900 font-bold uppercase text-xs tracking-wider flex items-center gap-2 hover:underline">
+                                        <Link href="/portfolio/sites-institucionais/premium/advocacia-empresarial/contato" className="text-slate-900 font-bold uppercase text-xs tracking-wider flex items-center gap-2 hover:underline">
                                             Análise de Risco <ArrowRight size={14} />
                                         </Link>
                                     </div>
@@ -255,7 +255,7 @@ export default function ServicosPage() {
                     <p className="text-xl text-amber-100 mb-10">
                         Agende uma reunião inicial com um de nossos sócios para discutir as necessidades jurídicas da sua empresa.
                     </p>
-                    <Link href="/sites-institucionais/premium/advocacia-empresarial/contato" className="inline-block bg-slate-900 text-white px-10 py-5 rounded font-bold text-lg hover:bg-slate-800 transition-colors shadow-xl">
+                    <Link href="/portfolio/sites-institucionais/premium/advocacia-empresarial/contato" className="inline-block bg-slate-900 text-white px-10 py-5 rounded font-bold text-lg hover:bg-slate-800 transition-colors shadow-xl">
                         Falar com um Especialista
                     </Link>
                 </div>

@@ -19,18 +19,18 @@ export default function Header() {
     }, []);
 
     const navLinks = [
-        { name: "Home", path: "/sites-institucionais/premium/arquitetura-design-interiores" },
-        { name: "Sobre", path: "/sites-institucionais/premium/arquitetura-design-interiores/sobre" },
-        { name: "Serviços", path: "/sites-institucionais/premium/arquitetura-design-interiores/servicos" },
-        { name: "Portfólio", path: "/sites-institucionais/premium/arquitetura-design-interiores/portfolio" },
-        { name: "Processo", path: "/sites-institucionais/premium/arquitetura-design-interiores/processo" },
-        { name: "Blog", path: "/sites-institucionais/premium/arquitetura-design-interiores/blog" },
-        { name: "Depoimentos", path: "/sites-institucionais/premium/arquitetura-design-interiores/depoimentos" },
-        { name: "Contato", path: "/sites-institucionais/premium/arquitetura-design-interiores/contato" },
+        { name: "Home", path: "/portfolio/sites-institucionais/premium/arquitetura-design-interiores" },
+        { name: "Sobre", path: "/portfolio/sites-institucionais/premium/arquitetura-design-interiores/sobre" },
+        { name: "Serviços", path: "/portfolio/sites-institucionais/premium/arquitetura-design-interiores/servicos" },
+        { name: "Portfólio", path: "/portfolio/sites-institucionais/premium/arquitetura-design-interiores/portfolio" },
+        { name: "Processo", path: "/portfolio/sites-institucionais/premium/arquitetura-design-interiores/processo" },
+        { name: "Blog", path: "/portfolio/sites-institucionais/premium/arquitetura-design-interiores/blog" },
+        { name: "Depoimentos", path: "/portfolio/sites-institucionais/premium/arquitetura-design-interiores/depoimentos" },
+        { name: "Contato", path: "/portfolio/sites-institucionais/premium/arquitetura-design-interiores/contato" },
     ];
 
     const isActive = (path: string) => {
-        if (path === "/sites-institucionais/premium/arquitetura-design-interiores" && pathname !== path) {
+        if (path === "/portfolio/sites-institucionais/premium/arquitetura-design-interiores" && pathname !== path) {
             return false;
         }
         return pathname.startsWith(path);
@@ -40,12 +40,12 @@ export default function Header() {
         <>
             <header
                 className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled
-                        ? "bg-stone-900/90 backdrop-blur-md shadow-lg py-3"
-                        : "bg-transparent py-6"
+                    ? "bg-stone-900/90 backdrop-blur-md shadow-lg py-3"
+                    : "bg-transparent py-6"
                     }`}
             >
                 <div className="container mx-auto px-4 md:px-8 lg:px-16 flex items-center justify-between">
-                    <Link href="/sites-institucionais/premium/arquitetura-design-interiores" className="group">
+                    <Link href="/portfolio/sites-institucionais/premium/arquitetura-design-interiores" className="group">
                         <div className="flex items-center gap-3">
                             <div className={`p-2 rounded-lg transition-colors duration-300 ${isScrolled ? "bg-amber-600/20 text-amber-500" : "bg-stone-800 text-amber-500"}`}>
                                 <DraftingCompass size={32} strokeWidth={1.5} />
@@ -68,10 +68,10 @@ export default function Header() {
                                 key={link.name}
                                 href={link.path}
                                 className={`relative text-sm font-medium tracking-wide transition-all duration-300 hover:text-amber-600 ${isActive(link.path)
-                                        ? "text-amber-600 font-bold"
-                                        : isScrolled
-                                            ? "text-stone-300"
-                                            : "text-stone-700"
+                                    ? "text-amber-600 font-bold"
+                                    : isScrolled
+                                        ? "text-stone-300"
+                                        : "text-stone-700"
                                     }`}
                             >
                                 {link.name}
@@ -92,10 +92,10 @@ export default function Header() {
                             </a>
                         </div>
                         <Link
-                            href="/sites-institucionais/premium/arquitetura-design-interiores/contato"
+                            href="/portfolio/sites-institucionais/premium/arquitetura-design-interiores/contato"
                             className={`px-6 py-2.5 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg ${isScrolled
-                                    ? "bg-amber-600 text-white hover:bg-amber-700 shadow-amber-900/20"
-                                    : "bg-stone-800 text-white hover:bg-stone-900 shadow-stone-900/20"
+                                ? "bg-amber-600 text-white hover:bg-amber-700 shadow-amber-900/20"
+                                : "bg-stone-800 text-white hover:bg-stone-900 shadow-stone-900/20"
                                 }`}
                         >
                             Iniciar Projeto

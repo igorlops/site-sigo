@@ -21,10 +21,10 @@ export default function Page() {
                                 A terapia é um ato de coragem e autocuidado. Através da Terapia Cognitivo-Comportamental baseada em evidências científicas, ajudo você a ressignificar experiências, compreender padrões e construir uma vida com mais leveza, propósito e bem-estar emocional.
                             </p>
                             <div className="flex gap-4">
-                                <Link href="/sites-institucionais/simples/psicologo/contato" className="px-8 py-4 bg-teal-700 text-white rounded-md font-medium hover:bg-teal-800 transition-all shadow-lg shadow-teal-700/20">
+                                <Link href="/portfolio/sites-institucionais/simples/psicologo/contato" className="px-8 py-4 bg-teal-700 text-white rounded-md font-medium hover:bg-teal-800 transition-all shadow-lg shadow-teal-700/20">
                                     Agendar Primeira Sessão
                                 </Link>
-                                <Link href="/sites-institucionais/simples/psicologo/sobre" className="px-8 py-4 bg-transparent border border-stone-300 text-stone-700 rounded-md font-medium hover:bg-white transition-all">
+                                <Link href="/portfolio/sites-institucionais/simples/psicologo/sobre" className="px-8 py-4 bg-transparent border border-stone-300 text-stone-700 rounded-md font-medium hover:bg-white transition-all">
                                     Conhecer Abordagem
                                 </Link>
                             </div>
@@ -291,7 +291,7 @@ export default function Page() {
                         <p className="text-stone-500 mb-8 max-w-2xl mx-auto">
                             Entre em contato para agendar sua primeira sessão. Vamos conversar sobre como a terapia pode ajudar você.
                         </p>
-                        <Link href="/sites-institucionais/simples/psicologo/contato" className="inline-block px-10 py-4 bg-teal-700 text-white rounded-md font-medium hover:bg-teal-800 transition-all shadow-lg">
+                        <Link href="/portfolio/sites-institucionais/simples/psicologo/contato" className="inline-block px-10 py-4 bg-teal-700 text-white rounded-md font-medium hover:bg-teal-800 transition-all shadow-lg">
                             Agendar Primeira Sessão
                         </Link>
                         <p className="mt-6 text-stone-500 text-sm">

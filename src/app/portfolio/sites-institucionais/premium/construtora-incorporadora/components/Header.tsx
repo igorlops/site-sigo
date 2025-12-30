@@ -24,26 +24,26 @@ export default function Header() {
     }, []);
 
     const navLinks = [
-        { name: "Home", path: "/sites-institucionais/premium/construtora-incorporadora" },
-        { name: "Sobre", path: "/sites-institucionais/premium/construtora-incorporadora/sobre" },
-        { name: "Empreendimentos", path: "/sites-institucionais/premium/construtora-incorporadora/servicos", isMega: true },
-        { name: "Obras Entregues", path: "/sites-institucionais/premium/construtora-incorporadora/portfolio" },
-        { name: "Guia de Compra", path: "/sites-institucionais/premium/construtora-incorporadora/processo" },
-        { name: "Blog", path: "/sites-institucionais/premium/construtora-incorporadora/blog" },
-        { name: "Fale Conosco", path: "/sites-institucionais/premium/construtora-incorporadora/contato" },
+        { name: "Home", path: "/portfolio/sites-institucionais/premium/construtora-incorporadora" },
+        { name: "Sobre", path: "/portfolio/sites-institucionais/premium/construtora-incorporadora/sobre" },
+        { name: "Empreendimentos", path: "/portfolio/sites-institucionais/premium/construtora-incorporadora/servicos", isMega: true },
+        { name: "Obras Entregues", path: "/portfolio/sites-institucionais/premium/construtora-incorporadora/portfolio" },
+        { name: "Guia de Compra", path: "/portfolio/sites-institucionais/premium/construtora-incorporadora/processo" },
+        { name: "Blog", path: "/portfolio/sites-institucionais/premium/construtora-incorporadora/blog" },
+        { name: "Fale Conosco", path: "/portfolio/sites-institucionais/premium/construtora-incorporadora/contato" },
     ];
 
     return (
         <header
             className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 border-b border-transparent ${isScrolled
-                    ? "bg-white/95 backdrop-blur-xl shadow-2xl py-2 border-teal-100/50"
-                    : "bg-white/80 backdrop-blur-md py-4 md:py-6"
+                ? "bg-white/95 backdrop-blur-xl shadow-2xl py-2 border-teal-100/50"
+                : "bg-white/80 backdrop-blur-md py-4 md:py-6"
                 }`}
         >
             <div className="container mx-auto px-6 md:px-10 lg:px-16 xl:px-24 flex items-center justify-between">
 
                 {/* Logo */}
-                <Link href="/sites-institucionais/premium/construtora-incorporadora" className="flex items-center gap-2 group z-50">
+                <Link href="/portfolio/sites-institucionais/premium/construtora-incorporadora" className="flex items-center gap-2 group z-50">
                     <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-teal-700 to-teal-600 rounded-lg flex items-center justify-center shadow-lg group-hover:shadow-teal-500/30 transition-shadow">
                         <Building2 className="text-white transform group-hover:-translate-y-0.5 transition-transform" size={24} strokeWidth={1.5} />
                     </div>
@@ -79,7 +79,7 @@ export default function Header() {
 
                                     <div className="space-y-6 border-r border-slate-100 pr-6">
                                         <h4 className="font-montserrat font-bold text-teal-700 uppercase tracking-widest text-xs mb-4">Por Status</h4>
-                                        <Link href="/sites-institucionais/premium/construtora-incorporadora/servicos#lancamentos" className="flex items-start gap-4 p-3 rounded-xl hover:bg-teal-50 transition-colors group/item">
+                                        <Link href="/portfolio/sites-institucionais/premium/construtora-incorporadora/servicos#lancamentos" className="flex items-start gap-4 p-3 rounded-xl hover:bg-teal-50 transition-colors group/item">
                                             <div className="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center text-teal-700 group-hover/item:bg-teal-600 group-hover/item:text-white transition-colors">
                                                 <Key size={20} />
                                             </div>
@@ -88,7 +88,7 @@ export default function Header() {
                                                 <p className="text-xs text-slate-500 mt-1">Oportunidades exclusivas</p>
                                             </div>
                                         </Link>
-                                        <Link href="/sites-institucionais/premium/construtora-incorporadora/servicos#obras" className="flex items-start gap-4 p-3 rounded-xl hover:bg-teal-50 transition-colors group/item">
+                                        <Link href="/portfolio/sites-institucionais/premium/construtora-incorporadora/servicos#obras" className="flex items-start gap-4 p-3 rounded-xl hover:bg-teal-50 transition-colors group/item">
                                             <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 group-hover/item:bg-orange-600 group-hover/item:text-white transition-colors">
                                                 <HardHat size={20} />
                                             </div>
@@ -97,7 +97,7 @@ export default function Header() {
                                                 <p className="text-xs text-slate-500 mt-1">Acompanhe a evolução</p>
                                             </div>
                                         </Link>
-                                        <Link href="/sites-institucionais/premium/construtora-incorporadora/servicos#prontos" className="flex items-start gap-4 p-3 rounded-xl hover:bg-teal-50 transition-colors group/item">
+                                        <Link href="/portfolio/sites-institucionais/premium/construtora-incorporadora/servicos#prontos" className="flex items-start gap-4 p-3 rounded-xl hover:bg-teal-50 transition-colors group/item">
                                             <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center text-slate-600 group-hover/item:bg-slate-800 group-hover/item:text-white transition-colors">
                                                 <Home size={20} />
                                             </div>
@@ -120,7 +120,7 @@ export default function Header() {
                                             ))}
                                         </ul>
                                         <div className="pt-4 mt-4 border-t border-slate-100">
-                                            <Link href="/sites-institucionais/premium/construtora-incorporadora/processo" className="text-xs font-bold text-teal-700 hover:underline flex items-center gap-1">
+                                            <Link href="/portfolio/sites-institucionais/premium/construtora-incorporadora/processo" className="text-xs font-bold text-teal-700 hover:underline flex items-center gap-1">
                                                 <CalendarCheck size={12} /> Agendar Visita
                                             </Link>
                                         </div>
@@ -136,7 +136,7 @@ export default function Header() {
                                             <span className="bg-orange-600 text-white text-[10px] font-bold px-2 py-1 rounded w-fit mb-2">LANÇAMENTO</span>
                                             <h5 className="font-montserrat font-bold text-white text-lg leading-tight mb-2">Reserva Imperial</h5>
                                             <p className="text-slate-200 text-xs mb-4">Apartamentos de 3 e 4 suítes no melhor do Jardins.</p>
-                                            <Link href="/sites-institucionais/premium/construtora-incorporadora/servicos" className="w-full bg-white text-slate-900 text-xs font-bold py-2 rounded text-center hover:bg-teal-50 transition-colors">
+                                            <Link href="/portfolio/sites-institucionais/premium/construtora-incorporadora/servicos" className="w-full bg-white text-slate-900 text-xs font-bold py-2 rounded text-center hover:bg-teal-50 transition-colors">
                                                 Ver Detalhes
                                             </Link>
                                         </div>
@@ -168,7 +168,7 @@ export default function Header() {
                     </a>
                     <div className="h-6 w-px bg-slate-200" />
                     <Link
-                        href="/sites-institucionais/premium/construtora-incorporadora/contato"
+                        href="/portfolio/sites-institucionais/premium/construtora-incorporadora/contato"
                         className="relative group overflow-hidden bg-gradient-to-r from-teal-700 to-teal-600 text-white px-8 py-3 rounded-xl font-bold text-sm shadow-lg shadow-teal-700/20 hover:shadow-teal-700/40 hover:-translate-y-0.5 transition-all duration-300"
                     >
                         <span className="relative z-10 flex items-center gap-2">Agendar Visita <ArrowRight size={16} /></span>
@@ -204,7 +204,7 @@ export default function Header() {
                     </nav>
                     <div className="mt-8 space-y-4">
                         <Link
-                            href="/sites-institucionais/premium/construtora-incorporadora/servicos"
+                            href="/portfolio/sites-institucionais/premium/construtora-incorporadora/servicos"
                             onClick={() => setIsMobileMenuOpen(false)}
                             className="w-full block bg-teal-700 text-white text-center py-4 rounded-xl font-bold text-lg shadow-xl"
                         >

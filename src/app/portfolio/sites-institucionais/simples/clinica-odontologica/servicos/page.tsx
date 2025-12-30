@@ -237,7 +237,7 @@ export default function ServicosPage() {
                                         </div>
 
                                         <Link
-                                            href="/sites-institucionais/simples/clinica-odontologica/contato"
+                                            href="/portfolio/sites-institucionais/simples/clinica-odontologica/contato"
                                             className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold"
                                         >
                                             Quero este tratamento
@@ -316,7 +316,7 @@ export default function ServicosPage() {
                         Agende sua avaliação gratuita e descubra qual tratamento é ideal para você
                     </p>
                     <Link
-                        href="/sites-institucionais/simples/clinica-odontologica/contato"
+                        href="/portfolio/sites-institucionais/simples/clinica-odontologica/contato"
                         className="inline-block bg-blue-600 text-white px-10 py-4 rounded-xl text-lg font-bold hover:bg-blue-700 transition-all duration-200 shadow-lg"
                     >
                         Agendar Avaliação Gratuita

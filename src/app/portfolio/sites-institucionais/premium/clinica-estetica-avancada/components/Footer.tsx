@@ -85,12 +85,12 @@ export default function Footer() {
                             <span className="absolute -bottom-2 left-0 w-12 h-1 bg-amber-500 rounded-full" />
                         </h4>
                         <ul className="space-y-4 text-sm">
-                            <li><Link href="/sites-institucionais/premium/clinica-estetica-avancada/sobre" className="hover:text-white transition-colors">Quem Somos</Link></li>
-                            <li><Link href="/sites-institucionais/premium/clinica-estetica-avancada/corpo-clinico" className="hover:text-white transition-colors">Corpo Clínico</Link></li>
-                            <li><Link href="/sites-institucionais/premium/clinica-estetica-avancada/processo" className="hover:text-white transition-colors">Nossa Metodologia</Link></li>
-                            <li><Link href="/sites-institucionais/premium/clinica-estetica-avancada/depoimentos" className="hover:text-white transition-colors">Histórias de Sucesso</Link></li>
-                            <li><Link href="/sites-institucionais/premium/clinica-estetica-avancada/blog" className="hover:text-white transition-colors">Lumière News</Link></li>
-                            <li><Link href="/sites-institucionais/premium/clinica-estetica-avancada/vagas" className="hover:text-white transition-colors">Trabalhe Conosco</Link></li>
+                            <li><Link href="/portfolio/sites-institucionais/premium/clinica-estetica-avancada/sobre" className="hover:text-white transition-colors">Quem Somos</Link></li>
+                            <li><Link href="/portfolio/sites-institucionais/premium/clinica-estetica-avancada/corpo-clinico" className="hover:text-white transition-colors">Corpo Clínico</Link></li>
+                            <li><Link href="/portfolio/sites-institucionais/premium/clinica-estetica-avancada/processo" className="hover:text-white transition-colors">Nossa Metodologia</Link></li>
+                            <li><Link href="/portfolio/sites-institucionais/premium/clinica-estetica-avancada/depoimentos" className="hover:text-white transition-colors">Histórias de Sucesso</Link></li>
+                            <li><Link href="/portfolio/sites-institucionais/premium/clinica-estetica-avancada/blog" className="hover:text-white transition-colors">Lumière News</Link></li>
+                            <li><Link href="/portfolio/sites-institucionais/premium/clinica-estetica-avancada/vagas" className="hover:text-white transition-colors">Trabalhe Conosco</Link></li>
                         </ul>
                     </div>
 

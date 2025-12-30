@@ -246,7 +246,7 @@ export default function ServicosPage() {
                                             </div>
 
                                             <Link
-                                                href="/sites-institucionais/simples/contabilidade/contato"
+                                                href="/portfolio/sites-institucionais/simples/contabilidade/contato"
                                                 className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-3 rounded hover:bg-blue-700 transition-colors font-semibold shadow-md"
                                             >
                                                 Contratar este Serviço <ArrowRight size={18} />
@@ -291,7 +291,7 @@ export default function ServicosPage() {
                         Fale com um especialista e descubra como podemos ajudar sua empresa a crescer com segurança fiscal
                     </p>
                     <Link
-                        href="/sites-institucionais/simples/contabilidade/contato"
+                        href="/portfolio/sites-institucionais/simples/contabilidade/contato"
                         className="inline-block bg-blue-600 text-white px-10 py-4 rounded text-lg font-bold hover:bg-blue-700 transition-all shadow-lg"
                     >
                         Solicitar Proposta Gratuita

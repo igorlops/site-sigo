@@ -248,7 +248,7 @@ export default function SobrePage() {
                         Agende sua avaliação gratuita e conheça nossa estrutura pessoalmente
                     </p>
                     <Link
-                        href="/sites-institucionais/simples/clinica-odontologica/contato"
+                        href="/portfolio/sites-institucionais/simples/clinica-odontologica/contato"
                         className="inline-block bg-blue-600 text-white px-10 py-4 rounded-xl text-lg font-bold hover:bg-blue-700 transition-all duration-200 shadow-lg"
                     >
                         Agendar Visita

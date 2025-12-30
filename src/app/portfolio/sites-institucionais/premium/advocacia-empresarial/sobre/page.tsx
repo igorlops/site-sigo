@@ -187,7 +187,7 @@ export default function SobrePage() {
                             <p className="text-slate-400 text-sm leading-relaxed mb-6">
                                 Além da nossa sede em São Paulo, mantemos correspondentes e parcerias estratégicas nas principais capitais do Brasil e nos centros financeiros de Nova York, Londres e Lisboa.
                             </p>
-                            <Link href="/sites-institucionais/premium/advocacia-empresarial/contato" className="text-amber-500 font-bold text-sm hover:text-white transition-colors flex items-center gap-2">
+                            <Link href="/portfolio/sites-institucionais/premium/advocacia-empresarial/contato" className="text-amber-500 font-bold text-sm hover:text-white transition-colors flex items-center gap-2">
                                 Ver Endereços <ArrowRight size={14} />
                             </Link>
                         </div>

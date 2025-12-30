@@ -22,10 +22,10 @@ export default function Page() {
                                 Impulse Digital é a agência full service que combina criatividade, dados e tecnologia para criar estratégias de marketing digital que realmente convertem. Mais de 200 empresas já multiplicaram seus resultados conosco.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <Link href="/sites-institucionais/simples/agencia-marketing/contato" className="px-8 py-4 bg-pink-500 rounded-full font-bold hover:bg-pink-600 transition-colors text-center shadow-lg">
+                                <Link href="/portfolio/sites-institucionais/simples/agencia-marketing/contato" className="px-8 py-4 bg-pink-500 rounded-full font-bold hover:bg-pink-600 transition-colors text-center shadow-lg">
                                     Quero Crescer Meu Negócio
                                 </Link>
-                                <Link href="/sites-institucionais/simples/agencia-marketing/portfolio" className="px-8 py-4 bg-transparent border-2 border-pink-300 rounded-full font-bold hover:bg-pink-900 transition-colors text-center">
+                                <Link href="/portfolio/sites-institucionais/simples/agencia-marketing/portfolio" className="px-8 py-4 bg-transparent border-2 border-pink-300 rounded-full font-bold hover:bg-pink-900 transition-colors text-center">
                                     Ver Casos de Sucesso
                                 </Link>
                             </div>
@@ -121,7 +121,7 @@ export default function Page() {
                                     </div>
                                     <h3 className="text-xl font-bold text-slate-900 mb-3">{servico.title}</h3>
                                     <p className="text-slate-600 leading-relaxed mb-6">{servico.desc}</p>
-                                    <Link href="/sites-institucionais/simples/agencia-marketing/servicos" className="text-purple-600 font-semibold inline-flex items-center hover:text-purple-700">
+                                    <Link href="/portfolio/sites-institucionais/simples/agencia-marketing/servicos" className="text-purple-600 font-semibold inline-flex items-center hover:text-purple-700">
                                         Saiba mais →
                                     </Link>
                                 </div>
@@ -260,7 +260,7 @@ export default function Page() {
                         <p className="text-purple-200 mb-8 max-w-2xl mx-auto">
                             Primeira consultoria estratégica sem custo. Vagas limitadas por mês.
                         </p>
-                        <Link href="/sites-institucionais/simples/agencia-marketing/contato" className="inline-block px-10 py-5 bg-pink-500 text-white font-bold rounded-full hover:bg-pink-600 transition-colors shadow-2xl text-lg">
+                        <Link href="/portfolio/sites-institucionais/simples/agencia-marketing/contato" className="inline-block px-10 py-5 bg-pink-500 text-white font-bold rounded-full hover:bg-pink-600 transition-colors shadow-2xl text-lg">
                             Solicitar Análise Gratuita Agora
                         </Link>
                         <p className="mt-6 text-purple-200 text-sm">

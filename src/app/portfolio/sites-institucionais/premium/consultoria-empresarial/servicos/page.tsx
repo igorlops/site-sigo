@@ -51,8 +51,8 @@ export default function ServicosPage() {
                                 key={tab.id}
                                 onClick={() => setActiveTab(tab.id)}
                                 className={`px-8 py-4 rounded-lg font-bold text-sm md:text-base transition-all ${activeTab === tab.id
-                                        ? "bg-slate-900 text-white shadow-lg scale-105"
-                                        : "bg-slate-100 text-slate-600 hover:bg-slate-200 hover:text-slate-900"
+                                    ? "bg-slate-900 text-white shadow-lg scale-105"
+                                    : "bg-slate-100 text-slate-600 hover:bg-slate-200 hover:text-slate-900"
                                     }`}
                             >
                                 {tab.label}
@@ -180,7 +180,7 @@ export default function ServicosPage() {
                                             <div>
                                                 <h3 className="text-2xl font-bold text-slate-900 mb-4">{item.title}</h3>
                                                 <p className="text-slate-600 leading-relaxed mb-6">{item.desc}</p>
-                                                <Link href="/sites-institucionais/premium/consultoria-empresarial/contato" className="text-blue-600 font-bold hover:underline flex items-center gap-2 text-sm uppercase tracking-wide">
+                                                <Link href="/portfolio/sites-institucionais/premium/consultoria-empresarial/contato" className="text-blue-600 font-bold hover:underline flex items-center gap-2 text-sm uppercase tracking-wide">
                                                     Solicitar Diagnóstico <ArrowRight size={16} />
                                                 </Link>
                                             </div>
@@ -207,7 +207,7 @@ export default function ServicosPage() {
                                     ? "Alinhamos estrutura, cultura e incentivos para criar organizações de alta performance."
                                     : "Modernizamos o core tecnológico e implementamos IA para escalar novos modelos de negócio."}
                             </p>
-                            <Link href="/sites-institucionais/premium/consultoria-empresarial/contato" className="bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition inline-block">
+                            <Link href="/portfolio/sites-institucionais/premium/consultoria-empresarial/contato" className="bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition inline-block">
                                 Falar com Especialista
                             </Link>
                         </div>

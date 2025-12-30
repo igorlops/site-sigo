@@ -190,7 +190,7 @@ export default function DepoimentosPage() {
                     <p className="text-xl text-slate-400 mb-10">
                         Junte-se às empresas que estão redefinindo seus setores. Agende uma conversa exploratória sem compromisso.
                     </p>
-                    <Link href="/sites-institucionais/premium/consultoria-empresarial/contato" className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-lg font-bold text-lg transition-all inline-flex items-center gap-3">
+                    <Link href="/portfolio/sites-institucionais/premium/consultoria-empresarial/contato" className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-lg font-bold text-lg transition-all inline-flex items-center gap-3">
                         <MessageSquare size={20} /> Falar com um Sócio
                     </Link>
                 </div>

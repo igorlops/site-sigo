@@ -82,10 +82,10 @@ export default function Home() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                            <Link href="/sites-institucionais/premium/consultoria-empresarial/contato" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-bold text-lg transition-all shadow-lg hover:shadow-blue-900/50 flex items-center justify-center gap-2 group">
+                            <Link href="/portfolio/sites-institucionais/premium/consultoria-empresarial/contato" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-bold text-lg transition-all shadow-lg hover:shadow-blue-900/50 flex items-center justify-center gap-2 group">
                                 Solicitar Diagnóstico <ArrowRight className="group-hover:translate-x-1 transition-transform" />
                             </Link>
-                            <Link href="/sites-institucionais/premium/consultoria-empresarial/portfolio" className="px-8 py-4 bg-transparent border-2 border-slate-700 hover:border-white text-white rounded-lg font-bold text-lg transition-all flex items-center justify-center gap-2">
+                            <Link href="/portfolio/sites-institucionais/premium/consultoria-empresarial/portfolio" className="px-8 py-4 bg-transparent border-2 border-slate-700 hover:border-white text-white rounded-lg font-bold text-lg transition-all flex items-center justify-center gap-2">
                                 Ver Cases de Sucesso
                             </Link>
                         </div>
@@ -142,7 +142,7 @@ export default function Home() {
                                 Identificar o problema corretamente é 50% da solução. Nossa experiência nos permite diagnosticar rapidamente os gargalos que impedem seu crescimento.
                             </p>
                         </div>
-                        <Link href="/sites-institucionais/premium/consultoria-empresarial/contato" className="hidden md:flex items-center gap-2 text-blue-600 font-bold hover:text-blue-800 transition-colors">
+                        <Link href="/portfolio/sites-institucionais/premium/consultoria-empresarial/contato" className="hidden md:flex items-center gap-2 text-blue-600 font-bold hover:text-blue-800 transition-colors">
                             Falar com um Consultor <ArrowRight size={20} />
                         </Link>
                     </div>
@@ -160,7 +160,7 @@ export default function Home() {
                     </div>
 
                     <div className="mt-12 text-center md:hidden">
-                        <Link href="/sites-institucionais/premium/consultoria-empresarial/contato" className="inline-flex items-center gap-2 text-blue-600 font-bold">
+                        <Link href="/portfolio/sites-institucionais/premium/consultoria-empresarial/contato" className="inline-flex items-center gap-2 text-blue-600 font-bold">
                             Vamos Resolver Juntos <ArrowRight size={20} />
                         </Link>
                     </div>
@@ -239,7 +239,7 @@ export default function Home() {
                             <p className="text-slate-400 text-lg leading-relaxed mb-8">
                                 Refinada em mais de 20 anos de projetos, nossa metodologia proprietária garante consistência, agilidade e resultados previsíveis.
                             </p>
-                            <Link href="/sites-institucionais/premium/consultoria-empresarial/processo" className="text-blue-400 font-bold hover:text-white transition-colors flex items-center gap-2">
+                            <Link href="/portfolio/sites-institucionais/premium/consultoria-empresarial/processo" className="text-blue-400 font-bold hover:text-white transition-colors flex items-center gap-2">
                                 Ver Detalhes do Processo <ArrowRight size={20} />
                             </Link>
                         </div>
@@ -305,7 +305,7 @@ export default function Home() {
                             <h2 className="text-slate-900 text-4xl font-bold mb-4">Resultados Que Falam Por Si</h2>
                             <p className="text-slate-500 max-w-xl">Veja como apoiamos empresas líderes a superarem seus maiores desafios.</p>
                         </div>
-                        <Link href="/sites-institucionais/premium/consultoria-empresarial/portfolio" className="bg-slate-900 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-600 transition-colors">
+                        <Link href="/portfolio/sites-institucionais/premium/consultoria-empresarial/portfolio" className="bg-slate-900 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-600 transition-colors">
                             Ver Todos os Cases
                         </Link>
                     </div>
@@ -342,7 +342,7 @@ export default function Home() {
                                             <p className="font-bold text-blue-800">{cajse.roi}</p>
                                         </div>
                                     </div>
-                                    <Link href="/sites-institucionais/premium/consultoria-empresarial/portfolio" className="text-sm font-bold text-slate-900 flex items-center gap-2 group/link">
+                                    <Link href="/portfolio/sites-institucionais/premium/consultoria-empresarial/portfolio" className="text-sm font-bold text-slate-900 flex items-center gap-2 group/link">
                                         Ler Estudo Completo <ArrowRight size={16} className="group-hover/link:translate-x-1 transition-transform" />
                                     </Link>
                                 </div>
@@ -430,7 +430,7 @@ export default function Home() {
                 <div className="container mx-auto px-6 md:px-12 lg:px-20 xl:px-32">
                     <div className="flex justify-between items-center mb-12">
                         <h2 className="text-3xl font-bold text-slate-900">Insights Estratégicos</h2>
-                        <Link href="/sites-institucionais/premium/consultoria-empresarial/blog" className="text-blue-600 font-bold hover:underline">Ver Todos</Link>
+                        <Link href="/portfolio/sites-institucionais/premium/consultoria-empresarial/blog" className="text-blue-600 font-bold hover:underline">Ver Todos</Link>
                     </div>
                     <div className="grid md:grid-cols-3 gap-8">
                         {[1, 2, 3].map((i) => (

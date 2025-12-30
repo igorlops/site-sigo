@@ -116,7 +116,7 @@ export default function DepoimentosPage() {
             <section className="py-24 text-center">
                 <div className="container mx-auto px-6">
                     <h2 className="font-playfair text-3xl text-stone-900 mb-8">Sua história também merece ser contada</h2>
-                    <Link href="/sites-institucionais/premium/joalheria-artesanal-premium/contato" className="inline-flex items-center gap-2 border-b-2 border-amber-600 pb-1 font-bold text-stone-900 uppercase tracking-widest hover:text-amber-700 transition-colors">
+                    <Link href="/portfolio/sites-institucionais/premium/joalheria-artesanal-premium/contato" className="inline-flex items-center gap-2 border-b-2 border-amber-600 pb-1 font-bold text-stone-900 uppercase tracking-widest hover:text-amber-700 transition-colors">
                         <MessageCircle size={18} /> Enviar meu depoimento
                     </Link>
                 </div>

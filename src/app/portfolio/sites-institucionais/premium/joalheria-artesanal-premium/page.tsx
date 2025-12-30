@@ -40,10 +40,10 @@ export default function HomePage() {
                         Joias criadas manualmente, uma a uma, para celebrar histórias únicas. O encontro perfeito entre a tradição dos mestres e a pureza das gemas.
                     </p>
                     <div className="animate-fade-in-up delay-500 flex flex-col md:flex-row gap-6 justify-center items-center">
-                        <Link href="/sites-institucionais/premium/joalheria-artesanal-premium/colecoes" className="bg-white text-stone-950 px-10 py-4 font-bold uppercase tracking-widest text-xs hover:bg-amber-500 hover:text-white transition-all duration-500 min-w-[200px]">
+                        <Link href="/portfolio/sites-institucionais/premium/joalheria-artesanal-premium/colecoes" className="bg-white text-stone-950 px-10 py-4 font-bold uppercase tracking-widest text-xs hover:bg-amber-500 hover:text-white transition-all duration-500 min-w-[200px]">
                             Explorar Coleções
                         </Link>
-                        <Link href="/sites-institucionais/premium/joalheria-artesanal-premium/contato" className="text-white border border-white/30 px-10 py-4 font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-stone-950 transition-all duration-500 min-w-[200px] backdrop-blur-sm">
+                        <Link href="/portfolio/sites-institucionais/premium/joalheria-artesanal-premium/contato" className="text-white border border-white/30 px-10 py-4 font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-stone-950 transition-all duration-500 min-w-[200px] backdrop-blur-sm">
                             Design Bespoke
                         </Link>
                     </div>
@@ -91,7 +91,7 @@ export default function HomePage() {
                             { title: "Solaris", img: "https://images.unsplash.com/photo-1617038220319-88af152841b6?q=80&w=2670&auto=format&fit=crop", desc: "Citrinos e Topázios Imperiais em ouro amarelo 18k." },
                             { title: "Jardin Secret", img: "https://images.unsplash.com/photo-1599643478518-17488fbbcd75?q=80&w=2574&auto=format&fit=crop", desc: "Esmeraldas e Rubis em designs florais orgânicos." }
                         ].map((col, i) => (
-                            <Link key={i} href="/sites-institucionais/premium/joalheria-artesanal-premium/colecoes" className="group relative block aspect-[3/4] overflow-hidden bg-stone-100">
+                            <Link key={i} href="/portfolio/sites-institucionais/premium/joalheria-artesanal-premium/colecoes" className="group relative block aspect-[3/4] overflow-hidden bg-stone-100">
                                 <Image src={col.img} alt={col.title} fill className="object-cover transition-transform duration-1000 group-hover:scale-110" />
                                 <div className="absolute inset-0 bg-stone-950/20 group-hover:bg-stone-950/40 transition-colors duration-500" />
                                 <div className="absolute bottom-0 inset-x-0 p-8 text-center text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
@@ -128,7 +128,7 @@ export default function HomePage() {
                         <p className="text-stone-600 font-light text-lg mb-10 leading-relaxed">
                             Não seguimos tendências passageiras. Criamos heranças familiares destinadas a atravessar gerações.
                         </p>
-                        <Link href="/sites-institucionais/premium/joalheria-artesanal-premium/sobre" className="inline-flex items-center gap-4 text-stone-900 font-bold uppercase tracking-widest text-xs hover:gap-6 transition-all border-b border-stone-300 pb-2 hover:border-amber-600 hover:text-amber-700">
+                        <Link href="/portfolio/sites-institucionais/premium/joalheria-artesanal-premium/sobre" className="inline-flex items-center gap-4 text-stone-900 font-bold uppercase tracking-widest text-xs hover:gap-6 transition-all border-b border-stone-300 pb-2 hover:border-amber-600 hover:text-amber-700">
                             Conheça nossa História <ArrowRight size={16} />
                         </Link>
                     </div>
@@ -145,7 +145,7 @@ export default function HomePage() {
                             { name: "Brincos", icon: "https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?q=80&w=2670&auto=format&fit=crop" },
                             { name: "Alianças", icon: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=2670&auto=format&fit=crop" }
                         ].map((cat, idx) => (
-                            <Link key={idx} href="/sites-institucionais/premium/joalheria-artesanal-premium/colecoes" className="group relative h-48 md:h-64 overflow-hidden rounded-sm">
+                            <Link key={idx} href="/portfolio/sites-institucionais/premium/joalheria-artesanal-premium/colecoes" className="group relative h-48 md:h-64 overflow-hidden rounded-sm">
                                 <Image src={cat.icon} alt={cat.name} fill className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" />
                                 <div className="absolute inset-0 bg-stone-900/40 flex items-center justify-center">
                                     <span className="text-white font-playfair italic text-2xl md:text-3xl border border-white/30 px-6 py-3 bg-white/5 backdrop-blur-sm group-hover:bg-white group-hover:text-stone-900 transition-all duration-500">
@@ -184,7 +184,7 @@ export default function HomePage() {
                                 ))}
                             </div>
                             <div className="mt-10">
-                                <Link href="/sites-institucionais/premium/joalheria-artesanal-premium/contato" className="bg-amber-700 text-white px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-amber-600 transition-all shadow-[0_0_30px_rgba(180,83,9,0.2)]">
+                                <Link href="/portfolio/sites-institucionais/premium/joalheria-artesanal-premium/contato" className="bg-amber-700 text-white px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-amber-600 transition-all shadow-[0_0_30px_rgba(180,83,9,0.2)]">
                                     Habilitar Concierge Bespoke
                                 </Link>
                             </div>
@@ -263,7 +263,7 @@ export default function HomePage() {
                         <span className="text-amber-700 text-xs font-bold uppercase tracking-[0.2em] mb-2 block">L'Art d'Or Journal</span>
                         <h2 className="font-playfair text-4xl text-stone-900">O Universo da Joalheria</h2>
                     </div>
-                    <Link href="/sites-institucionais/premium/joalheria-artesanal-premium/journal" className="text-stone-500 hover:text-amber-700 font-bold uppercase text-xs tracking-widest border-b border-stone-200 hover:border-amber-700 pb-1 mt-6 md:mt-0 transition-all">
+                    <Link href="/portfolio/sites-institucionais/premium/joalheria-artesanal-premium/journal" className="text-stone-500 hover:text-amber-700 font-bold uppercase text-xs tracking-widest border-b border-stone-200 hover:border-amber-700 pb-1 mt-6 md:mt-0 transition-all">
                         Ler todos os artigos
                     </Link>
                 </div>
@@ -319,7 +319,7 @@ export default function HomePage() {
                     <p className="text-stone-300 text-lg font-light mb-10 max-w-xl mx-auto">
                         Permita-se viver a experiência de possuir uma obra de arte usável, criada exclusivamente para você.
                     </p>
-                    <Link href="/sites-institucionais/premium/joalheria-artesanal-premium/colecoes" className="bg-white text-stone-950 px-12 py-5 font-bold uppercase tracking-widest text-xs hover:bg-amber-500 hover:text-white transition-all duration-500">
+                    <Link href="/portfolio/sites-institucionais/premium/joalheria-artesanal-premium/colecoes" className="bg-white text-stone-950 px-12 py-5 font-bold uppercase tracking-widest text-xs hover:bg-amber-500 hover:text-white transition-all duration-500">
                         Ver Catálogo Completo
                     </Link>
                 </div>

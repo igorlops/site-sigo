@@ -211,7 +211,7 @@ export default function SobrePage() {
                             Agende uma visita ao escritório e conheça nossa equipe pessoalmente
                         </p>
                         <a
-                            href="/sites-institucionais/simples/imobiliaria/contato"
+                            href="/portfolio/sites-institucionais/simples/imobiliaria/contato"
                             className="inline-block bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-10 py-4 rounded text-lg font-bold hover:from-cyan-700 hover:to-blue-700 transition-all shadow-lg"
                         >
                             Agendar Visita ao Escritório

@@ -22,10 +22,10 @@ export default function Page() {
                                 Prime Negócios Imobiliários é referência em São Paulo na compra, venda, locação e administração de imóveis. Há mais de 25 anos ajudamos famílias e empresas a encontrarem o espaço perfeito para viver e prosperar.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <Link href="/sites-institucionais/simples/imobiliaria/portfolio" className="px-8 py-4 bg-cyan-500 rounded font-bold hover:bg-cyan-600 transition-colors text-center shadow-lg">
+                                <Link href="/portfolio/sites-institucionais/simples/imobiliaria/portfolio" className="px-8 py-4 bg-cyan-500 rounded font-bold hover:bg-cyan-600 transition-colors text-center shadow-lg">
                                     Ver Imóveis Disponíveis
                                 </Link>
-                                <Link href="/sites-institucionais/simples/imobiliaria/contato" className="px-8 py-4 bg-transparent border-2 border-cyan-300 rounded font-bold hover:bg-cyan-900 transition-colors text-center">
+                                <Link href="/portfolio/sites-institucionais/simples/imobiliaria/contato" className="px-8 py-4 bg-transparent border-2 border-cyan-300 rounded font-bold hover:bg-cyan-900 transition-colors text-center">
                                     Anunciar Meu Imóvel
                                 </Link>
                             </div>
@@ -121,7 +121,7 @@ export default function Page() {
                                     </div>
                                     <h3 className="text-xl font-bold text-slate-900 mb-3">{servico.title}</h3>
                                     <p className="text-slate-600 leading-relaxed mb-6">{servico.desc}</p>
-                                    <Link href="/sites-institucionais/simples/imobiliaria/servicos" className="text-cyan-600 font-semibold inline-flex items-center hover:text-cyan-700">
+                                    <Link href="/portfolio/sites-institucionais/simples/imobiliaria/servicos" className="text-cyan-600 font-semibold inline-flex items-center hover:text-cyan-700">
                                         Saiba mais →
                                     </Link>
                                 </div>
@@ -251,7 +251,7 @@ export default function Page() {
                         <p className="text-cyan-200 mb-8 max-w-2xl mx-auto">
                             Primeira consultoria totalmente gratuita.
                         </p>
-                        <Link href="/sites-institucionais/simples/imobiliaria/contato" className="inline-block px-10 py-5 bg-cyan-500 text-white font-bold rounded hover:bg-cyan-600 transition-colors shadow-2xl text-lg">
+                        <Link href="/portfolio/sites-institucionais/simples/imobiliaria/contato" className="inline-block px-10 py-5 bg-cyan-500 text-white font-bold rounded hover:bg-cyan-600 transition-colors shadow-2xl text-lg">
                             Falar com Corretor Agora
                         </Link>
                         <p className="mt-6 text-cyan-200 text-sm">

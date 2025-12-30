@@ -148,7 +148,7 @@ export default function PortfolioPage() {
                                             <p className="text-2xl font-bold text-cyan-700">{imovel.valor}</p>
                                         </div>
                                         <Link
-                                            href="/sites-institucionais/simples/imobiliaria/contato"
+                                            href="/portfolio/sites-institucionais/simples/imobiliaria/contato"
                                             className="px-4 py-2 bg-cyan-600 text-white rounded font-semibold hover:bg-cyan-700 transition-colors text-sm"
                                         >
                                             Ver Detalhes
@@ -164,7 +164,7 @@ export default function PortfolioPage() {
                             Mostrando 6 de 200+ imóveis disponíveis. Use os filtros ou entre em contato para ver nossa carteira completa.
                         </p>
                         <Link
-                            href="/sites-institucionais/simples/imobiliaria/contato"
+                            href="/portfolio/sites-institucionais/simples/imobiliaria/contato"
                             className="inline-block px-8 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 text-white rounded font-bold hover:from-cyan-700 hover:to-blue-700 transition-colors shadow-lg"
                         >
                             Ver Todos os Imóveis
@@ -181,7 +181,7 @@ export default function PortfolioPage() {
                                 <p className="text-slate-600 mb-4 text-sm">
                                     Não encontrou o que procura? Informe suas preferências e buscaremos ativamente o imóvel perfeito para você.
                                 </p>
-                                <Link href="/sites-institucionais/simples/imobiliaria/contato" className="text-cyan-600 font-semibold hover:text-cyan-700">
+                                <Link href="/portfolio/sites-institucionais/simples/imobiliaria/contato" className="text-cyan-600 font-semibold hover:text-cyan-700">
                                     Solicitar Busca →
                                 </Link>
                             </div>
@@ -192,7 +192,7 @@ export default function PortfolioPage() {
                                 <p className="text-slate-600 mb-4 text-sm">
                                     Visite os imóveis sem sair de casa através de nossos tours virtuais imersivos em alta definição.
                                 </p>
-                                <Link href="/sites-institucionais/simples/imobiliaria/contato" className="text-cyan-600 font-semibold hover:text-cyan-700">
+                                <Link href="/portfolio/sites-institucionais/simples/imobiliaria/contato" className="text-cyan-600 font-semibold hover:text-cyan-700">
                                     Agendar Tour →
                                 </Link>
                             </div>
@@ -203,7 +203,7 @@ export default function PortfolioPage() {
                                 <p className="text-slate-600 mb-4 text-sm">
                                     Quer vender ou alugar? Cadastre gratuitamente e tenha acesso ao nosso marketing premium e corretores especializados.
                                 </p>
-                                <Link href="/sites-institucionais/simples/imobiliaria/contato" className="text-cyan-600 font-semibold hover:text-cyan-700">
+                                <Link href="/portfolio/sites-institucionais/simples/imobiliaria/contato" className="text-cyan-600 font-semibold hover:text-cyan-700">
                                     Anunciar Grátis →
                                 </Link>
                             </div>
@@ -218,7 +218,7 @@ export default function PortfolioPage() {
                             Agende uma visita presencial ou online e conheça os detalhes de cada imóvel
                         </p>
                         <Link
-                            href="/sites-institucionais/simples/imobiliaria/contato"
+                            href="/portfolio/sites-institucionais/simples/imobiliaria/contato"
                             className="inline-block bg-cyan-500 text-white px-10 py-4 rounded text-lg font-bold hover:bg-cyan-600 transition-colors shadow-lg"
                         >
                             Agendar Visita Agora

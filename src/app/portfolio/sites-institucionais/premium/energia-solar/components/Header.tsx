@@ -20,13 +20,13 @@ export default function Header() {
     }, []);
 
     const navLinks = [
-        { name: "Home", path: "/sites-institucionais/premium/energia-solar" },
-        { name: "Sobre", path: "/sites-institucionais/premium/energia-solar/sobre" },
-        { name: "Portfólio", path: "/sites-institucionais/premium/energia-solar/portfolio" },
-        { name: "Processo", path: "/sites-institucionais/premium/energia-solar/processo" },
-        { name: "Blog", path: "/sites-institucionais/premium/energia-solar/blog" },
-        { name: "Depoimentos", path: "/sites-institucionais/premium/energia-solar/depoimentos" },
-        { name: "Contato", path: "/sites-institucionais/premium/energia-solar/contato" },
+        { name: "Home", path: "/portfolio/sites-institucionais/premium/energia-solar" },
+        { name: "Sobre", path: "/portfolio/sites-institucionais/premium/energia-solar/sobre" },
+        { name: "Portfólio", path: "/portfolio/sites-institucionais/premium/energia-solar/portfolio" },
+        { name: "Processo", path: "/portfolio/sites-institucionais/premium/energia-solar/processo" },
+        { name: "Blog", path: "/portfolio/sites-institucionais/premium/energia-solar/blog" },
+        { name: "Depoimentos", path: "/portfolio/sites-institucionais/premium/energia-solar/depoimentos" },
+        { name: "Contato", path: "/portfolio/sites-institucionais/premium/energia-solar/contato" },
     ];
 
     const servicesLinks = [
@@ -38,7 +38,7 @@ export default function Header() {
     ];
 
     const isActive = (path: string) => {
-        if (path === "/sites-institucionais/premium/energia-solar" && pathname !== path) return false;
+        if (path === "/portfolio/sites-institucionais/premium/energia-solar" && pathname !== path) return false;
         return pathname.startsWith(path);
     }
 
@@ -65,7 +65,7 @@ export default function Header() {
                 </div>
 
                 <div className="container mx-auto px-6 md:px-10 lg:px-20 h-16 lg:h-20 flex items-center justify-between">
-                    <Link href="/sites-institucionais/premium/energia-solar" className="group">
+                    <Link href="/portfolio/sites-institucionais/premium/energia-solar" className="group">
                         <div className="flex items-center gap-3">
                             <div className="relative">
                                 <Sun size={36} className="text-amber-500 animate-[spin_10s_linear_infinite]" />
@@ -103,7 +103,7 @@ export default function Header() {
                             onMouseLeave={() => setIsServicesOpen(false)}
                         >
                             <Link
-                                href="/sites-institucionais/premium/energia-solar/servicos"
+                                href="/portfolio/sites-institucionais/premium/energia-solar/servicos"
                                 className={`flex items-center gap-1 text-sm font-bold tracking-wide transition-all duration-300 ${pathname.includes('/servicos') ? "text-amber-400" : "text-slate-200 hover:text-white"
                                     }`}
                             >
@@ -115,7 +115,7 @@ export default function Header() {
                                 {servicesLinks.map((service, idx) => (
                                     <Link
                                         key={idx}
-                                        href="/sites-institucionais/premium/energia-solar/servicos"
+                                        href="/portfolio/sites-institucionais/premium/energia-solar/servicos"
                                         className="flex items-start gap-4 p-3 rounded-xl hover:bg-white/5 transition-colors group/item"
                                     >
                                         <div className="p-2 rounded-lg bg-sky-900/50 text-amber-500 group-hover/item:bg-amber-500 group-hover/item:text-sky-900 transition-colors">
@@ -128,7 +128,7 @@ export default function Header() {
                                     </Link>
                                 ))}
                                 <div className="col-span-2 mt-2 pt-4 border-t border-white/10 text-center">
-                                    <Link href="/sites-institucionais/premium/energia-solar/servicos" className="text-xs font-bold text-emerald-400 hover:text-emerald-300 flex items-center justify-center gap-2">
+                                    <Link href="/portfolio/sites-institucionais/premium/energia-solar/servicos" className="text-xs font-bold text-emerald-400 hover:text-emerald-300 flex items-center justify-center gap-2">
                                         Ver todos os serviços <ArrowRight size={12} />
                                     </Link>
                                 </div>
@@ -138,7 +138,7 @@ export default function Header() {
 
                     <div className="hidden lg:flex items-center gap-6">
                         <Link
-                            href="/sites-institucionais/premium/energia-solar/contato"
+                            href="/portfolio/sites-institucionais/premium/energia-solar/contato"
                             className="relative px-6 py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-sky-600 via-sky-500 to-amber-500 text-white shadow-lg shadow-sky-900/50 hover:shadow-amber-500/20 hover:scale-105 transition-all duration-300 flex items-center gap-2 overflow-hidden group"
                         >
                             <span className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
@@ -164,7 +164,7 @@ export default function Header() {
             >
                 <div className="flex flex-col h-full p-8 pt-24">
                     <nav className="flex flex-col gap-6">
-                        {[...navLinks, { name: "Serviços", path: "/sites-institucionais/premium/energia-solar/servicos" }].map((link, index) => (
+                        {[...navLinks, { name: "Serviços", path: "/portfolio/sites-institucionais/premium/energia-solar/servicos" }].map((link, index) => (
                             <Link
                                 key={link.name}
                                 href={link.path}
@@ -180,7 +180,7 @@ export default function Header() {
 
                     <div className="mt-auto grid gap-4">
                         <Link
-                            href="/sites-institucionais/premium/energia-solar/calculadora"
+                            href="/portfolio/sites-institucionais/premium/energia-solar/calculadora"
                             onClick={() => setIsMobileMenuOpen(false)}
                             className="w-full py-4 rounded-xl font-bold text-center bg-amber-500 text-sky-950 hover:bg-amber-400 transition-colors"
                         >

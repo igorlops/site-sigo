@@ -122,8 +122,8 @@ export default function PortfolioPage() {
                                     key={cat.id}
                                     onClick={() => setFilter(cat.id)}
                                     className={`whitespace-nowrap px-6 py-2 rounded-full font-bold text-sm transition-all border ${filter === cat.id
-                                            ? "bg-amber-700 text-white border-amber-700 shadow-lg"
-                                            : "bg-white text-slate-500 border-slate-200 hover:border-amber-400 hover:text-amber-700"
+                                        ? "bg-amber-700 text-white border-amber-700 shadow-lg"
+                                        : "bg-white text-slate-500 border-slate-200 hover:border-amber-400 hover:text-amber-700"
                                         }`}
                                 >
                                     {cat.label}
@@ -205,10 +205,10 @@ export default function PortfolioPage() {
                         Não deixe que questões jurídicas limitem o crescimento da sua empresa. Nossa equipe está pronta para atuar.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-6">
-                        <Link href="/sites-institucionais/premium/advocacia-empresarial/contato" className="bg-amber-700 hover:bg-amber-600 text-white px-10 py-4 rounded font-bold text-lg shadow-lg transition-transform hover:-translate-y-1">
+                        <Link href="/portfolio/sites-institucionais/premium/advocacia-empresarial/contato" className="bg-amber-700 hover:bg-amber-600 text-white px-10 py-4 rounded font-bold text-lg shadow-lg transition-transform hover:-translate-y-1">
                             Agendar Reunião
                         </Link>
-                        <Link href="/sites-institucionais/premium/advocacia-empresarial/servicos" className="bg-transparent border border-white text-white hover:bg-white hover:text-slate-900 px-10 py-4 rounded font-bold text-lg transition-colors">
+                        <Link href="/portfolio/sites-institucionais/premium/advocacia-empresarial/servicos" className="bg-transparent border border-white text-white hover:bg-white hover:text-slate-900 px-10 py-4 rounded font-bold text-lg transition-colors">
                             Ver Todas as Áreas
                         </Link>
                     </div>

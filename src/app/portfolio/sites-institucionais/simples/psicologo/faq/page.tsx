@@ -111,7 +111,7 @@ export default function FAQPage() {
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <a
-                                    href="/sites-institucionais/simples/psicologo/contato"
+                                    href="/portfolio/sites-institucionais/simples/psicologo/contato"
                                     className="px-8 py-4 bg-white text-teal-900 rounded-md font-bold hover:bg-teal-50 transition-colors"
                                 >
                                     Enviar Mensagem

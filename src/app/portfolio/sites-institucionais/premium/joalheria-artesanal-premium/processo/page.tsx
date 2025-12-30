@@ -137,7 +137,7 @@ export default function ProcessoPage() {
             <section className="py-24 text-center">
                 <div className="container mx-auto px-6">
                     <h2 className="font-playfair text-4xl text-stone-900 mb-8">Pronto para começar sua jornada?</h2>
-                    <Link href="/sites-institucionais/premium/joalheria-artesanal-premium/contato" className="inline-flex items-center gap-4 bg-stone-900 text-white px-10 py-5 font-bold uppercase tracking-widest text-xs hover:bg-amber-600 transition-colors shadow-xl">
+                    <Link href="/portfolio/sites-institucionais/premium/joalheria-artesanal-premium/contato" className="inline-flex items-center gap-4 bg-stone-900 text-white px-10 py-5 font-bold uppercase tracking-widest text-xs hover:bg-amber-600 transition-colors shadow-xl">
                         Agendar Reunião de Briefing <ArrowRight size={16} />
                     </Link>
                 </div>

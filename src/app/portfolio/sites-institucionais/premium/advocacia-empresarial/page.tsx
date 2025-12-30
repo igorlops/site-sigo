@@ -92,10 +92,10 @@ export default function HomePage() {
                     </p>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-6 animate-fade-in-up">
-                        <Link href="/sites-institucionais/premium/advocacia-empresarial/contato" className="w-full md:w-auto bg-gradient-to-r from-amber-700 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-white px-10 py-5 rounded-md font-bold text-lg transition-all shadow-lg hover:shadow-amber-900/50 flex items-center justify-center gap-3 transform hover:-translate-y-1">
+                        <Link href="/portfolio/sites-institucionais/premium/advocacia-empresarial/contato" className="w-full md:w-auto bg-gradient-to-r from-amber-700 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-white px-10 py-5 rounded-md font-bold text-lg transition-all shadow-lg hover:shadow-amber-900/50 flex items-center justify-center gap-3 transform hover:-translate-y-1">
                             <Gavel size={20} /> Agendar Consulta
                         </Link>
-                        <Link href="/sites-institucionais/premium/advocacia-empresarial/sobre" className="w-full md:w-auto bg-transparent border-2 border-stone-400 hover:border-white text-stone-300 hover:text-white px-10 py-5 rounded-md font-bold text-lg transition-all flex items-center justify-center gap-3">
+                        <Link href="/portfolio/sites-institucionais/premium/advocacia-empresarial/sobre" className="w-full md:w-auto bg-transparent border-2 border-stone-400 hover:border-white text-stone-300 hover:text-white px-10 py-5 rounded-md font-bold text-lg transition-all flex items-center justify-center gap-3">
                             Conheça o Escritório
                         </Link>
                     </div>
@@ -169,7 +169,7 @@ export default function HomePage() {
                     </div>
 
                     <div className="text-center mt-12">
-                        <Link href="/sites-institucionais/premium/advocacia-empresarial/servicos" className="inline-flex items-center gap-2 text-amber-700 font-bold tracking-wide hover:text-amber-800 transition-colors uppercase text-sm border-b-2 border-amber-700/20 hover:border-amber-700 pb-1">
+                        <Link href="/portfolio/sites-institucionais/premium/advocacia-empresarial/servicos" className="inline-flex items-center gap-2 text-amber-700 font-bold tracking-wide hover:text-amber-800 transition-colors uppercase text-sm border-b-2 border-amber-700/20 hover:border-amber-700 pb-1">
                             Ver Todas as Áreas de Atuação <ArrowRight size={16} />
                         </Link>
                     </div>
@@ -288,7 +288,7 @@ export default function HomePage() {
                                 Uma equipe de juristas renomados, autores de obras jurídicas e professores em grandes universidades.
                             </p>
                         </div>
-                        <Link href="/sites-institucionais/premium/advocacia-empresarial/sobre" className="hidden md:flex items-center gap-2 text-slate-900 font-bold hover:text-amber-700 transition-colors">
+                        <Link href="/portfolio/sites-institucionais/premium/advocacia-empresarial/sobre" className="hidden md:flex items-center gap-2 text-slate-900 font-bold hover:text-amber-700 transition-colors">
                             Conheça a Equipe Completa <ArrowRight size={18} />
                         </Link>
                     </div>
@@ -338,7 +338,7 @@ export default function HomePage() {
                                 <p className="text-slate-400 text-sm leading-relaxed mb-6 border-t border-slate-700 pt-4">
                                     {caza.desc}
                                 </p>
-                                <Link href="/sites-institucionais/premium/advocacia-empresarial/portfolio" className="text-amber-500 text-sm font-bold flex items-center gap-2 hover:text-white transition-colors">Ler Case Detalhado <ArrowRight size={14} /></Link>
+                                <Link href="/portfolio/sites-institucionais/premium/advocacia-empresarial/portfolio" className="text-amber-500 text-sm font-bold flex items-center gap-2 hover:text-white transition-colors">Ler Case Detalhado <ArrowRight size={14} /></Link>
                             </div>
                         ))}
                     </div>
@@ -392,7 +392,7 @@ export default function HomePage() {
                         Agende uma consulta para uma análise preliminar do seu caso. Garantimos total confidencialidade e atendimento por um sócio.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                        <Link href="/sites-institucionais/premium/advocacia-empresarial/contato" className="bg-amber-700 hover:bg-amber-600 text-white px-10 py-4 rounded-md font-bold text-lg shadow-xl shadow-amber-900/20 transition-all flex items-center justify-center gap-3">
+                        <Link href="/portfolio/sites-institucionais/premium/advocacia-empresarial/contato" className="bg-amber-700 hover:bg-amber-600 text-white px-10 py-4 rounded-md font-bold text-lg shadow-xl shadow-amber-900/20 transition-all flex items-center justify-center gap-3">
                             <MessageSquare size={20} /> Solicitar Análise de Caso
                         </Link>
                         <div className="flex items-center justify-center gap-2 text-slate-400">

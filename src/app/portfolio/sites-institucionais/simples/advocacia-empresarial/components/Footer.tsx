@@ -37,27 +37,27 @@ export default function Footer() {
                         <h4 className="font-bold text-white text-lg mb-6">Links Rápidos</h4>
                         <ul className="space-y-3">
                             <li>
-                                <Link href="/sites-institucionais/simples/advocacia-empresarial" className="hover:text-amber-400 transition-colors text-sm">
+                                <Link href="/portfolio/sites-institucionais/simples/advocacia-empresarial" className="hover:text-amber-400 transition-colors text-sm">
                                     Home
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/sites-institucionais/simples/advocacia-empresarial/sobre" className="hover:text-amber-400 transition-colors text-sm">
+                                <Link href="/portfolio/sites-institucionais/simples/advocacia-empresarial/sobre" className="hover:text-amber-400 transition-colors text-sm">
                                     Sobre o Escritório
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/sites-institucionais/simples/advocacia-empresarial/servicos" className="hover:text-amber-400 transition-colors text-sm">
+                                <Link href="/portfolio/sites-institucionais/simples/advocacia-empresarial/servicos" className="hover:text-amber-400 transition-colors text-sm">
                                     Áreas de Atuação
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/sites-institucionais/simples/advocacia-empresarial/faq" className="hover:text-amber-400 transition-colors text-sm">
+                                <Link href="/portfolio/sites-institucionais/simples/advocacia-empresarial/faq" className="hover:text-amber-400 transition-colors text-sm">
                                     Perguntas Frequentes
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/sites-institucionais/simples/advocacia-empresarial/contato" className="hover:text-amber-400 transition-colors text-sm">
+                                <Link href="/portfolio/sites-institucionais/simples/advocacia-empresarial/contato" className="hover:text-amber-400 transition-colors text-sm">
                                     Contato
                                 </Link>
                             </li>
@@ -136,7 +136,7 @@ export default function Footer() {
                             Agende uma consulta estratégica gratuita e descubra como podemos ajudar sua empresa
                         </p>
                         <Link
-                            href="/sites-institucionais/simples/advocacia-empresarial/contato"
+                            href="/portfolio/sites-institucionais/simples/advocacia-empresarial/contato"
                             className="inline-block px-8 py-3 bg-white text-amber-900 rounded font-bold hover:bg-amber-50 transition-colors shadow-lg"
                         >
                             Agendar Consulta Gratuita

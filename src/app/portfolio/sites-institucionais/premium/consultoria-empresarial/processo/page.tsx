@@ -114,8 +114,8 @@ export default function ProcessoPage() {
                                     key={phase.id}
                                     onClick={() => setActivePhase(phase.id)}
                                     className={`w-full text-left px-6 py-4 rounded-xl flex items-center gap-4 transition-all ${activePhase === phase.id
-                                            ? "bg-blue-600 text-white shadow-lg shadow-blue-900/20"
-                                            : "bg-white text-slate-600 hover:bg-slate-100 border border-slate-200"
+                                        ? "bg-blue-600 text-white shadow-lg shadow-blue-900/20"
+                                        : "bg-white text-slate-600 hover:bg-slate-100 border border-slate-200"
                                         }`}
                                 >
                                     <phase.icon size={20} className={activePhase === phase.id ? "text-blue-200" : "text-slate-400"} />
@@ -245,7 +245,7 @@ export default function ProcessoPage() {
             <section className="py-24 bg-blue-600 text-white text-center">
                 <div className="container mx-auto px-6 md:px-12 lg:px-20 xl:px-32 max-w-4xl">
                     <h2 className="text-4xl font-bold mb-8">Pronto para Iniciar sua Jornada?</h2>
-                    <Link href="/sites-institucionais/premium/consultoria-empresarial/contato" className="inline-flex items-center gap-2 bg-white text-blue-600 px-10 py-5 rounded-lg font-bold text-lg hover:bg-slate-100 transition-all shadow-xl">
+                    <Link href="/portfolio/sites-institucionais/premium/consultoria-empresarial/contato" className="inline-flex items-center gap-2 bg-white text-blue-600 px-10 py-5 rounded-lg font-bold text-lg hover:bg-slate-100 transition-all shadow-xl">
                         Solicitar Proposta Comercial <ArrowRight size={20} />
                     </Link>
                 </div>

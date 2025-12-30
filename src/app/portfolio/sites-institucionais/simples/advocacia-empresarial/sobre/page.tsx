@@ -207,7 +207,7 @@ export default function SobrePage() {
                             Agende uma visita ao escritório e conheça nossa equipe e metodologia de trabalho
                         </p>
                         <a
-                            href="/sites-institucionais/simples/advocacia-empresarial/contato"
+                            href="/portfolio/sites-institucionais/simples/advocacia-empresarial/contato"
                             className="inline-block bg-amber-700 text-white px-10 py-4 rounded text-lg font-bold hover:bg-amber-800 transition-all shadow-lg"
                         >
                             Agendar Reunião

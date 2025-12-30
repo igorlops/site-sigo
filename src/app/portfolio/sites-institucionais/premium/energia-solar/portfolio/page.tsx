@@ -177,8 +177,8 @@ export default function PortfolioPage() {
                                 key={cat.id}
                                 onClick={() => setFilter(cat.id)}
                                 className={`flex items-center gap-2 px-6 py-3 rounded-full font-bold text-sm transition-all duration-300 ${filter === cat.id
-                                        ? "bg-sky-600 text-white shadow-lg scale-105"
-                                        : "bg-white text-slate-500 border border-slate-200 hover:bg-slate-100"
+                                    ? "bg-sky-600 text-white shadow-lg scale-105"
+                                    : "bg-white text-slate-500 border border-slate-200 hover:bg-slate-100"
                                     }`}
                             >
                                 <cat.icon size={16} /> {cat.label}
@@ -310,7 +310,7 @@ export default function PortfolioPage() {
                     <p className="text-xl text-slate-600 mb-10">
                         Não deixe seu dinheiro ir embora pela fiação. Transforme seu imóvel em um ativo gerador de renda.
                     </p>
-                    <Link href="/sites-institucionais/premium/energia-solar/contato" className="inline-block px-12 py-5 bg-gradient-to-r from-sky-600 to-sky-500 text-white font-bold rounded-xl text-lg shadow-xl shadow-sky-200 hover:shadow-sky-300 hover:-translate-y-1 transition-all">
+                    <Link href="/portfolio/sites-institucionais/premium/energia-solar/contato" className="inline-block px-12 py-5 bg-gradient-to-r from-sky-600 to-sky-500 text-white font-bold rounded-xl text-lg shadow-xl shadow-sky-200 hover:shadow-sky-300 hover:-translate-y-1 transition-all">
                         Solicitar Estudo de Viabilidade
                     </Link>
                 </div>
