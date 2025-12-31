@@ -15,13 +15,13 @@ export default function ContactSocial({ content, icon, title, href }: ContactSoc
             <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-primary-400/10 text-primary-400 rounded-xl group-hover:bg-primary-400 transition-colors duration-300 group-hover:text-navy-950">
                 {icon}
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col min-w-0">
                 {title && (
                     <span className="text-xs font-black uppercase tracking-widest text-primary-400 mb-1">
                         {title}
                     </span>
                 )}
-                <span className="text-white font-medium group-hover:text-primary-400 transition-colors truncate max-w-[200px]">
+                <span className="text-white font-medium group-hover:text-primary-400 transition-colors break-all">
                     {content}
                 </span>
             </div>

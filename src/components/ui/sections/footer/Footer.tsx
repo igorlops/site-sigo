@@ -58,11 +58,11 @@ export default function Footer() {
                                 icon={<WhatsAppIcon />}
                             />
                             <div className="mt-6 flex gap-4">
-                                <a href="https://www.instagram.com/sigowebsolutions/" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary-400/20 transition-colors">
+                                <a href="https://www.instagram.com/sigowebsolutions/" className="w-10 h-10 rounded-full bg-primary-400/80 flex items-center justify-center hover:bg-primary-400/40 transition-colors">
                                     <InstagramIcon />
                                 </a>
                                 {/* Phone icon as a link too */}
-                                <a href="tel:85992100969" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary-400/20 transition-colors">
+                                <a href="tel:85992100969" className="w-10 h-10 rounded-full bg-primary-400/80 flex items-center justify-center hover:bg-primary-400/40 transition-colors">
                                     <PhoneIcon />
                                 </a>
                             </div>

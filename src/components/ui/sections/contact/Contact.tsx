@@ -21,7 +21,7 @@ export default function Contact() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start lg:items-center">
                     <InViewSection>
                         <div className="space-y-12">
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div className="grid grid-cols-1 lg:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-6">
                                 <div className="glass-dark p-6 rounded-2xl border border-white/5 hover:bg-white/5 transition-colors group">
                                     <ContactSocial
                                         title="Instagram"

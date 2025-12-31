@@ -7,6 +7,7 @@ import Process from "@/components/ui/sections/budget/Process";
 import Pricing from "@/components/ui/sections/budget/Pricing";
 import FormBudget from "@/components/ui/sections/budget/FormBudget";
 import InViewSection from "@/components/ui/items/InViewSection";
+import HostingPricing from "@/components/ui/sections/budget/HostingPricing";
 
 export default function OrcamentoPage() {
     const homeRef = useRef<HTMLElement>(null);
@@ -50,6 +51,8 @@ export default function OrcamentoPage() {
             <Process />
 
             <Pricing />
+
+            <HostingPricing />
 
             <section className="py-20 relative overflow-hidden bg-mesh" id="budget-form-section">
                 <div className="container mx-auto px-6 max-w-4xl">

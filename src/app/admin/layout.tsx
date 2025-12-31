@@ -22,15 +22,6 @@ export default function AdminLayout({
                     <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                 </svg>
             )
-        },
-        {
-            href: '/admin/portfolios',
-            label: 'Portfólios',
-            icon: (
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 01-1.125-1.125v-3.75zM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-8.25zM2.25 14.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v3.375c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-3.375z" />
-                </svg>
-            )
         }
     ];
 
@@ -55,8 +46,8 @@ export default function AdminLayout({
                                 key={item.href}
                                 href={item.href}
                                 className={`flex items-center gap-4 px-4 py-4 rounded-2xl transition-all border ${active
-                                        ? "bg-primary-400/10 text-primary-400 border-primary-400/20 shadow-[0_0_20px_rgba(245,158,11,0.1)]"
-                                        : "text-gray-500 hover:text-white hover:bg-white/5 border-transparent"
+                                    ? "bg-primary-400/10 text-primary-400 border-primary-400/20 shadow-[0_0_20px_rgba(245,158,11,0.1)]"
+                                    : "text-gray-500 hover:text-white hover:bg-white/5 border-transparent"
                                     }`}
                             >
                                 {item.icon}
