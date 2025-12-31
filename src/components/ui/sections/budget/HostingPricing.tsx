@@ -87,7 +87,7 @@ export default function HostingPricing() {
                             <div className="glass-dark p-10 rounded-[2.5rem] border border-white/10 relative overflow-hidden">
                                 <div className="absolute top-0 left-0 w-1.5 h-full bg-secondary-400/50"></div>
                                 <p className="text-xl md:text-2xl text-gray-200 leading-relaxed font-medium italic">
-                                    "O desenvolvimento do site é um projeto com início, meio e fim. A hospedagem é um serviço contínuo, essencial para manter o site no ar com segurança, desempenho e suporte."
+                                    O desenvolvimento do site é um projeto com início, meio e fim. A hospedagem é um serviço contínuo, essencial para manter o site no ar com segurança, desempenho e suporte.
                                 </p>
                             </div>
                         </div>
