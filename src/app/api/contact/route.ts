@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import pool from '@/lib/mysql';
+import { sql } from '@vercel/postgres';
 
 export async function POST(req: NextRequest) {
     try {
@@ -14,11 +14,11 @@ export async function POST(req: NextRequest) {
             );
         }
 
-        // Insert into MySQL
-        const [result] = await pool.execute(
-            'INSERT INTO contacts (first_name, last_name, email, phone, message) VALUES (?, ?, ?, ?, ?)',
-            [first_name, last_name, email, phone, message]
-        );
+        // Insert into Postgres
+        const result = await sql`
+            INSERT INTO contacts (first_name, last_name, email, phone, message)
+            VALUES (${first_name}, ${last_name}, ${email}, ${phone}, ${message})
+        `;
 
         return NextResponse.json(
             { message: 'Sua mensagem foi enviada com sucesso e salva em nosso banco de dados!', result },
@@ -35,7 +35,7 @@ export async function POST(req: NextRequest) {
 }
 export async function GET() {
     try {
-        const [rows] = await pool.execute('SELECT * FROM contacts ORDER BY created_at DESC');
+        const { rows } = await sql`SELECT * FROM contacts ORDER BY created_at DESC`;
         return NextResponse.json(rows, { status: 200 });
     } catch (error: unknown) {
         console.error('Database Error:', error);

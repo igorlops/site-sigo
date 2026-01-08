@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import pool from '@/lib/mysql';
+import { sql } from '@vercel/postgres';
 
 export async function POST(req: NextRequest) {
     try {
@@ -24,11 +24,11 @@ Mensagem Original:
 ${message}
         `.trim();
 
-        // Insert into MySQL (using contacts table for simplicity as per plan)
-        const [result] = await pool.execute(
-            'INSERT INTO contacts (first_name, last_name, email, phone, message) VALUES (?, ?, ?, ?, ?)',
-            [first_name, last_name, email, phone, details]
-        );
+        // Insert into Postgres (using contacts table for simplicity as per plan)
+        const result = await sql`
+            INSERT INTO contacts (first_name, last_name, email, phone, message)
+            VALUES (${first_name}, ${last_name}, ${email}, ${phone}, ${details})
+        `;
 
         return NextResponse.json(
             { message: 'Solicitação de orçamento recebida com sucesso!', result },
