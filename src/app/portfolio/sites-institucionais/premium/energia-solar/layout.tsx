@@ -16,14 +16,12 @@ export default function Layout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="pt-BR">
-            <body className="scroll-smooth font-sans antialiased text-slate-700 bg-slate-50 selection:bg-amber-500 selection:text-sky-950">
-                <Header />
-                <main className="min-h-screen flex flex-col pt-16 lg:pt-20">
-                    {children}
-                </main>
-                <Footer />
-            </body>
-        </html>
+        <div className="scroll-smooth font-sans antialiased text-slate-700 bg-slate-50 selection:bg-amber-500 selection:text-sky-950">
+            <Header />
+            <main className="min-h-screen flex flex-col pt-16 lg:pt-20">
+                {children}
+            </main>
+            <Footer />
+        </div>
     );
 }

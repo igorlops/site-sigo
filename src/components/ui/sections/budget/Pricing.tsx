@@ -10,22 +10,20 @@ const plans = [
             "Design Exclusivo",
             "Alta Conversão",
             "SEO Básico",
-            "Integração WhatsApp",
-            "Hospedagem Inclusa (1 ano)"
+            "Integração WhatsApp"
         ],
         highlight: false
     },
     {
         name: "Site Institucional Standart",
-        description: "Para empresas dominar o mundo digital.",
+        description: "Para empresas dominarem o mundo digital.",
         price: "699,97",
         oldPrice: "899,97",
         features: [
             "Até 5 Páginas",
             "Design Standart",
             "SEO Básico",
-            "Integração WhatsApp",
-            "Hospedagem Inclusa (1 ano)"
+            "Integração WhatsApp"
         ],
         highlight: false
     },
@@ -38,8 +36,7 @@ const plans = [
             "Até 7 Páginas",
             "Design Premium",
             "SEO Otimizado",
-            "Integração WhatsApp",
-            "Hospedagem Inclusa (1 ano)"
+            "Integração WhatsApp"
         ],
         highlight: true
     },

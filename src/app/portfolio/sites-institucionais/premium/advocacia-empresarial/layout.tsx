@@ -40,14 +40,12 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="pt-BR" className={`${playfair.variable} ${lato.variable}`}>
-            <body className="font-sans antialiased text-slate-700 bg-stone-50 selection:bg-amber-700 selection:text-white">
-                <Header />
-                <main className="min-h-screen flex flex-col pt-32">
-                    {children}
-                </main>
-                <Footer />
-            </body>
-        </html>
+        <div className={`${playfair.variable} ${lato.variable} font-sans antialiased text-slate-700 bg-stone-50 selection:bg-amber-700 selection:text-white`}>
+            <Header />
+            <main className="min-h-screen flex flex-col pt-32">
+                {children}
+            </main>
+            <Footer />
+        </div>
     );
 }

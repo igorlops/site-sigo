@@ -39,17 +39,15 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="pt-BR" >
-            <body className={`font-sans antialiased text-stone-950 bg-zinc-50 selection:bg-amber-600 selection:text-white ${playfair.variable} ${lato.variable} scroll-smooth`}>
-                {/* Background Texture for Luxury Feel */}
-                <div className="fixed inset-0 z-[-1] opacity-[0.03] bg-[url('https://www.transparenttextures.com/patterns/noise.png')] pointer-events-none mix-blend-multiply"></div>
+        <div className={`font-sans antialiased text-stone-950 bg-zinc-50 selection:bg-amber-600 selection:text-white ${playfair.variable} ${lato.variable} scroll-smooth`}>
+            {/* Background Texture for Luxury Feel */}
+            <div className="fixed inset-0 z-[-1] opacity-[0.03] bg-[url('https://www.transparenttextures.com/patterns/noise.png')] pointer-events-none mix-blend-multiply"></div>
 
-                <Header />
-                <main className="min-h-screen flex flex-col pt-0 relative z-10">
-                    {children}
-                </main>
-                <Footer />
-            </body>
-        </html>
+            <Header />
+            <main className="min-h-screen flex flex-col pt-0 relative z-10">
+                {children}
+            </main>
+            <Footer />
+        </div>
     );
 }

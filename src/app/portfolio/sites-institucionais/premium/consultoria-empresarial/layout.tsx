@@ -41,14 +41,12 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="pt-BR" >
-            <body className={`${inter.variable} ${roboto.variable} font-sans antialiased text-slate-700 bg-slate-50 selection:bg-blue-600 selection:text-white`}>
-                <Header />
-                <main className="min-h-screen flex flex-col pt-20 lg:pt-28">
-                    {children}
-                </main>
-                <Footer />
-            </body>
-        </html>
+        <div className={`${inter.variable} ${roboto.variable} font-sans antialiased text-slate-700 bg-slate-50 selection:bg-blue-600 selection:text-white`}>
+            <Header />
+            <main className="min-h-screen flex flex-col pt-20 lg:pt-28">
+                {children}
+            </main>
+            <Footer />
+        </div>
     );
 }

@@ -39,14 +39,12 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="pt-BR" className={`${montserrat.variable} ${inter.variable}`}>
-            <body className="font-sans antialiased text-slate-700 bg-zinc-50 selection:bg-teal-700 selection:text-white">
-                <Header />
-                <main className="min-h-screen flex flex-col pt-0">
-                    {children}
-                </main>
-                <Footer />
-            </body>
-        </html>
+        <div className={`${montserrat.variable} ${inter.variable} font-sans antialiased text-slate-700 bg-zinc-50 selection:bg-teal-700 selection:text-white`}>
+            <Header />
+            <main className="min-h-screen flex flex-col pt-0">
+                {children}
+            </main>
+            <Footer />
+        </div>
     );
 }
