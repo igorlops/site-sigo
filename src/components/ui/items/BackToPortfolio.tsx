@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, Layout } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 
 export default function BackToPortfolio() {
     return (
