@@ -4,8 +4,8 @@ const plans = [
     {
         name: "Landing Page",
         description: "Ideal para campanhas e produtos únicos.",
-        price: "499,97",
-        oldPrice: "699,97",
+        price: "249,97",
+        oldPrice: "499,97",
         features: [
             "Design Exclusivo",
             "Alta Conversão",
@@ -17,7 +17,7 @@ const plans = [
     {
         name: "Site Institucional Standart",
         description: "Para empresas dominarem o mundo digital.",
-        price: "699,97",
+        price: "499,97",
         oldPrice: "899,97",
         features: [
             "Até 5 Páginas",
@@ -30,7 +30,7 @@ const plans = [
     {
         name: "Site Institucional Premium",
         description: "Para empresas que querem fortalecer a marca.",
-        price: "1.299,97",
+        price: "999,97",
         oldPrice: "1.599,97",
         features: [
             "Até 7 Páginas",
