@@ -3,7 +3,7 @@ import InViewSection from "../../items/InViewSection";
 const hostingPlans = [
     {
         name: "Plano Essencial",
-        price: "59",
+        price: "29",
         description: "Para quem só quer o site no ar",
         features: [
             "Hospedagem em servidor compartilhado ou cloud",
@@ -23,7 +23,7 @@ const hostingPlans = [
     },
     {
         name: "Plano Profissional",
-        price: "119",
+        price: "69",
         description: "O mais contratado",
         features: [
             "Hospedagem otimizada (cloud)",
@@ -44,7 +44,7 @@ const hostingPlans = [
     },
     {
         name: "Plano Premium",
-        price: "249",
+        price: "149",
         description: "Para quem depende de performance e estabilidade",
         features: [
             "Hospedagem dedicada ou recursos isolados",
